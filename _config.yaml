@@ -1,0 +1,12 @@
+# Where things are
+source:      .
+destination: ./_site
+layouts_dir:     ./_layouts
+# collections: null
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
