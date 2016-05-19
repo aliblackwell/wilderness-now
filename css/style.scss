@@ -1,8 +1,225 @@
 ---
 ---
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/Oswald/Oswald-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Work Sans Local';
+  src: url('/fonts/Work_Sans/WorkSans-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Work Sans Bold';
+  src: url('/fonts/Work_Sans/WorkSans-SemiBold.ttf')  format('truetype')
+}
+
 @import 'bootstrap';
 @import 'variables';
 
 body {
-  background: $red;
+  font-family: "Work Sans", "Work Sans Local";
+}
+
+.navbar {
+  img {
+    width: 3vw;
+  }
+}
+
+.bg-faded {
+  background: lighten($peach, 10%);
+}
+
+
+.banner {
+  width: 100%;
+  text-align: center;
+  padding: 30vh 0vw;
+  margin: 0;
+  h1 {
+    color: black;
+    font-size: 3vw;
+    img {
+      width: 10vw;
+      display: block;
+      margin: 0 auto 2vh auto;
+    }
+  }
+  h2 {
+    color: black;
+    font-size: 2vw;
+    font-family: "Work Sans", "Work Sans Bold";
+    font-weight: 600;
+  }
+}
+
+header.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,.4);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+header.banner { // Logo
+  position: relative;
+  background: url('/img/ravine.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25vh 0vh;
+  h1 {
+    margin-bottom: 0vh;
+    font-family: "Oswald";
+    position: relative;
+    z-index: 2;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.banner.create-your-dream {
+  background: url('/img/standing.jpg') no-repeat;
+  background-size: cover;
+}
+
+.banner.mountains-quote {
+  background: url('/img/gulley.jpg') no-repeat;
+  background-size: cover;
+}
+
+.banner.wilderness-quote {
+  background: url('/img/hiking.jpg') no-repeat;
+  background-size: cover;
+}
+
+.banner.signup {
+  background: url('/img/skiing2.jpg') no-repeat;
+  background-size: cover;
+}
+
+.full-width-white {
+  background: white;
+  padding: 3rem 0rem;
+}
+
+.full-width-image::after {
+      content: "";
+      background: transparentize($peach, 0.45);
+      background-blend-mode: multiply;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 0;
+    }
+
+.full-width-image {
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .wn {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 6rem);
+    background: url('/img/wilderness_now_logo_01_white.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.3;
+    overflow: hidden;
+    margin: 3rem 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  h1 {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.feature {
+  text-align: center;
+  img {
+    width: 160px;
+    height: 160px;
+    padding: 40px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: white;
+    border: 1px solid $grey;
+  }
+}
+
+.activity-categories {
+  position: relative;
+  text-align: center;
+  .heading {
+    height: 34px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -16px;
+    h4 {
+      font-size: 34px;
+      line-height: 1;
+      margin: 0;
+      color: white;
+      font-family: "Work Sans Bold";
+    }
+  }
+}
+
+
+/* Typography */
+
+.section-title {
+  text-align: center;
+  margin-bottom:  3rem;
+}
+
+.btn-primary {
+  background: none;
+  border-color: $ochre;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  border-color: $green;
+  background: none;
+}
+
+/* Galleries */
+
+.card-columns {
+  img {
+
+  }
+}
+
+
+.morse-divider {
+  height: 10px;
+  width: 80%;
+  background: url('/img/wilderness_now_morse.svg') no-repeat center center;
+  background-size: contain;
+  margin: 3rem auto;
+  opacity: 0.3;
 }
