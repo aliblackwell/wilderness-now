@@ -62,6 +62,9 @@ body {
   font-size: 1.4rem;
   color: $greyText;
   text-align: center;
+  p {
+    margin-bottom: 0;
+  }
   .down-arrow {
     margin: 0 auto;
     width: 50px;
@@ -91,6 +94,14 @@ body {
     font-family: "Work Sans", "Work Sans Bold";
     font-weight: 600;
   }
+}
+
+.activity-category-layout-1 header.banner {
+  padding: 20vh 0vh;
+}
+
+.activity-category-layout-2 header.banner {
+  padding: 20vh 0vh;
 }
 
 header.banner { // Logo
@@ -142,15 +153,19 @@ header.banner { // Logo
 
 .banner.signup {
   background-image: url('/assets/img/skiing2.jpg');
+}
+
+.banner.logo-overlay {
   background-color: $ochre;
   background-blend-mode: multiply;
   background-size: cover;
+  background-position: center center;
 }
 
 .full-width-white {
   position: relative;
   background: white;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .full-width-image {
