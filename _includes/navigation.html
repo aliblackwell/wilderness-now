@@ -1,0 +1,45 @@
+<div class="navbar navbar-light navbar-fixed-top">
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="/"><img src="/assets/img/wilderness_now_logo_01_black.png" alt="WN"></a>
+          </div>
+          <div class="col-xs-6">
+
+            <a class="activities-dropdown" href="#activities" id="trigger-overlay">
+              <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              Our Activities
+            </a>
+          </div>
+          <div class="col-xs-3">
+            <h2>
+              Great British Adventures
+            </h2>
+          </div>
+        </div>
+    </div>
+    <!-- open/close -->
+    <div id="activities" class="overlay overlay-slidedown">
+      <button type="button" class="overlay-close">Close</button>
+      <nav class="row">
+        <ul class="col-md-4">
+        {% for activity in site.data.dropdown.col1 %}
+          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
+        {% endfor %}
+        </ul>
+        <ul class="col-md-4">
+        {% for activity in site.data.dropdown.col2 %}
+          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
+        {% endfor %}
+        </ul>
+        <ul class="col-md-4">
+        {% for activity in site.data.dropdown.col3 %}
+          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>

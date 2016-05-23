@@ -1,8 +1,8 @@
 test: "This"
 col1:
-    - { url: '/', text: 'Mountaineering' }
-    - { url: '/', text: 'Skiing' }
-    - { url: '/', text: 'Biking' }
+    - { url: '/mountaineering', text: 'Mountaineering' }
+    - { url: '/skiing', text: 'Skiing' }
+    - { url: '/biking', text: 'Biking' }
     - { url: '/', text: 'Rock Climbing' }
     - { url: '/', text: 'Endurance' }
     - { url: '/', text: 'Trekking' }
