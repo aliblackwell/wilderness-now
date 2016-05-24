@@ -28,22 +28,25 @@
       </div>
     </div>
 
+    <div class="container-fluid">
 
-    <div class="row">
-      {% for activity in site.data.activities %}
-       {% for detail in activity %}
-        {% if detail.featured %}
-          <div class="col-md-{{detail.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{detail.image}})">
-            <a href="/{{detail.slug}}">
-              <h4>{{detail.title}}</h4>
-            </a>
-          </div>
-        {% endif %}
 
-      {% endfor %}
+      <div class="row">
+        {% for activity in site.data.activities %}
+         {% for detail in activity %}
+          {% if detail.featured %}
+            <div class="col-md-{{detail.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{detail.image}})">
+              <a href="/{{detail.slug}}.html">
+                <h4>{{detail.title}}</h4>
+              </a>
+            </div>
+          {% endif %}
 
-      {% endfor %}
+        {% endfor %}
 
+        {% endfor %}
+
+      </div>
     </div>
 
     <div class="full-width-white">
