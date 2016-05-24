@@ -1,0 +1,21 @@
+    {% for activity in page.activities %}
+      {% assign loopmod = forloop.index0 | modulo: 3 %}
+      {% if loopmod == 0 %}
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+      {% endif %}
+            <div class="card">
+              <img class="card-img-top" src="{{ site.data.activities.[page.slug].image }}" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">{{activity.title}}</h4>
+                <p class="card-text">{{activity.description}}</p>
+              </div>
+              <div class="card-block">
+                <a class="btn btn-primary" href="https://alib.typeform.com/to/sSiGYV?activity={{activity.slug}}">Tell me more</a>
+              </div>
+            </div>
+      {% if loopmod == 2 or forloop.last %}
+          </div><!-- / .card -->
+        </div><!-- / .card-deck-wrapper -->
+      {% endif %}
+    {% endfor %}
