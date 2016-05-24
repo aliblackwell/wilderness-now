@@ -3,14 +3,14 @@ mountaineering:
   title: Mountaineering
   image: /assets/img/activities/mountaineering.jpg
   featured: true
-  grid: 5
+  grid: 4
 
 skiing:
   slug: skiing
   title: Skiing
   image: /assets/img/activities/skiing.jpg
   featured: true
-  grid: 7
+  grid: 8
 
 biking:
   slug: biking
