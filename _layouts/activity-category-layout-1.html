@@ -6,9 +6,9 @@
   </head>
   <body class="activity-category-layout-1 overlay-closed">
     {% include navigation.html %}
-    <header class="banner" style="background-image: url({{ site.data.activities.[page.slug].image }})">
+    <header class="banner" style="background-image: url({{ sites.data.config.cdn }}/{{ site.data.activities.[page.slug].image }})">
       <h1>
-        <img src="/assets/img/wilderness_now_logo_01_white.png" alt="WN">
+        <img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_white.png" alt="WN">
         {{ site.data.activities.[page.slug].title }}
       </h1>
 
