@@ -1,56 +1,56 @@
 mountaineering:
   slug: mountaineering
   title: Mountaineering
-  image: {{ site.data.config.cdn }}/img/activities/mountaineering.jpg
+  image: activities/mountaineering.jpg
   featured: true
   grid: 4
 
 skiing:
   slug: skiing
   title: Skiing
-  image: {{ site.data.config.cdn }}/img/activities/skiing.jpg
+  image: activities/skiing.jpg
   featured: true
   grid: 8
 
 biking:
   slug: biking
   title: Biking
-  image: {{ site.data.config.cdn }}/img/activities/biking.jpg
+  image: activities/biking.jpg
   featured: true
   grid: 7
 
 fishing:
   slug: fishing
   title: Fishing
-  image:  {{ site.data.config.cdn }}/img/activities/fishing.jpg
+  image:  activities/fishing.jpg
   featured: true
   grid: 5
 
 endurance:
   slug: endurance
   title: Endurance
-  image: {{ site.data.config.cdn }}/img/activities/endurance.jpg
+  image: activities/endurance.jpg
   featured: true
   grid: 6
 
 paddle:
   slug: paddle
   title: Paddle
-  image: {{ site.data.config.cdn }}/img/activities/paddle.jpg
+  image: activities/paddle.jpg
   featured: true
   grid: 6
 
 surfing:
   slug: surfing
   title: Surfing
-  image: {{ site.data.config.cdn }}/img/activities/surfing.jpg
+  image: activities/surfing.jpg
   featured: true
   grid: 5
 
 trekking:
   slug: trekking
   title: Trekking
-  image: {{ site.data.config.cdn }}/img/activities/trekking.jpg
+  image: activities/trekking.jpg
   featured: true
   grid: 7
 
