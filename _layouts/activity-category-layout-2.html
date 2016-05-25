@@ -7,13 +7,13 @@
   <body class="activity-category-layout-2 overlay-closed">
     {% include navigation.html %}
 
-    <header class="full-width-image banner logo-overlay" style="background-image: url({{ sites.data.config.cdn }}/{{ site.data.activities.[page.slug].image }})">
+    <header class="full-width-image banner logo-overlay" style="background-image: url({{ site.data.config.cdn }}/{{ site.data.activities.[page.slug].image }})">
       <div class="wn"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h1>
-              <img src="{{ sites.data.config.cdn }}/img/wilderness_now_logo_01_white.png" alt="WN">
+              <img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_white.png" alt="WN">
               {{ site.data.activities.[page.slug].title }}
             </h1>
           </div>
