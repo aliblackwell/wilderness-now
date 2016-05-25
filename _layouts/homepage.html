@@ -36,7 +36,7 @@
          {% for detail in activity %}
           {% if detail.featured %}
             <div class="col-md-{{detail.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{detail.image}})">
-              <a href="/{{detail.slug}}.html">
+              <a href="{{detail.slug}}.html">
                 <h4>{{detail.title}}</h4>
               </a>
             </div>
