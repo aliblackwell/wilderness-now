@@ -3,17 +3,17 @@
 
 @font-face {
   font-family: 'Oswald';
-  src: url('/assets/fonts/Oswald/Oswald-Regular.ttf')  format('truetype')
+  src: url('{{site.data.config.cdn}}/fonts/Oswald/Oswald-Regular.ttf')  format('truetype')
 }
 
 @font-face {
   font-family: 'Work Sans Local';
-  src: url('/assets/fonts/Work_Sans/WorkSans-Regular.ttf')  format('truetype')
+  src: url('{{site.data.config.cdn}}/fonts/Work_Sans/WorkSans-Regular.ttf')  format('truetype')
 }
 
 @font-face {
   font-family: 'Work Sans Bold';
-  src: url('/assets/fonts/Work_Sans/WorkSans-SemiBold.ttf')  format('truetype')
+  src: url('{{site.data.config.cdn}}/fonts/Work_Sans/WorkSans-SemiBold.ttf')  format('truetype')
 }
 
 @import 'bootstrap';
@@ -107,7 +107,7 @@ body {
 header.banner { // Logo
   position: relative;
   background-color: $ochre;
-  background-image: url('/assets/img/wide-mountains.jpg');
+  background-image: url('{{site.data.config.cdn}}/img/homepage-background.jpg');
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -136,23 +136,10 @@ header.banner { // Logo
   }
 }
 
-.banner.create-your-dream {
-  background: url('/assets/img/standing.jpg') no-repeat;
-  background-size: cover;
-}
 
-.banner.mountains-quote {
-  background: url('/assets/img/gulley.jpg') no-repeat;
-  background-size: cover;
-}
-
-.banner.wilderness-quote {
-  background: url('/assets/img/hiking.jpg') no-repeat;
-  background-size: cover;
-}
 
 .banner.signup {
-  background-image: url('/assets/img/skiing2.jpg');
+  background-image: url('{{site.data.config.cdn}}/img/mailing-list-bg.jpg');
 }
 
 .banner.logo-overlay {
@@ -178,7 +165,7 @@ header.banner { // Logo
     position: absolute;
     width: 100%;
     height: calc(100% - 6rem);
-    background-image: url('/assets/img/wilderness_now_logo_01_white.png');
+    background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -318,7 +305,7 @@ img {
 .morse-divider {
   height: 10px;
   width: 80%;
-  background: url('/assets/img/wilderness_now_morse.svg') no-repeat center center;
+  background: url('{{site.data.config.cdn}}/img/wilderness_now_morse.svg') no-repeat center center;
   background-size: contain;
   margin: 3rem auto;
   opacity: 0.3;
