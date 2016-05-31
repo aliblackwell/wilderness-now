@@ -1,0 +1,105 @@
+-
+  slug: mountaineering
+  title: Mountaineering
+  image: activities/mountaineering.jpg
+  featured: true
+  grid: 4
+  layout: activity-category-layout-1
+  permalink: /mountaineering
+  quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
+  quoth: Jack Kerouac
+  includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
+  dyk: Did you know that there are no mountains in Scotland, only hills?
+
+-
+  slug: skiing
+  title: Skiing
+  image: activities/skiing.jpg
+  featured: true
+  grid: 8
+  layout: activity-category-layout-2
+  quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity."
+  quoth: John Muir
+
+-
+  slug: biking
+  title: Biking
+  image: activities/biking.jpg
+  featured: true
+  grid: 7
+  layout: activity-category-layout-2
+
+-
+  slug: fishing
+  title: Fishing
+  image:  activities/fishing.jpg
+  featured: true
+  grid: 5
+  layout: activity-category-layout-2
+
+-
+  slug: endurance
+  title: Endurance
+  image: activities/endurance.jpg
+  featured: true
+  grid: 6
+  layout: activity-category-layout-2
+
+-
+  slug: paddle
+  title: Paddle
+  image: activities/paddle.jpg
+  featured: true
+  grid: 6
+  layout: activity-category-layout-2
+  quote: "Paddle Quote."
+
+-
+  slug: surfing
+  title: Surfing
+  image: activities/surfing.jpg
+  featured: true
+  grid: 5
+  layout: activity-category-layout-2
+
+-
+  slug: trekking
+  title: Trekking
+  image: activities/trekking.jpg
+  featured: true
+  grid: 7
+  layout: activity-category-layout-2
+
+-
+  slug: canyoning
+  title: Canyoning
+  layout: activity-category-layout-2
+
+-
+  slug: horse-trekking
+  title: Horse Trekking
+  layout: activity-category-layout-2
+
+-
+  slug: stalking
+  title: Stalking
+  layout: activity-category-layout-2
+
+-
+  slug: sailing
+  title: Sailing
+  layout: activity-category-layout-2
+
+-
+  slug: diving
+  title: Diving
+  layout: activity-category-layout-2
+
+-
+  slug: coasteering
+  title: Coasteering
+  layout: activity-category-layout-1
+
+-
+  slug: wild-swimming
+  title: Wild Swimming
