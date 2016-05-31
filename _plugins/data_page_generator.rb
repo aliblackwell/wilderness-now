@@ -71,27 +71,27 @@ module Jekyll
       data = site.config['page_gen']
       if data
         data.each do |data_spec|
+          template = data_spec['template'] || data_spec['data']
           name = data_spec['name']
           dir = data_spec['dir'] || data_spec['data']
           extension = data_spec['extension'] || "html"
 
-          # records is the list of records defined in _data.yml
-          # for which we want to generate different pages
-          records = nil
-          data_spec['data'].split('.').each do |level|
-            if records.nil?
-              records = site.data[level]
-            else
-              records = records[level]
+          if site.layouts.key? template
+            # records is the list of records defined in _data.yml
+            # for which we want to generate different pages
+            records = nil
+            data_spec['data'].split('.').each do |level|
+              if records.nil?
+                records = site.data[level]
+              else
+                records = records[level]
+              end
             end
-          end
-          records.each do |record|
-            template = data_spec['template'] || record['layout']
-            if defined?(template)
+            records.each do |record|
               site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
-            else
-              puts "error. no template #{template}"
             end
+          else
+            puts "error. could not find template #{template}" if not site.layouts.key? template
           end
         end
       end
