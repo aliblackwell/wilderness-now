@@ -11,3 +11,12 @@ port:    4000
 host:    127.0.0.1
 baseurl: "" # does not include hostname
 
+# Generating pages
+# page_gen-dirs: true
+page_gen:
+  - data: 'parent-activities'
+    template: 'homepage'
+    name: 'slug'
+    dir: ''
+    extension: 'html'
+

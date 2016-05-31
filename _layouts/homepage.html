@@ -32,19 +32,18 @@
 
 
       <div class="row">
-        {% for activity in site.data.activities %}
-         {% for detail in activity %}
-          {% if detail.featured %}
-            <div class="col-md-{{detail.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{detail.image}})">
-              <a href="{{detail.slug}}.html">
-                <h4>{{detail.title}}</h4>
+
+         {% for activity in site.data.activities %}
+          {% if activity.featured %}
+            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{activity.image}})">
+              <a href="{{activity.slug}}.html">
+                <h4>{{activity.title}}</h4>
               </a>
             </div>
           {% endif %}
 
         {% endfor %}
 
-        {% endfor %}
 
       </div>
     </div>

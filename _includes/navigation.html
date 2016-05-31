@@ -26,12 +26,23 @@
     <div id="activities" class="overlay overlay-slidedown">
       <button type="button" class="overlay-close">Close</button>
       <nav class="row">
-        <ul class="col-md-4">
-        {% for activity in site.data.dropdown.col1 %}
-          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
+
+        {% for activity in site.data.parent-activities %}
+        {% assign loopmod = forloop.index0 | modulo: 6 %}
+        {% if loopmod == 0 %}
+          <ul class="col-md-4">
+        {% endif %}
+            <li><a href="{{ activity.slug }}.html">{{ activity.title }}</a></li>
+
+        {% if loopmod == 5 %}
+          </ul>
+        {% endif %}
+
+
+
         {% endfor %}
-        </ul>
-        <ul class="col-md-4">
+
+<!--         <ul class="col-md-4">
         {% for activity in site.data.dropdown.col2 %}
           <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
         {% endfor %}
@@ -40,6 +51,6 @@
         {% for activity in site.data.dropdown.col3 %}
           <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
         {% endfor %}
-        </ul>
+        </ul> -->
       </nav>
     </div>
