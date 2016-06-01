@@ -26,7 +26,7 @@ module Jekyll
     # - `name` is the key in `data` which determines the output filename
     # - `template` is the name of the template for generating the page
     # - `extension` is the extension for the generated file
-    def initialize(site, base, index_files, dir, data, name, template, extension)
+    def initialize(site, base, index_files, dir, data, name, parent, template, extension)
       @site = site
       @base = base
 
@@ -47,6 +47,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), template + ".html")
       self.data['title'] = data[name]
+      self.data['parent'] = parent
       # add all the information defined in _data for the current record to the
       # current page (so that we can access it with liquid tags)
       self.data.merge!(data)
@@ -72,6 +73,7 @@ module Jekyll
       if data
         data.each do |data_spec|
           name = data_spec['name']
+          parent = data_spec['data']
           dir = data_spec['dir'] || data_spec['data']
           extension = data_spec['extension'] || "html"
 
@@ -88,7 +90,7 @@ module Jekyll
           records.each do |record|
             template = data_spec['template'] || record['layout']
             if defined?(template)
-              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, parent, template, extension)
             else
               puts "error. no template #{template}"
             end

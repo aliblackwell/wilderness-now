@@ -12,11 +12,105 @@ host:    127.0.0.1
 baseurl: "" # does not include hostname
 
 # Generating pages
-# page_gen-dirs: true
+page_gen-dirs: true
 page_gen:
+
   - data: 'parent-activities'
     template: 'homepage'
     name: 'slug'
     dir: ''
-    extension: 'html'
 
+  - data: 'trekking'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'trekking'
+
+  - data: 'rock-climbing'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'rock-climbing'
+
+  - data: 'skiing'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'skiing'
+
+  - data: 'surfing'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'surfing'
+
+  - data: 'paddle'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'paddle'
+
+  - data: 'skiing'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'skiing'
+
+  - data: 'mountaineering'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'mountaineering'
+
+  - data: 'coasteering'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'coasteering'
+
+  - data: 'survival'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'survival'
+
+  - data: 'biking'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'biking'
+
+  - data: 'cycle-touring'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'cycle-touring'
+
+  - data: 'canyoning'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'canyoning'
+
+  - data: 'stalking'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'stalking'
+
+  - data: 'horse-trekking'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'horse-trekking'
+
+  - data: 'diving'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'diving'
+
+  - data: 'wild-swimming'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'wild-swimming'
+
+  - data: 'adventure-yoga'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'adventure-yoga'
+
+  - data: 'fishing'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'fishing'
+
+  - data: 'endurance'
+    template: 'activity-page'
+    name: 'slug'
+    dir: 'endurance'

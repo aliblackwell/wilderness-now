@@ -5,7 +5,6 @@
   featured: true
   grid: 4
   layout: activity-category-layout-1
-  permalink: /mountaineering
   quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
   quoth: Jack Kerouac
   includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
@@ -20,6 +19,8 @@
   layout: activity-category-layout-2
   quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity."
   quoth: John Muir
+  includes: Includes skiing, snowboarding and anything you can ride down a mountain
+  dyk: You can ski in the UK!
 
 -
   slug: biking
@@ -28,6 +29,11 @@
   featured: true
   grid: 7
   layout: activity-category-layout-2
+  quote: When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle.
+  quoth: Arthur Conan Doyle
+  includes: Includes mountain biking and cycle touring
+  dyk: Bikes!
+
 
 -
   slug: fishing
@@ -36,6 +42,10 @@
   featured: true
   grid: 5
   layout: activity-category-layout-2
+  quote: "If people concentrated on the really important things in life, there'd be a shortage of fishing poles."
+  quoth: Doug Larson
+  includes: Includes freshwater fly fishing and sea fishing
+  dyk: Fish have been on planet earth for 450 million years – twice as long as mammals.
 
 -
   slug: endurance
@@ -44,6 +54,10 @@
   featured: true
   grid: 6
   layout: activity-category-layout-2
+  quote: "I don't run to add days to my life, I run to add life to my days"
+  quoth: Ronald Rook
+  includes: Includes trail running, triathlon and challenges so insane that you couldn’t make them up
+  dyk: An Iron Man is not for the faint hearted
 
 -
   slug: paddle
@@ -52,7 +66,9 @@
   featured: true
   grid: 6
   layout: activity-category-layout-2
-  quote: "Paddle Quote."
+  quote: "Thousands have lived without love, not one without water."
+  quoth: W.H. Auden
+  dyk: Great Britain has won 13 medals in canoeing and kayaking at the Olympics. Four of these medals were won at the London 2012 Olympics. The country with the most Olympic medals in these disciplines in Hungary with 77.
 
 -
   slug: surfing
@@ -61,14 +77,22 @@
   featured: true
   grid: 5
   layout: activity-category-layout-2
+  quote: "It’s like the mafia. Once you're in – you’re in. There's no getting out."
+  quoth: Kelly Slater
+  includes: Includes surfing, windsurfing, kitesurfing – just a board and water
+  dyk: The longest surf ride ever recorded was 3 hours and 55 minutes
 
 -
   slug: trekking
   title: Trekking
   image: activities/trekking.jpg
+  quote: "Life is either a daring adventure or nothing."
+  quoth: Helen Keller
+  includes: 'From gentle day-hikes to fortnight-long yomps: your wilderness is here'
   featured: true
   grid: 7
   layout: activity-category-layout-2
+  dyk: Did you know that there are no mountains in Scotland, only hills?
 
 -
   slug: canyoning
@@ -98,8 +122,30 @@
 -
   slug: coasteering
   title: Coasteering
-  layout: activity-category-layout-1
+  layout: activity-category-layout-2
 
 -
   slug: wild-swimming
   title: Wild Swimming
+  layout: activity-category-layout-1
+-
+  slug: rock-climbing
+  title: Rock Climbing
+  image: activities/rock-climbing.jpg
+  layout: activity-category-layout-2
+  quote: Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner.
+  quoth: Chris Sharma
+  includes: Includes trad, bouldering and sports climbing
+-
+  slug: cycle-touring
+  title: Cycle Touring
+  layout: activity-category-layout-2
+-
+  slug: survival
+  title: Survival
+  layout: activity-category-layout-2
+-
+  slug: adventure-yoga
+  title: Adventure Yoga
+  layout: activity-category-layout-2
+
