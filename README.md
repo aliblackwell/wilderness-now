@@ -28,4 +28,4 @@ Merging master into the gh-pages branch will publish your changes on the main si
 
 Coming soon
 
-
+curl -I -s -X GET -H "Origin: www.github.com" http://d3fybqvnrweshl.cloudfront.net/fonts/Oswald.ttf

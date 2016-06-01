@@ -7,21 +7,22 @@
   <body class="activity-category-layout-2 overlay-closed">
     {% include navigation.html %}
 
-    <header class="full-width-image banner logo-overlay" style="background-image: url({{ site.data.config.cdn }}/{{ site.data.activities.[page.slug].image }})">
+    <header class="full-width-image banner logo-overlay" style="background-image: url({{site.data.config.cdn}}/{{ page.image }})">
       <div class="wn"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <h1>
               <img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_white.png" alt="WN">
-              {{ site.data.activities.[page.slug].title }}
+              {{ page.title }}
             </h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8 col-md-offset-3">
+          <div class="col-md-6 col-md-offset-3">
+
             <blockquote class="blockquote">
-              <p class="m-b-0">{{page.quote}}</p>
+              <p class="m-b-0">{{page.quote}}</p><br>
               <cite>{{page.quoth}}</cite>
             </blockquote>
           </div>
@@ -29,10 +30,50 @@
       </div>
     </header>
 
-
     <div class="full-width-white">
       <div class="container">
-         {% include activities-columns.html %}
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <section class="introduction">
+              <p>{{page.includes}}</p>
+              <img class="down-arrow" src="{{site.data.config.cdn}}/img/down-arrow.png" alt="Down">
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-width-grey">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-12">
+                {% include activities-table.html %}
+              </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+
+           <div class="row">
+             <div class="col-md-10 col-md-offset-1">
+
+
+               <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+                 <div class="card-block">
+                   <h3 class="card-title">Did you know</h3>
+                   <p class="card-text">{{page.dyk}}</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+
+         </div>
+        </div>
+
       </div>
     </div>
     {% include footer.html %}

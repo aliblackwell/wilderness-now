@@ -66,14 +66,16 @@ body {
     margin-bottom: 0;
   }
   .down-arrow {
-    margin: 0 auto;
+    margin: 1rem auto 0rem;
     width: 50px;
     height: 12px;
     display: block;
   }
 }
 
-
+.card-deck-wrapper {
+  margin-bottom: 1rem;
+}
 
 .banner {
   width: 100%;
@@ -102,8 +104,33 @@ body {
 
 .activity-category-layout-2 header.banner {
   padding: 10vh 0vh;
+  text-align: left;
 }
 
+
+.activity-category-layout-2 blockquote {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.activity-page {
+  header.banner {
+    padding: 10vh 0vh;
+    text-align: left;
+    h2 {
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: -1vh;
+      position: relative;
+      z-index: 10;
+      a {
+        color: white;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
 header.banner { // Logo
   position: relative;
   background-color: $ochre;
@@ -113,7 +140,7 @@ header.banner { // Logo
   background-size: cover;
   background-position: center;
   padding: 45vh 0vh;
-  top: 40px;
+  margin-top: 40px;
   h1 {
     margin-bottom: 0vh;
     font-family: "Oswald";
@@ -124,8 +151,8 @@ header.banner { // Logo
     color: white;
     line-height: 1;
     img {
-      width: 12vw;
-      margin: 0 auto 1.2vw;
+      height: 11.2vh;
+      margin: 0 auto 1.5vw;
     }
   }
 
@@ -146,12 +173,18 @@ header.banner { // Logo
   background-color: $ochre;
   background-blend-mode: multiply;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 .full-width-white {
   position: relative;
   background: white;
+  padding: 2rem 0rem;
+}
+
+.full-width-grey {
+  position: relative;
+  background: $greyBg;
   padding: 2rem 0rem;
 }
 
@@ -227,6 +260,7 @@ img {
   text-align: center;
   overflow: hidden;
   background-size: cover;
+  background-position: center center;
   &:hover {
     background-color: lighten($ochre, 4%);
   }
@@ -269,6 +303,10 @@ img {
 }
 
 .full-width-white .btn-primary {
+  color: black;
+}
+
+.full-width-grey .btn-primary {
   color: black;
 }
 

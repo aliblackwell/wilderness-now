@@ -1,17 +1,17 @@
-    {% for activity in page.activities %}
+    {% for activity in site.data[page.slug] %}
       {% assign loopmod = forloop.index0 | modulo: 3 %}
       {% if loopmod == 0 %}
         <div class="card-deck-wrapper">
           <div class="card-deck">
       {% endif %}
             <div class="card">
-              <img class="card-img-top" src="{{ site.data.activities.[page.slug].image }}" alt="Card image cap">
+              <img class="card-img-top" src="{{site.data.config.cdn}}/{% if activity.image != undefined %}{{activity.image}}{%else%}activities/{{page.slug}}.jpg{%endif%}" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title">{{activity.title}}</h4>
-                <p class="card-text">{{activity.description}}</p>
+                <p class="card-text">{{activity.location}}</p>
               </div>
               <div class="card-block">
-                <a class="btn btn-primary" href="https://alib.typeform.com/to/sSiGYV?activity={{activity.slug}}">Tell me more</a>
+                <a class="btn btn-primary" href="{{activity.slug}}">Tell me more</a>
               </div>
             </div>
       {% if loopmod == 2 or forloop.last %}
