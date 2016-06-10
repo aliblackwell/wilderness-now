@@ -3,46 +3,55 @@
   title: Ben Nevis North Face
   location: West Scotland
   image: activities/trekking/amazing-lakes.jpg
+  coords: 56.851350, -5.044441
 -
   slug: glencoe-ridges
   title: Glencoe ridges
   location: Glencoe, Scotland
   image: activities/trekking/coast-to-coast.jpg
+  coords: 56.651580, -4.840870
 -
   slug: cuillin-summits
   title: Cuillin summits
   location: Skye, Scotland
   image: activities/trekking/valleys-of-glencoe.jpg
+  coords: 57.065539, -5.901292
 -
   slug: towering-torridon
   title: Towering Torridon
   location: Torridon, Scotland
   image: activities/mountaineering/towering-torridon.jpg
+  coords: 57.547562, -5.513143
 -
   slug: infamous-striding-edge
   title: Infamous Striding Edge
   location: Glenridding, England
   image: activities/trekking/west-highland-way.jpg
+  coords: 54.545182, -2.949720
 -
   slug: snowdon-and-tryfan-double
   title: Snowdon & Tryfan Double
   location: Capel Curig, Wales
   image: activities/trekking/stunning-snowdonia.jpg
+  coords: 53.106795, -3.912274
 -
   slug: ben-nevis-winter-ascent
   title: Ben Nevis winter ascent
   location: Fort William, Scotland
   image: activities/mountaineering/ben-nevis-winter-ascent.jpg
+  coords: 56.821394, -5.105388
 -
   slug: cairngorm-winter-plateau
   title: Cairngorm winter plateau
   location: Aviemore, Scotland
   image: activities/mountaineering/cairngorm-winter-plateau.jpg
+  coords: 57.195555, -3.823784
 -
   slug: glencoe-winter-ridges
   title: Glencoe winter ridges
   location: Glencoe, Scotland
   image: activities/mountaineering/glencoe-winter-ridges.jpg
+  coords: 56.667218, -5.056534
 
 
 

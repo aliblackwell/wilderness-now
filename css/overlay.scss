@@ -57,10 +57,11 @@
   min-height: 54px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  list-style-type: disc;
 }
 
 .overlay ul li a {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 300;
   display: block;
   color: #fff;
@@ -129,7 +130,7 @@
   height: 2px;
   width: 100%;
   background: black;
-  border-radius: 100%;
+  border-radius: 1px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);

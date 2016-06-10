@@ -1,4 +1,4 @@
 #cdn: //d3fybqvnrweshl.cloudfront.net
-#site_url: http://aliblackwell.github.io/wilderness-now/
-site_url: /
+#site_url: http://aws-website-wildernessnow-yib3s.s3-website-us-east-1.amazonaws.com/
+site_url: http://localhost:4000/
 cdn: /cdn
