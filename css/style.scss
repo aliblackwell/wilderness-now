@@ -26,6 +26,9 @@ body {
   }
 }
 
+#activities {
+  border-bottom: 10px solid $blockHighlight;
+}
 
 .navbar {
   background: white;
@@ -39,6 +42,9 @@ body {
     font-size: 1rem;
     line-height: 1.4rem;
   }
+  // .activities-dropdown-wrap {
+  //   text-align: right;
+  // }
   .activities-dropdown {
     color: black;
     letter-spacing: 1px;
@@ -66,15 +72,14 @@ body {
     margin-bottom: 0;
   }
   .down-arrow {
-    margin: 1rem auto 0rem;
-    width: 50px;
-    height: 12px;
+    margin: 1.5rem auto 0rem;
+    width: 100px;
     display: block;
   }
 }
 
 .card-deck-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .banner {
@@ -86,7 +91,6 @@ body {
     color: black;
     font-size: 3vw;
     img {
-      width: 10vw;
       margin: 0 auto 2vh auto;
     }
   }
@@ -103,14 +107,85 @@ body {
 }
 
 .activity-category-layout-2 header.banner {
-  padding: 10vh 0vh;
+  padding: 20vh 0vh;
+  min-height: 70vh;
   text-align: left;
+  overflow: hidden;
 }
 
 
 .activity-category-layout-2 blockquote {
   text-align: center;
   margin-bottom: 0;
+}
+
+
+
+.card.activity-card {
+
+  &.selected {
+    a {
+      .card-block {
+        border-top: 10px solid $minty;
+      }
+    }
+  }
+  a {
+    img {
+      height: 300px;
+      width: 100%;
+    }
+    .card-img-bottom {
+      position: relative;
+      background-size: cover;
+      min-height: 300px;
+    }
+    .card-block {
+      background: white;
+      border-top: 10px solid black;
+      .card-title {
+        color: #000;
+      }
+      .card-text {
+        color: #999;
+      }
+      .btn-primary {
+        background: white;
+        color: black;
+        border: 1px solid black;
+        &:active, &:hover {
+          color: white;
+          background: $minty;
+          border: 1px solid $minty;
+        }
+      }
+    }
+  }
+  a:hover, a:active {
+    text-decoration: none;
+    .card-block {
+      border-top: 10px solid $minty;
+      .btn-primary {
+        background: $minty;
+        color: white;
+        border: 1px solid $minty;
+      }
+    }
+  }
+}
+
+.card-deck-wrapper:nth-child(3n) {
+
+}
+
+.card.activity-card:nth-child(2n) {
+  // .card-block {
+  //   background: black;
+  // }
+}
+
+.card.activity-card.selected {
+
 }
 
 .activity-page {
@@ -151,8 +226,8 @@ header.banner { // Logo
     color: white;
     line-height: 1;
     img {
-      height: 11.2vh;
-      margin: 0 auto 1.5vw;
+      width: 2.03em;
+      margin: 0 auto 0.25em
     }
   }
 
@@ -177,7 +252,6 @@ header.banner { // Logo
 }
 
 .full-width-white {
-  position: relative;
   background: white;
   padding: 2rem 0rem;
 }
@@ -188,27 +262,29 @@ header.banner { // Logo
   padding: 2rem 0rem;
 }
 
+.wn {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 6rem);
+  background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.1;
+  overflow: hidden;
+  margin: 3rem 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .full-width-image {
   position: relative;
   .container {
     position: relative;
     z-index: 3;
   }
-  .wn {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 6rem);
-    background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.1;
-    overflow: hidden;
-    margin: 3rem 0;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
+
   h4 {
     position: relative;
     z-index: 10;
@@ -262,7 +338,7 @@ img {
   background-size: cover;
   background-position: center center;
   &:hover {
-    background-color: lighten($ochre, 4%);
+    background-color: lighten($ochre, 4%) !important;
   }
   a {
     width: 100%;
@@ -292,10 +368,7 @@ img {
   margin-bottom:  3rem;
 }
 
-.btn-primary {
-  background: none;
-  border-color: $ochre;
-}
+
 
 .btn-primary:hover, .btn-primary:active {
   border-color: $green;
@@ -322,7 +395,7 @@ img {
   cite {
     display: inline;
     padding: 0 0.5rem;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,1);
     color: white;
     font-size: 1.3rem;
     &:before {
@@ -348,3 +421,36 @@ img {
   margin: 3rem auto;
   opacity: 0.3;
 }
+
+.uk-map {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    overflow: visible;
+}
+
+.banner-map {
+  position: absolute;
+  top: -50px;
+  right: 6vw;
+  width: 400px;
+  min-height: 600px;
+  z-index: 0;
+  div {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+#typeform-overlay {
+  opacity: 0.3 !important;
+}
+
+
