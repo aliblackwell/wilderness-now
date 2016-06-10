@@ -1,9 +1,9 @@
 <div class="navbar navbar-light navbar-fixed-top">
         <div class="row">
           <div class="col-xs-3">
-            <a href="{{ site.data.config.site_url }}"><img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_black.png" alt="WN"></a>
+            <a href="{{ site.data.config.site_url }}"><img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_black.svg" alt="Wilderness Now"></a>
           </div>
-          <div class="col-xs-6">
+          <div class="col-md-6 col-xs-9 activities-dropdown-wrap">
 
             <a class="activities-dropdown" href="#activities" id="trigger-overlay">
               <div id="nav-icon3">
@@ -15,31 +15,25 @@
               Our Activities
             </a>
           </div>
-          <div class="col-xs-3">
-            <h2>
+          <div class="col-md-3 hidden-xs">
+<!--             <h2>
               Great British Adventures
-            </h2>
+            </h2> -->
           </div>
         </div>
     </div>
-    <!-- open/close -->
     <div id="activities" class="overlay overlay-slidedown">
       <button type="button" class="overlay-close">Close</button>
       <nav class="row">
+      {% for activity in site.data.parent-activities %}
+        {% assign loopmod = forloop.index0 | modulo: 7 %}
+        {% if loopmod == 0 %}
         <ul class="col-md-4">
-        {% for activity in site.data.dropdown.col1 %}
-          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
-        {% endfor %}
+        {% endif %}
+          <li><a href="{{ site.data.config.site_url }}{{ activity.slug }}">{{ activity.title }}</a></li>
+        {% if loopmod == 6 %}
         </ul>
-        <ul class="col-md-4">
-        {% for activity in site.data.dropdown.col2 %}
-          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
-        {% endfor %}
-        </ul>
-        <ul class="col-md-4">
-        {% for activity in site.data.dropdown.col3 %}
-          <li><a href="{{ activity.url }}">{{ activity.text }}</a></li>
-        {% endfor %}
-        </ul>
+        {% endif %}
+      {% endfor %}
       </nav>
     </div>

@@ -1,19 +1,23 @@
-    {% for activity in page.activities %}
+    {% for activity in site.data[page.slug] %}
       {% assign loopmod = forloop.index0 | modulo: 3 %}
       {% if loopmod == 0 %}
-        <div class="card-deck-wrapper">
-          <div class="card-deck">
+        <div class="card-deck-wrapper ">
+          <div class="card-deck cd-{{forloop.index}}">
       {% endif %}
-            <div class="card">
-              <img class="card-img-top" src="{{ site.data.activities.[page.slug].image }}" alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title">{{activity.title}}</h4>
-                <p class="card-text">{{activity.description}}</p>
-              </div>
-              <div class="card-block">
-                <a class="btn btn-primary" href="https://alib.typeform.com/to/sSiGYV?activity={{activity.slug}}">Tell me more</a>
-              </div>
+
+            <div class="card activity-card" id="{{activity.slug}}">
+              <a  class="typeform-share link"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.site_url}}" data-mode="1" target="_blank">
+                <div class="card-block">
+                  <h4 class="card-title">{{activity.title}}</h4>
+                  <p class="card-text">{{activity.location}}</p>
+                  <button class="btn btn-primary">Tell me more</button>
+                </div>
+                <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/{% if activity.image != undefined %}{{activity.image}}{%else%}{{page.image}}{%endif%});" alt="Card image cap">
+                  <div class="wn"></div>
+                </div>
+              </a>
             </div>
+
       {% if loopmod == 2 or forloop.last %}
           </div><!-- / .card -->
         </div><!-- / .card-deck-wrapper -->

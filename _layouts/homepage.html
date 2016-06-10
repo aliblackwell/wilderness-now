@@ -8,7 +8,7 @@
     {% include navigation.html %}
     <header class="banner">
       <h1>
-        <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.png" alt="WN">
+        <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg" alt="WN">
         Wilderness Now
       </h1>
 
@@ -21,7 +21,7 @@
           <div class="col-md-8 col-md-offset-2 col-sm-12">
             <section class="introduction">
               <p>Wilderness Now is a link between you and the feeling of being fully alive that only nature offers. Choose your next Great British adventure by clicking on the images below, or via the 'our activities' dropdown at the top of our homepage.</p>
-              <img class="down-arrow" src="{{site.data.config.cdn}}/img/down-arrow.png" alt="Down">
+              <img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down">
             </section>
           </div>
         </div>
@@ -32,19 +32,18 @@
 
 
       <div class="row">
-        {% for activity in site.data.activities %}
-         {% for detail in activity %}
-          {% if detail.featured %}
-            <div class="col-md-{{detail.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{detail.image}})">
-              <a href="{{detail.slug}}.html">
-                <h4>{{detail.title}}</h4>
+
+         {% for activity in site.data.parent-activities %}
+          {% if activity.featured %}
+            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{activity.image}}); background-color: rgba(208, 159, 0, {% if activity.opacity %}{{activity.opacity}}{% else %}0.65{%endif%});">
+              <a href="{{activity.slug}}">
+                <h4>{{activity.title}}</h4>
               </a>
             </div>
           {% endif %}
 
         {% endfor %}
 
-        {% endfor %}
 
       </div>
     </div>

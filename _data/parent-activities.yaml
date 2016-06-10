@@ -1,0 +1,187 @@
+-
+  slug: mountaineering
+  title: Mountaineering
+  image: activities/mountaineering/mountaineering-wilderness-now.jpg
+  image-wide: activities/mountaineering/mountaineering-wilderness-now-wide.jpg
+  featured: true
+  grid: 6
+  layout: activity-category-layout-2
+  quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
+  quoth: Jack Kerouac
+  includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
+  dyk: Did you know that there are no mountains in Scotland, only hills?
+
+-
+  slug: skiing
+  title: Skiing
+  image: activities/skiing/skiing-wilderness-now.jpg
+  image-wide: activities/skiing/skiing-wilderness-now.jpg
+  featured: true
+  grid: 6
+  opacity: 0.45
+  layout: activity-category-layout-2
+  quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity."
+  quoth: John Muir
+  includes: Includes skiing, snowboarding and anything you can ride down a mountain
+  dyk: You can ski in the UK!
+
+-
+  slug: biking
+  title: Biking
+  image: activities/biking.jpg
+  featured: true
+  grid: 7
+  layout: activity-category-layout-2
+  quote: When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle.
+  quoth: Arthur Conan Doyle
+  includes: Includes mountain biking and cycle touring
+  dyk: Bikes!
+
+
+-
+  slug: fishing
+  title: Fishing
+  image:  activities/fishing/fishing-wilderness-now.jpg
+  image-wide: activities/fishing/fishing-wilderness-now-wide.jpg
+  featured: true
+  grid: 5
+  layout: activity-category-layout-2
+  quote: "If people concentrated on the really important things in life, there'd be a shortage of fishing poles."
+  quoth: Doug Larson
+  includes: Includes freshwater fly fishing and sea fishing
+  dyk: Fish have been on planet earth for 450 million years – twice as long as mammals.
+
+-
+  slug: endurance
+  title: Endurance
+  image: activities/endurance.jpg
+  featured: true
+  grid: 6
+  layout: activity-category-layout-2
+  quote: "I don't run to add days to my life, I run to add life to my days"
+  quoth: Ronald Rook
+  includes: Includes trail running, triathlon and challenges so insane that you couldn’t make them up
+  dyk: An Iron Man is not for the faint hearted
+
+-
+  slug: paddle
+  title: Paddle
+  image: activities/paddle.jpg
+  featured: true
+  grid: 6
+  layout: activity-category-layout-2
+  quote: "Thousands have lived without love, not one without water."
+  quoth: W.H. Auden
+  dyk: Great Britain has won 13 medals in canoeing and kayaking at the Olympics. Four of these medals were won at the London 2012 Olympics. The country with the most Olympic medals in these disciplines in Hungary with 77.
+
+-
+  slug: surfing
+  title: Surfing
+  image: activities/surfing.jpg
+  featured: true
+  grid: 5
+  opacity: 0.45
+  layout: activity-category-layout-2
+  quote: "It’s like the mafia. Once you're in – you’re in. There's no getting out."
+  quoth: Kelly Slater
+  includes: Includes surfing, windsurfing, kitesurfing – just a board and water
+  dyk: The longest surf ride ever recorded was 3 hours and 55 minutes
+
+-
+  slug: trekking
+  title: Trekking
+  image: activities/trekking/trekking.jpg
+  image-wide: activities/trekking/trekking-wilderness-now-wide.jpg
+  quote: "Life is either a daring adventure or nothing."
+  quoth: Helen Keller
+  includes: 'From gentle day-hikes to fortnight-long yomps: your wilderness is here'
+  featured: true
+  grid: 7
+  multiply: 0.65
+  layout: activity-category-layout-2
+  dyk: Did you know that there are no mountains in Scotland, only hills?
+
+-
+  slug: canyoning
+  title: Canyoning
+  layout: activity-category-layout-2
+  quote: "Somebody should tell us, right at the start of our lives, that we are dying. Then we might live life to the limit, every minute of every day. Do it! I say. Whatever you want to do, do it now! There are only so many tomorrows."
+  quoth: Pope Paul IV
+  includes: Canyoning involves traversing canyons by way of scrambling, climbing, jumping, abseiling, swimming and being a general badass
+  dyk: sfds skmo oij yufy fy kjn jkb jkbuyf tc
+
+-
+  slug: horse-trekking
+  title: Horse Trekking
+  layout: activity-category-layout-2
+  quote: "There’s nothing better for the inside of a man than the outside of a horse."
+  quoth: Ronald Reagan
+  includes: The perfect opportunity to go far into the wilderness off the beaten path
+  dyk: Horses are measured in hands
+
+-
+  slug: stalking
+  title: Stalking
+  layout: activity-category-layout-2
+  quote: "For us hunting wasn’t a sport. It was a way to be intimate with nature."
+  quoth: Ted Kerasote
+  includes: Because the point of human evolution is not buying cheap meat from Tesco\'s
+  dyk: stalking stalking stalking
+
+-
+  slug: sailing
+  title: Sailing
+  layout: activity-category-layout-2
+  quote: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor."
+  quoth: Mark Twain
+  includes: lots of boats!
+  dyk: Boats
+
+-
+  slug: diving
+  title: Diving
+  layout: activity-category-layout-2
+  quote: "How inappropriate to call this planet Earth when it is quite clearly Ocean."
+  quoth: Arthur C. Clarke
+  includes: Deep sea diving, free-diving, you name it
+  dyk: The longest underwater free-dive was a really long time
+
+-
+  slug: coasteering
+  title: Coasteering
+  layout: activity-category-layout-2
+  quote: "Watching a coast [...] is like thinking about an enigma. There it is before you, smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.'"
+  quoth: Joseph Conrad
+  includes: sdfsdf
+  dyk: sfdsfd
+
+-
+  slug: wild-swimming
+  title: Wild Swimming
+  layout: activity-category-layout-2
+  quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
+  quoth: Henry David Thoreau
+  includes: sfdsfd
+  dyk: sdfs
+-
+  slug: rock-climbing
+  title: Rock Climbing
+  image: activities/rock-climbing.jpg
+  layout: activity-category-layout-2
+  quote: Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner.
+  quoth: Chris Sharma
+  includes: Includes trad, bouldering and sports climbing
+  dyk: sdfs sdf sdf sdf sdf sdf sdf
+-
+  slug: cycle-touring
+  title: Cycle Touring
+  layout: activity-category-layout-2
+-
+  slug: survival
+  title: Survival
+  layout: activity-category-layout-2
+-
+  slug: adventure-yoga
+  title: Adventure Yoga
+  layout: activity-category-layout-2
+

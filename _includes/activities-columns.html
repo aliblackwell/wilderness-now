@@ -1,13 +1,13 @@
       <div class="card-columns">
-    {% for activity in page.activities %}
-        <div class="card">
-          <img class="card-img-top" src="{{ site.data.activities.[page.slug].image }}" alt="Card image cap">
+    {% for activity in site.data[page.slug] %}
+        <div class="card activity-card" id="{{activity.slug}}">
+          <img class="card-img-top" src="{{site.data.config.cdn}}/{{activity.image }}" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title">{{activity.title}}</h4>
-            <p class="card-text">{{activity.description}}</p>
+            <p class="card-text">{{activity.location}}</p>
           </div>
           <div class="card-block">
-            <a class="btn btn-primary" href="https://alib.typeform.com/to/sSiGYV?activity={{activity.slug}}">Tell me more</a>
+            <a class="btn btn-primary" href="{{page.slug}}/{{activity.slug}}.html">Tell me more</a>
           </div>
         </div>
     {% endfor %}
