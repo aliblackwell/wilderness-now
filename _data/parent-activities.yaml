@@ -156,12 +156,12 @@
   dyk: sfdsfd
 
 -
-  slug: wild-swimming
-  title: Wild Swimming
+  slug: kitesurfing
+  title: Kitesurfing
   layout: activity-category-layout-2
   quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
   quoth: Henry David Thoreau
-  includes: sfdsfd
+  includes: Wind, waves, golden beaches 
   dyk: sdfs
 -
   slug: rock-climbing
@@ -173,15 +173,36 @@
   includes: Includes trad, bouldering and sports climbing
   dyk: sdfs sdf sdf sdf sdf sdf sdf
 -
-  slug: cycle-touring
-  title: Cycle Touring
+  slug: paragliding
+  title: Paragliding
   layout: activity-category-layout-2
+  quote: sdfs sdf sdf sdf sdf sdf sdf
+  quoth: sdfs sdf 
+  includes: Ever dreamt of flying... enough said!
+  dyk: sdfs sdf sdf sdf sdf sdf sdf
 -
   slug: survival
   title: Survival
   layout: activity-category-layout-2
+  quote: sdfs sdf sdf sdf sdf sdf sdf
+  quoth: sdfs sdf sd
+  includes: Anyone ready to go off grid and live in the forest?
+  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  
 -
-  slug: adventure-yoga
-  title: Adventure Yoga
+  slug: caving
+  title: Caving
   layout: activity-category-layout-2
-
+  quote: "I wanna borrow it. For, uh, spelunking."
+  quoth: Bruce Wayne
+  includes: Squeeze yourself into a new underground world... not for me thanks!  
+  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  
+-
+  slug: family-adventure
+  title: Family Adventure
+  layout: activity-category-layout-2
+  quote: sdfs sdf sdf sdf sdf sdf sdf
+  quoth: sdfs sdf sdf
+  includes: sdfs sdf sdf sdf sdf sdf sdf
+  dyk: sdfs sdf sdf 
