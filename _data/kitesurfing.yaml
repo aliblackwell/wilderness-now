@@ -1,18 +1,18 @@
 -
   slug: kitesurf-hunstanton
-  title: Kitesurf Hunstanton
-  location: Northolk
+  title: Kitesurf - Hunstanton
+  location: Northolk, England
   image: activities/kitesurfing/kitesurf-hunstanton.jpg
   coords: 52.941778, 0.486654
 -
   slug: kitesurf-hayling-island
-  title: Kitesurf Hayling Island
-  location: South Coast
+  title: Kitesurf - Hayling Island
+  location: Portsmouth, England
   image: activities/kitesurfing/kitesurf-hayling-island.jpg
   coords: 50.800870, -0.974891
 -
-  slug: kitesurf-in-edinburgh
-  title: Kitesurf In Edinburgh
-  location: Edinburgh
-  image: activities/kitesurfing/kitesurf-in-edinburgh.jpg
+  slug: kitesurf-edinburgh
+  title: Kitesurf - Edinburgh
+  location: Edinburgh, Scotland
+  image: activities/kitesurfing/kitesurf-edinburgh.jpg
   coords: 55.976600, -3.299634
