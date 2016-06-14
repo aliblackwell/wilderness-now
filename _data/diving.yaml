@@ -1,24 +1,21 @@
 -
-  title: James Eagan
-  location: Layne Plymouth, England
-  slug: james-eagan-layne-plymouth-england
+  title: Dive - Trearddur Bay 
+  location: Holyhead, Wales
+  slug: dive-trearddur-bay
+  image: activities/diving/dive-trearddur-bay.jpg
+  coords: 53.283722, -4.617327
+
 -
-  title: Scapa Flow
-  location: Orkneys, Scotland
-  slug: scapa-flow-orkneys-scotland
+  title: Dive - Wrecks and reefs
+  location: Plymouth, England
+  slug: dive-wrecks-and-reefs
+  image: activities/diving/dive-wrecks-and-reefs.jpg
+  coords: 50.376024, -4.138664
+  
 -
-  title: Lundy Island
-  location: Devon, England
-  slug: lundy-island-devon-england
--
-  title: HMS Moldavia
-  location: Eastbourne Harbour, England
-  slug: hms-moldavia-eastbourne-harbour-england
--
-  title: Porthkerris
+  title: Dive - Open Water
   location: Cornwall, England
-  slug: porthkerris-cornwall-england
--
-  title: Portland
-  location: Dorset, England
-  slug: portland-dorset-england
+  slug: dive-open-water
+  image: activities/diving/dive-open-water.jpg
+  coords: 50.050419, -5.087921
+
