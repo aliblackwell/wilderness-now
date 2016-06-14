@@ -1,49 +1,41 @@
 -
-  title: Nan Bield Pass
+  title: MTB - Nan Bield Pass
   location: Lake District, England
-  slug: nan-bield-pass
+  slug: mtb-nan-bield-pass
+  image: activities/biking/mtb-nan-bield-pass.jpg
   coords: 54.481884, -2.834889
+
 -
-  title: Rhyd Ddu
+  title: MTB - Rhyd Ddu
   location: Snowdonia, Wales
-  slug: rhyd-ddu
+  slug: mtb-rhyd-ddu
+  image: activities/biking/mtb-rhyd-ddu.jpg
+  coords: 53.055643, -4.135950
+
 -
-  title: Torridon
-  location: North West Highlands, Scotland
-  slug: torridon
--
-  title: Cut Gate
+  title: MTB - Cut Gate
   location: Peak District, England
-  slug: cut-gate
+  slug: mtb-cut-gate
+  image: activities/biking/mtb-cut-gate.jpg
+  coords: 53.414057, -1.696593
+  
 -
-  title: Lairig Ghru Circuit
-  location: Cairngorms, Scotland
-  slug: lairig-ghru-circuit
+  title: MTB - Quantocks
+  location: Exmoor, England
+  slug: mtb-quantocks
+  image: activities/biking/mtb-quantocks.jpg
+  coords: 51.141446, -3.210892
+  
 -
-  title: Quantocks
-  location: Nr Exmoor, England
-  slug: quantocks
--
-  title: Coast to Coast
+  title: Touring - Coast to Coast
   location: Lake District to Sunderland, England
-  slug: coast-to-coast
+  slug: touring-coast-to-coast
+  image: activities/biking/touring-coast-to-coast.jpg
+  coords: 54.491887, -3.589699, 54.912617, -1.384496
+  
 -
-  title: Lon Las Cymru
-  location: Anglesea to Cardiff, Wales
-  slug: lon-las-cymru
--
-  title: Lochs and Glens
-  location: North Inverness to Glasgow, Scotland
-  slug: lochs-and-glens
--
-  title: Coast and Castles
-  location: Newcastle to Edinburgh, Scotland
-  slug: coast-and-castles
--
-  title: West Country Way
-  location: Padstow to Bristol, England
-  slug: west-country-way
--
-  title: Buxton to Buxton loop
-  location: Peak District, England
-  slug: buxton-to-buxton-loop
+  title: Touring - Lochs and Glens
+  location: Inverness to Glasgow, Scotland
+  slug: touring-lochs-and-glens
+  image: activities/biking/touring-lochs-and-glens
+  coords: 57.480083, -4.224433, 55.874646, -4.253065
