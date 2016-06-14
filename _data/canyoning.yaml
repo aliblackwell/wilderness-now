@@ -1,12 +1,18 @@
 -
-  title: Gorge walking
+  title: Canyoning - Gorge Exploring
   location: Peak District, England
-  slug: gorge-walking
+  slug: canyoning-gorge-exploring
+  image: activities/canyoning/canyoning-gorge-exploring.jpg
+  coords: 53.257357, -1.714261
 -
-  title: Canyoning
+  title: Canyoning - Black Mountains
   location: Brecon Beacons, Wales
-  slug: canyoning-brecon-beacons
+  slug: canyoning-black-mountains
+  image: activities/canyoning/canyoning-black-mountains.jpg
+  coords: 51.985428, -3.155008
 -
-  title: Canyoning
-  location: Fort William, Scotland
-  slug: canyoning-fort-william-scotland
+  title: Canyoning - Dungeon Ghyll
+  location: Lake Distict, England
+  slug: canyoning-dungeon-ghyll
+  image: activities/canyoning/canyoning-dungeon-ghyll.jpg
+  coords: 54.599117, -3.134230
