@@ -41,10 +41,10 @@
   image: activities/mountaineering/winter-ascent-ben-nevis.jpg
   coords: 56.821394, -5.105388
 -
-  slug: winter-climbing-northen-corries
-  title: Winter Climbing - Northen Corries
+  slug: winter-climb-northen-corries
+  title: Winter Climb - Northen Corries
   location: Cairngorms, Scotland
-  image: activities/mountaineering/winter-climbing-northen-corries.jpg
+  image: activities/mountaineering/winter-climb-northen-corries.jpg
   coords: 57.195555, -3.823784
 -
   slug: winter-ridges-the-buachaille
