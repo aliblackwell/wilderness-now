@@ -1,24 +1,20 @@
 -
-  title: Red deer stalking
-  location: Isle of Mull, Inner Hebrides, Scotland
-  slug: red-deer-stalking-isle-of-mull-inner-hebrides-scotland
+  title: Stalking - Isle of Mull 
+  location: Inner Hebrides, Scotland
+  slug: stalking-isle-of-mull
+  image: activities/stalking/stalking-isle-of-mull.jpeg
+  coords: 56.475909, -5.993859
+  
 -
-  title: Red deer stalking
-  location: Sutherland, Highlands, Scotland
-  slug: red-deer-stalking-sutherland-highlands-scotland
+  title: Stalking - Atholl Estate
+  location: Perthshire, Scotland
+  slug: stalking-atholl-estate
+  image: activities/stalking/stalking-atholl-estate.jpeg
+  coords: 56.705635, -3.729521
+
 -
-  title: Red deer stalking
-  location: Blair Atholl, Perthshire, Scotland
-  slug: red-deer-stalking-blair-atholl-perthshire-scotland
--
-  title: Red deer stalking
-  location: Argyll, Scotland
-  slug: red-deer-stalking-argyll-scotland
--
-  title: Roe deer stalking
-  location: Hexham, England
-  slug: roe-deer-stalking-hexham-england
--
-  title: Roe deer stalking
+  title: Stalking - Forestland
   location: Wiltshire, England
-  slug: roe-deer-stalking-wiltshire-england
+  slug: stalking-forestland
+  image: activities/stalking/stalking-forestland.jpeg
+  coords: 51.396477, -1.986190
