@@ -40,6 +40,8 @@ $(function() {
 
         var scale = kartograph.scale.sqrt(locations.concat([{ nb_visits: 0 }]), 'nb_visits').range([2, 30]);
 
+
+
         function pulseUserLocation(activityGroup) {
           var animationLength = 150;
           activityGroup.update({
@@ -98,7 +100,7 @@ $(function() {
         for (var i=0; i<locations.length; i++) {
           var style = 'fill:#000; fill-opacity: 0.5; stroke-width: 0;'
           var radius = 3;
-          activitiesList["activity"+i] = createActivity(locations[i], style, radius);
+          activitiesList[locations[i].slug] = createActivity(locations[i], style, radius);
         }
 
         var allLocations = {}
@@ -108,6 +110,15 @@ $(function() {
           var radius = 3;
           allLocations[allLocationsObj[i].slug] = createActivity(allLocationsObj[i], style, radius);
         }
+
+        map.addSymbols({
+          type: kartograph.Label,
+          data: allLocationsLabels,
+          class: function(d) { return 'text-label '+ d[1].slug },
+          location: function(d) { return d[0]; },
+          style: function(d) { return 'font-family: Oswald; fill:#000; fill-opacity: .75; font-size: 11px;' },
+          text: function(d) { return '0' }
+        });
 
         function loopThroughActivities(morseIndex, activityIndex) {
           var wnMorse = [0,1,1,"/",0,0,"/",0,1,0,0,"/",1,0,0,"/",0,"/",0,1,0,"/",1,0,"/",0,"/",0,0,0,"/",0,0,0,"/",1,0,"/",1,1,1,"/",0,1,1];
@@ -154,7 +165,19 @@ $(function() {
 
        // loopThroughActivities( 0, 0 );
         $('.map-activities a').hover(function() {
+          var aLength = 500;
           var slug = $(this).attr('data-slug');
+
+
+          var distance = $(this).attr('data-dist');
+
+          $('.text-label.'+ slug + ' tspan').html(distance + ' miles');
+
+          if (distance != undefined) {
+            $('.text-label.'+ slug).fadeIn('fast');
+          }
+
+
           allLocations[slug].update({
             attrs: {
               r: 20,
@@ -162,9 +185,10 @@ $(function() {
               stroke: '#fff',
               'stroke-width': 2
            }
-          }, 500);
+          }, aLength);
           fadeOutActivitiesAnimation();
         }, function() {
+          $('.text-label').hide();
           var slug = $(this).attr('data-slug');
           allLocations[slug].update({
             attrs: {
@@ -218,7 +242,7 @@ $(function() {
       var userLon = position.coords.longitude;
       location.distance = getDistanceFromLatLonInMiles(userLat, userLon, location.lat, location.long)
       location.distance = location.distance.toFixed(0);
-      $('.map-activities .'+location.slug +' a').append(' <span class="dist">'+location.distance +'m</span>')
+      $('.map-activities .'+location.slug +' a').attr('data-dist', location.distance );
 
     })
 

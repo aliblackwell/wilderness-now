@@ -4,6 +4,12 @@ $(function() {
     event.preventDefault();
   });
 
+  //borrowed from jQuery easing plugin
+  //http://gsgd.co.uk/sandbox/jquery.easing.php
+  $.easing.easeInOutCubic = function(x, t, b, c, d) {
+    if ((t/=d/2) < 1) return c/2*t*t*t + b;
+    return c/2*((t-=2)*t*t + 2) + b;
+  };
 
   $('a.activity-link-jump').click(function(event){
     var target = $(this).attr('href');
@@ -23,7 +29,8 @@ $(function() {
       offset: {
         top: -60
       },
-      duration: 1000
+      duration: 1000,
+      easing: 'easeInOutCubic'
     });
     event.preventDefault();
     return false

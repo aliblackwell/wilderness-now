@@ -556,9 +556,12 @@ img {
     }
     .text-label {
       display: none;
-      position: absolute;
-      top: 0px;
-      right: 0px;
+      position: relative;
+      tspan {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
     }
   }
 }
