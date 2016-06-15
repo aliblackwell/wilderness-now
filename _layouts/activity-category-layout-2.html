@@ -38,7 +38,7 @@
       <div class="map-activities">
         <ul>
         {% for activity in site.data[page.slug] %}
-          <li class="{{activity.slug}}"><a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}">{{activity.title}}</a></li>
+          <li class="{{activity.slug}}"><a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}" class="activity-link-jump">{{activity.title}}</a></li>
         {% endfor %}
         </ul>
       </div>

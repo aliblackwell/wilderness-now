@@ -152,10 +152,9 @@ $(function() {
 
         }
 
-        loopThroughActivities( 0, 0 );
+       // loopThroughActivities( 0, 0 );
         $('.map-activities a').hover(function() {
           var slug = $(this).attr('data-slug');
-          console.log(slug, allLocations[slug])
           allLocations[slug].update({
             attrs: {
               r: 20,

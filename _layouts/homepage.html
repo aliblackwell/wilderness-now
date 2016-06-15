@@ -35,7 +35,7 @@
 
          {% for activity in site.data.parent-activities %}
           {% if activity.featured %}
-            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{activity.image}}); background-color: rgba(208, 159, 0, {% if activity.opacity %}{{activity.opacity}}{% else %}0.65{%endif%});">
+            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{activity.image}}); background-color: rgba(208, 159, 0, 0.4);">
               <a href="{{activity.slug}}">
                 <h4>{{activity.title}}</h4>
               </a>
@@ -52,9 +52,9 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <div class="col-md-10 col-md-offset-1 col-sm-12">
             <section class="introduction">
-              <p>Wilderness Now is a link between you and the feeling of being fully alive that only nature offers. Choose your next Great British adventure by clicking on the images below, or via the 'our activities' dropdown at the top of our homepage.</p>
+              <p>Wilderness Now is an innovative platform serving our community of UK adventurers. We'd love the chance to organise your next trip for free (we're currently testing our site, to make it as good as we can). Just click on what you like the look of, do 30 seconds of form, and we’ll sort you out with an absolute belter of an adventure.</p>
             </section>
           </div>
         </div>
