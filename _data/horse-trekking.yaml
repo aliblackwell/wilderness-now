@@ -1,24 +1,20 @@
 -
-  title: Brecon Beacons circuit
+  title: Trail Ride - Black Mountains
   location: Brecon Beacons, Wales
-  slug: brecon-beacons-circuit-brecon-beacons-wales
+  slug: trail-ride-black-mountains
+  image: activities/horse-trekking/trail-ride-black-mountains.jpeg
+  coords: 51.975701, -3.153806
+  
+-  
+  title: Trail Ride - Coast to Coast
+  location: Sutherland, Scotland
+  slug: trail-ride-coast-to-coast
+  image: activities/horse-trekking/trail-ride-coast-to-coast.jpeg
+  coords: 58.013340, -3.852449, 58.344137, -5.159061
+
 -
-  title: Fort William to Aviemore
-  location: Cairngorms, Scotland
-  slug: fort-william-to-aviemore-cairngorms-scotland
--
-  title: Coast to Coast
-  location: Sutherland, Highlands, Scotland
-  slug: coast-to-coast-sutherland-highlands-scotland
--
-  title: North York Moors circuit
-  location: North Yorkshire, England
-  slug: north-york-moors-circuit-north-yorkshire-england
--
-  title: Black Mountains to Irish Sea
-  location: Brecon Beacons, Wales
-  slug: black-mountains-to-irish-sea-brecon-beacons-wales
--
-  title: Lakes trek
-  location: Lake District, England
-  slug: lakes-trek-lake-district-england
+  title: Trail Ride - South Downs
+  location: Chichester, England
+  slug: trail-ride-south-downs
+  image: activities/horse-trekking/trail-ride-south-downs.jpeg 
+  coords: 50.855566, -0.883707
