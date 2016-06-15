@@ -1,25 +1,25 @@
 -
   slug: scramble-ben-nevis-north-face
   title: Scramble - Ben Nevis North Face
-  location: Fort William, Scotland
+  location: West Highlands, Scotland
   image: activities/mountaineering/scramble-ben-nevis-north-face.jpg
   coords: 56.821719, -5.105474
 -
   slug: scramble-stob-dearg
   title: Scramble - Stob Dearg
-  location: Glencoe, Scotland
+  location: West Highlands, Scotland
   image: activities/mountaineering/scramble-stob-dearg.jpg
   coords: 56.651580, -4.840870
 -
   slug: scramble-black-cuillin
   title: Scramble - Black Cuillin
-  location: Skye, Scotland
+  location: Isle of Skye, Scotland
   image: activities/mountaineering/scramble-black-cuillin.jpg
   coords: 57.065539, -5.901292
 -
   slug: scramble-beinn-alligin
   title: Scramble - Beinn Alligin
-  location: Torridon, Scotland
+  location: North-West Highlands, Scotland
   image: activities/mountaineering/scramble-beinn-alligin.jpg
   coords: 57.547562, -5.513143
 -
@@ -37,7 +37,7 @@
 -
   slug: winter-ascent-ben-nevis
   title: Winter Ascent - Ben Nevis
-  location: Fort William, Scotland
+  location: West Highlands, Scotland
   image: activities/mountaineering/winter-ascent-ben-nevis.jpg
   coords: 56.821394, -5.105388
 -
@@ -49,7 +49,7 @@
 -
   slug: winter-ridges-the-buachaille
   title: Winter Ridges - The Buachaille
-  location: Glencoe, Scotland
+  location: West Highlands, Scotland
   image: activities/mountaineering/winter-ridges-the-buachaille.jpg
   coords: 56.667218, -5.056534
 
