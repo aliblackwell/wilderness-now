@@ -1,36 +1,41 @@
 -
-  slug: self-guided-west-highland-way
-  title: Self-guided West Highland Way
-  location: West Scotland
-  image: activities/trekking/valleys-of-glencoe.jpg
-  coords: 55.944932, -4.316989
+  slug: trek-west-highland-way
+  title: Trek - West Highland Way
+  location: West Highlands, Scotland
+  image: activities/trekking/trek-west-highland-way.jpg
+  coords: 55.873490, -4.249632, 56.821112, -5.105037
+  
 -
-  slug: coast-to-coast
-  title: Coast-to-Coast challenge
-  location: North England
-  image: activities/trekking/coast-to-coast.jpg
-  coords: 54.492036, -3.589528
+  slug: trek-coast-to-coast
+  title: Trek - Coast-to-Coast 
+  location: Northern England
+  image: activities/trekking/trek-coast-to-coast.jpg
+  coords: 54.491787, -3.589699, 54.434690, -0.535064
+  
 -
-  slug: valleys-of-glencoe
-  title: Valleys of Glencoe
+  slug: trek-the-lost-valley
+  title: Trek - The Lost Valley
   location: Glencoe, Scotland
-  image: activities/trekking/valleys-of-glencoe.jpg
+  image: activities/trekking/trek-the-lost-valley.jpg
   coords: 56.651580, -4.840870
+  
 -
-  slug: stunning-snowdonia
-  title: Stunning Snowdonia
+  slug: trek-mount-snowdon
+  title: Trek - Mount Snowdon
   location: Snowdonia, Wales
-  image: activities/trekking/stunning-snowdonia.jpg
+  image: activities/trekking/trek-mount-snowdon.jpg
   coords: 53.106795, -3.912274
+  
 -
-  slug: amazing-lakes
-  title: Amazing Lakes
+  slug: Trek - Southern Fells
+  title: trek-southern-fells
   location: Lake District, England
-  image: activities/trekking/amazing-lakes.jpg
+  image: activities/trekking/trek-southern-fells.jpg
   coords: 54.545182, -2.949720
+
 -
-  slug: ascent-of-kinder-scout
-  title: Ascent of Kinder Scout
+  slug: trek-kinder-scout
+  title: Trek - Kinder Scout
   location: Peak District, England
-  image: activities/trekking/ascent-of-kinder-scout.jpg
+  image: activities/trekking/trek-kinder-scout.jpg
   coords: 53.387730, -1.873234
