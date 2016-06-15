@@ -28,7 +28,7 @@
       {% for activity in site.data.parent-activities %}
         {% assign loopmod = forloop.index0 | modulo: 7 %}
         {% if loopmod == 0 %}
-        <ul class="col-md-4">
+        <ul class="col-md-4 col-xs-12">
         {% endif %}
           <li><a href="{{ site.data.config.site_url }}{{ activity.slug }}">{{ activity.title }}</a></li>
         {% if loopmod == 6 %}

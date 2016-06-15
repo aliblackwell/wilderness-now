@@ -3,6 +3,7 @@
 
 /* Entirely based on http://tympanus.net/Development/FullscreenOverlayStyles/index3.html */
 
+@import 'variables';
 
 /* Overlay style */
 .overlay {
@@ -12,7 +13,7 @@
   top: 0;
   left: 0;
   background: rgba(10,10,10,0.9);
-  z-index: 10;
+  z-index: 20;
 }
 
 /* Overlay closing cross */
@@ -91,10 +92,14 @@
   transition: transform 0.4s ease-in-out;
 }
 
-@media screen and (max-height: 30.5em) {
+@media screen and (max-width: $break-small) {
   .overlay nav {
-    height: 70%;
+    margin-top: 10px;
+    position: relative;
+    height: calc(100% - 10px);
     font-size: 34px;
+    overflow-y: scroll;
+    padding-top: 40px;
   }
   .overlay ul li {
     min-height: 34px;

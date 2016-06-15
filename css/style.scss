@@ -26,10 +26,6 @@ body {
   }
 }
 
-#activities {
-  border-bottom: 10px solid $blockHighlight;
-}
-
 .navbar {
   background: white;
   text-align: center;
@@ -52,6 +48,10 @@ body {
     text-transform: uppercase;
     font-size: 0.9rem;
     text-decoration: none;
+    @media screen and (max-width: $break-small) {
+      float: right;
+      margin-top: 3px;
+    }
     :active, :hover {
       text-decoration: none;
     }
@@ -66,13 +66,16 @@ body {
 
 .introduction {
   font-size: 1.4rem;
+  @media screen and (max-width: $break-small) {
+    font-size: 1rem;
+  }
   color: $greyText;
   text-align: center;
   p {
     margin-bottom: 0;
   }
   .down-arrow {
-    margin: 1.5rem auto 0rem;
+    margin: 1rem auto 0rem;
     width: 100px;
     display: block;
   }
@@ -87,6 +90,9 @@ body {
   text-align: center;
   padding: 30vh 0vw;
   margin: 0;
+  @media screen and (max-width: $break-small) {
+    padding: 6vh 0vw;
+  }
   h1 {
     color: black;
     font-size: 3vw;
@@ -123,54 +129,64 @@ body {
 
 .card.activity-card {
 
+  @media screen and (max-width: $break-small) {
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+
   &.selected {
     a {
       .card-block {
-        border-top: 10px solid $minty;
+        border-top: 10px solid black;
       }
     }
   }
   a {
-    img {
-      height: 300px;
-      width: 100%;
-    }
     .card-img-bottom {
       position: relative;
       background-size: cover;
       min-height: 300px;
+      @media screen and (max-width: $break-small) {
+        min-height: 200px;
+      }
     }
     .card-block {
       background: white;
-      border-top: 10px solid black;
+      border-top: 10px solid $grey;
       .card-title {
         color: #000;
       }
       .card-text {
         color: #999;
       }
-      .btn-primary {
-        background: white;
-        color: black;
-        border: 1px solid black;
-        &:active, &:hover {
-          color: white;
-          background: $minty;
-          border: 1px solid $minty;
-        }
-      }
+
     }
   }
   a:hover, a:active {
     text-decoration: none;
     .card-block {
-      border-top: 10px solid $minty;
-      .btn-primary {
-        background: $minty;
-        color: white;
-        border: 1px solid $minty;
-      }
+      border-top: 10px solid black;
     }
+  }
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  &:active, &:hover {
+    color: white;
+    background: black;
+    border: 1px solid black;
+  }
+}
+
+a:hover, a:active {
+  .btn-primary {
+    background: black;
+    color: white;
+    border: 1px solid black;
   }
 }
 
@@ -225,6 +241,9 @@ header.banner { // Logo
     text-transform: uppercase;
     color: white;
     line-height: 1;
+    @media screen and (max-width: $break-small) {
+      font-size: 9.8vw;
+    }
     img {
       width: 2.03em;
       margin: 0 auto 0.25em
@@ -253,7 +272,7 @@ header.banner { // Logo
 
 .full-width-white {
   background: white;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .full-width-grey {
@@ -283,6 +302,9 @@ header.banner { // Logo
   .container {
     position: relative;
     z-index: 3;
+    @media screen and (max-width: $break-small) {
+      z-index: 10; // place title over map on small screens
+    }
   }
 
   h4 {
@@ -295,10 +317,16 @@ header.banner { // Logo
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
   p {
     color: white;
     font-size: 1.2rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -355,6 +383,10 @@ img {
     font-family: "Work Sans Bold";
     color: white;
     font-size: 3vw;
+    @media screen and (max-width: $break-small) {
+      font-size: 10vw;
+      margin-top: -5vw;
+    }
   }
 }
 
@@ -369,12 +401,6 @@ img {
 }
 
 
-
-.btn-primary:hover, .btn-primary:active {
-  border-color: $green;
-  background: none;
-}
-
 .full-width-white .btn-primary {
   color: black;
 }
@@ -386,11 +412,17 @@ img {
 .blockquote {
   border-left: none;
   line-height: 1.5rem;
+  @media screen and (max-width: $break-small) {
+    line-height: 1.2rem;
+  }
   p {
     font-size: 1.3rem;
     color: black;
     display: inline;
     background: rgba(255,255,255,.7);
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
   cite {
     display: inline;
@@ -398,6 +430,9 @@ img {
     background: rgba(0,0,0,1);
     color: white;
     font-size: 1.3rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
     &:before {
       content: "–";
     }
@@ -435,6 +470,9 @@ img {
   top: 1rem;
   right: 1rem;
   z-index: 7;
+  @media screen and (max-width: $break-small) {
+    opacity: 0.1;
+  }
   ul {
     li {
       font-size: 0.725rem;
@@ -476,6 +514,10 @@ img {
   height: 100%;
   min-height: 70vh;
   z-index: 4;
+  @media screen and (max-width: $break-small) {
+    right: 5%;
+    opacity: 0.3;
+  }
   div {
     position: absolute;
     bottom: 0px;

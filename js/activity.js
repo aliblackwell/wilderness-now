@@ -1,8 +1,4 @@
 $(function() {
-  $('.activities-dropdown').click(function() {
-    event.preventDefault();
-  })
-
 
   $(window).scroll(function(e){
       parallax();
@@ -67,7 +63,7 @@ $(function() {
           $('.map-activities li').removeClass('highlighted');
           $('.map-activities .'+activityGroup.data.item.slug).addClass('highlighted')
 
-          var animationLength = 200;
+          var animationLength = 600;
           activityGroup.update({
             attrs: {
               r: 10
@@ -100,7 +96,7 @@ $(function() {
 
         var activitiesList = {}
         for (var i=0; i<locations.length; i++) {
-          var style = 'fill:#ccc; fill-opacity: 0.5; stroke-width: 0;'
+          var style = 'fill:#000; fill-opacity: 0.5; stroke-width: 0;'
           var radius = 3;
           activitiesList["activity"+i] = createActivity(locations[i], style, radius);
         }
@@ -123,7 +119,7 @@ $(function() {
           }
           var pulse, runAnimation;
 
-          var timer = [400, 1200, 1200];
+          var timer = [1200, 3600, 3600];
 
           switch(wnMorse[morseIndex]) {
             case 0:
