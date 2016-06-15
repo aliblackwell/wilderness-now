@@ -1,24 +1,44 @@
 -
-  title: City surf break
-  location: Edinburgh, Scotland
-  slug: city-surf-break
+  title: Surf - Coldingham Bay
+  location: Berwick-upon-Tweed, Scotland
+  slug: surf-coldingham-bay
+  image: activities/surfing/surf-coldingham-bay.jpeg
+  coords: 55.887452, -2.158450
+  
 -
-  title: Surf glamping
-  location: Welcombe, England
-  slug: surf-glamping
+  title: Surf Glamping - Koa Tree Camp 
+  location: Devon, England
+  slug: surf-glamping-koa-tree-camp
+  image: activities/surfing/surf-glamping-koa-tree-camp.jpeg
+  coords: 50.939571, -4.524983
+  
 -
-  title: Hidden beaches
+  title: Surf - Isle of Lewis
   location: Outer Hebrides, Scotland
-  slug: hidden-beaches
+  slug: surf-isle-of-lewis
+  image: activities/surfing/surf-isle-of-lewis.jpeg
+  coords: 58.276551, -6.654864
+  
 -
-  title: South Coast kite surf
-  location: Hayling Island, England
-  slug: south-coast-kite-surf
+  title: Surf - Thurso
+  location: North Coast, Scotland
+  slug: surf-thurso
+  image: activities/surfing/surf-thurso.jpeg
+  coords: 58.594462, -3.521894
+  
 -
-  title: Britain's biggest
-  location: Thurso, Scotland
-  slug: britains-biggest
+  title: Surf - Polzeath
+  location: Cornwall, England
+  slug: surf-polzeath
+  image: activities/surfing/surf-polzeath.jpeg
+  coords: 50.573676, -4.910715
+
 -
-  title: Cornish swell
-  location: Polzeath, England
-  slug: cornish-swell
+  title: Surf - Pembroke
+  location: Pembrokeshire, Wales
+  slug: surf-pembroke
+  image: activities/surfing/surf-pembroke.jpeg
+  coords: 51.785904, -5.085852
+  
+
+  
