@@ -5,16 +5,16 @@ var allLocationsList = [
  {%for activity in site.data.[parent.slug] %}
 
 
- {% assign coords = activity.coords | split: ', ' %}
+ {% assign coords = activity.coords | split: ", " %}
  {% assign latitude = coords[0] %}
  {% assign longitude = coords[1] %}
    {% if latitude %}
      // [new kartograph.LonLat({{longitude}}, {{latitude}}), {"title":"{{activity.title}}", "slug": "{{activity.slug}}" }, false],
      {
-       'name': '{{activity.title}}',
-       'lat': {{latitude}},
-       'long': {{longitude}},
-       'slug': '{{activity.slug}}'
+       "name": "{{activity.title}}",
+       "lat": {{latitude}},
+       "long": {{longitude}},
+       "slug": "{{activity.slug}}"
      },
    {% endif %}
   {% endfor %}
@@ -26,7 +26,7 @@ var allLocationsLabels = [
  {%for activity in site.data.[parent.slug] %}
 
 
- {% assign coords = activity.coords | split: ', ' %}
+ {% assign coords = activity.coords | split: ", " %}
  {% assign latitude = coords[0] %}
  {% assign longitude = coords[1] %}
    {% if latitude %}
@@ -42,15 +42,15 @@ var allLocationsObj = [
  {%for activity in site.data.[parent.slug] %}
 
 
- {% assign coords = activity.coords | split: ', ' %}
+ {% assign coords = activity.coords | split: ", " %}
  {% assign latitude = coords[0] %}
  {% assign longitude = coords[1] %}
    {% if latitude %}
      {
-       'name': '{{activity.title}}',
-       'lat': {{latitude}},
-       'long': {{longitude}},
-       'slug': '{{activity.slug}}'
+       "name": "{{activity.title}}",
+       "lat": {{latitude}},
+       "long": {{longitude}},
+       "slug": "{{activity.slug}}"
      },
    {% endif %}
   {% endfor %}
