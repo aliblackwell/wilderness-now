@@ -1,12 +1,20 @@
 -
-  title: West Coast exploration
-  location: Anglesey, Wales
-  slug: west-coast-exploration
+  title: Coasteering - Gower Peninsular
+  location: Swansea, Wales
+  slug: coasteering-gower-peninsular
+  image: activities/coasteering/coasteering-gower-peninsular.jpg
+  coords: 51.623725, -4.174373
+
 -
-  title: Wild sea cliffs
-  location: Ilfracombe, England
-  slug: wild-sea-cliffs
+  title: Coasteering - Wild Sea Cliffs
+  location: Devon, England
+  slug: coasteering-wild-sea-cliffs
+  image: activities/coasteering/coasteering-wild-sea-cliffs.jpg
+  coords: 51.208025, -4.126703
+
 -
-  title: Jurassic coast
-  location: Swanage, England
-  slug: jurassic-coast
+  title: Coasteering - Jurassic Coast
+  location: Dorset, England
+  slug: coasteering-jurassic-coast
+  image: activities/coasteering/coasteering-jurassic-coast.jpg
+  coords: 50.609865, -1.960599

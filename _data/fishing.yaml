@@ -1,36 +1,19 @@
 -
-  title: Fly fishing (river)
-  location: Dartmoor , England
-  slug: fly-fishing-river-dartmoor-england
+  title: Fly Fishing - Rivers of Dartmoor
+  location: Devon, England
+  slug: fly-fishing-rivers-of-dartmoor
+  image: activities/fishing/fly-fishing-rivers-of-dartmoor.jpeg
+  coords: 50.571777, -3.911505
 -
-  title: Sea fishing
-  location: Whitby, North Yorkshire, England
-  slug: sea-fishing-whitby-north-yorkshire-england
+  title: Sea Fishing - Whitby
+  location: North Yorkshire, England
+  slug: sea-fishing-whitby
+  image: activities/fishing/sea-fishing-whitby.jpeg
+  coords: 54.489246, -0.613297
+  
 -
-  title: Fly fishing (river)
-  location: Cheviot Hills, Northumberland, England
-  slug: fly-fishing-river-cheviot-hills-northumberland-england
--
-  title: Loch fishing
-  location: Sutherland, Highlands, Scotland
-  slug: loch-fishing-sutherland-highlands-scotland
--
-  title: Wild game fishing
-  location: South Uist, Outer Hebrides, Scotland
-  slug: wild-game-fishing-south-uist-outer-hebrides-scotland
--
-  title: Loch fishing
-  location: Loch Lomand, The Trossachs, Scotland
-  slug: loch-fishing-loch-lomand-the-trossachs-scotland
--
-  title: Sea fishing
-  location: Pembrokeshire, Wales
-  slug: sea-fishing-pembrokeshire-wales
--
-  title: Fly fishing (lake)
-  location: Snowdonia, Wales
-  slug: fly-fishing-lake-snowdonia-wales
--
-  title: Fly fishing (lake)
-  location: Lake District, England
-  slug: fly-fishing-lake-district-england
+  title: Loch Fishing - South Uist
+  location: Outer Hebrides, Scotland
+  slug: loch-fishing-south-uist
+  image: activities/fishing/loch-fishing-south-uist.jpeg
+  coords: 57.285905, -7.332555

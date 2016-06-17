@@ -1,12 +1,21 @@
 -
-  title: Wilderness living
-  location: Randwick, England
-  slug: wilderness-living
+  title: Survival - Randwick Forest
+  location: Gloucestershire, England
+  slug: survival-randwick-forest
+  image: activities/survival/survival-randwick-forest.jpeg
+  coords: 51.760947, -2.250456
+  
 -
-  title: Forest survivor
-  location: Etchingham, England
-  slug: forest-survivor
+  title: Survival - High Weald Forest
+  location: Sussex, England
+  slug: survival-high-weald-forest
+  image: activities/survival/survival-high-weald-forest.jpeg
+  coords: 51.017264, 0.422510
+  
 -
-  title: Off the grid survival
-  location: Aviemore, Scotland
-  slug: off-the-grid-survival
+  title: Survival - Mountains and Lochs
+  location: Central Highlands, Scotland
+  slug: survival-mountains-and-lochs
+  image: activities/survival/survival-mountains-and-lochs.jpeg
+  coords: 57.195436, -3.823578
+  

@@ -9,7 +9,7 @@
   quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
   quoth: Jack Kerouac
   includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
-  dyk: Did you know that there are no mountains in Scotland, only hills?
+  dyk: UK mountains rival the Alps in beauty and remoteness. | Winter mountaineering runs from December to April, a must for adventure seekers. 
 
 -
   slug: skiing
@@ -22,8 +22,8 @@
   layout: activity-category-layout-2
   quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity."
   quoth: John Muir
-  includes: Includes skiing, snowboarding and anything you can ride down a mountain
-  dyk: You can ski in the UK!
+  includes: Includes ski mountaineering, ski touring, snowboarding and first descents
+  dyk: The secret is out, you can ski in the UK! | Ski season runs from December to April, don't miss out.
 
 -
   slug: biking
@@ -32,11 +32,10 @@
   featured: true
   grid: 7
   layout: activity-category-layout-2
-  quote: When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle.
+  quote: "When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle."
   quoth: Arthur Conan Doyle
   includes: Includes mountain biking and cycle touring
-  dyk: Bikes!
-
+  dyk: Guilt-free snacks, look younger, improved sex life... and it's fun! | The UK is home to world class mountain bike trails. 
 
 -
   slug: fishing
@@ -49,19 +48,19 @@
   quote: "If people concentrated on the really important things in life, there'd be a shortage of fishing poles."
   quoth: Doug Larson
   includes: Includes freshwater fly fishing and sea fishing
-  dyk: Fish have been on planet earth for 450 million years – twice as long as mammals.
+  dyk: The Scottish salmon fishing season runs from February to September. | There are no permit or licence hassles when you go with a local guide. 
 
 -
-  slug: endurance
-  title: Endurance
-  image: activities/endurance.jpg
+  slug: kitesurfing
+  title: Kitesurfing
+  image: activities/Kitesurfing.jpg
   featured: true
   grid: 6
   layout: activity-category-layout-2
-  quote: "I don't run to add days to my life, I run to add life to my days"
-  quoth: Ronald Rook
-  includes: Includes trail running, triathlon and challenges so insane that you couldn’t make them up
-  dyk: An Iron Man is not for the faint hearted
+  quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
+  quoth: Henry David Thoreau
+  includes: Wind, waves, golden beaches 
+  dyk: Kitesurfing is on the rise, join the tribe! |  There are amazing spots within easy reach of London and other cities. 
 
 -
   slug: paddle
@@ -156,14 +155,6 @@
   dyk: sfdsfd
 
 -
-  slug: kitesurfing
-  title: Kitesurfing
-  layout: activity-category-layout-2
-  quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
-  quoth: Henry David Thoreau
-  includes: Wind, waves, golden beaches 
-  dyk: sdfs
--
   slug: rock-climbing
   title: Rock Climbing
   image: activities/rock-climbing.jpg
@@ -206,3 +197,23 @@
   quoth: sdfs sdf sdf
   includes: sdfs sdf sdf sdf sdf sdf sdf
   dyk: sdfs sdf sdf 
+  
+-
+  slug: endurance
+  title: Endurance
+  image: activities/endurance.jpg
+  layout: activity-category-layout-2
+  quote: "I don't run to add days to my life, I run to add life to my days"
+  quoth: Ronald Rook
+  includes: Includes trail running, triathlon and challenges so insane that you couldn’t make them up
+  dyk: An Iron Man is not for the faint hearted
+
+-
+  slug: wildlife
+  title: Wildlife
+  image: activities/wildlife.jpg
+  layout: activity-category-layout-2
+  quote: sdf sdf sdf
+  quoth: sdf sdf
+  includes: Bird watching (not the ladies)
+  dyk: UK has really fit birds!
