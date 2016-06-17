@@ -60,7 +60,7 @@
   quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
   quoth: Henry David Thoreau
   includes: Includes kitesurfing in the UK's favorite secret spots with local pros 
-  dyk: Kitesurfing is on the rise, join the tribe! |  There are amazing spots within easy reach of London and other major cities. 
+  dyk: Kitesurfing is on the rise, join the tribe! | There are amazing spots within easy reach of London and other major cities. 
 
 -
   slug: paddle
@@ -134,8 +134,8 @@
   layout: activity-category-layout-2
   quote: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor."
   quoth: Mark Twain
-  includes: lots of boats!
-  dyk: Boats
+  includes: Includes cruising and offshore sailing, discovering the magnificent UK coastline 
+  dyk: The sailing season runs from April to November. | Nothing beats sitting round the galley table, below deck, enjoying a warm meal with friends.  
 
 -
   slug: diving
@@ -143,43 +143,43 @@
   layout: activity-category-layout-2
   quote: "How inappropriate to call this planet Earth when it is quite clearly Ocean."
   quoth: Arthur C. Clarke
-  includes: Deep sea diving, free-diving, you name it
-  dyk: The longest underwater free-dive was a really long time
+  includes: Includes onshore and offshore scuba diving with experienced professionals
+  dyk: Guides provide high quality wetsuits, so you stay warm all year round. | Diving is easy to learn and you don't need to be a good swimmer. 
 
 -
   slug: coasteering
   title: Coasteering
   layout: activity-category-layout-2
-  quote: "Watching a coast [...] is like thinking about an enigma. There it is before you, smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.'"
+  quote: "Watching a coast is like thinking about an enigma. There it is before you, smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.'"
   quoth: Joseph Conrad
-  includes: sdfsdf
-  dyk: sfdsfd
+  includes: Includes movement along the intertidal zone of a rocky coastline by climbing, scrambling, jumping, and swimming
+  dyk: The UK's fastest growing sport, there are no ropes or climbing harnesses, just basic safety wear, enabling total freedom of movement. | Thick wetsuits provided by guides keep you warm all year round.
 
 -
   slug: rock-climbing
   title: Rock Climbing
   image: activities/rock-climbing.jpg
   layout: activity-category-layout-2
-  quote: Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner.
+  quote: "Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner."
   quoth: Chris Sharma
-  includes: Includes trad, bouldering and sports climbing
-  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  includes: Includes trad, top-roping and sport climbing in the UK's pristine national parks
+  dyk: The UK is a world class climbing destination, producing some of the world's top climbers. | Climbing engages and works all muscle groups simultaneously, while improving balance and coordination.
 -
   slug: paragliding
   title: Paragliding
   layout: activity-category-layout-2
   quote: sdfs sdf sdf sdf sdf sdf sdf
   quoth: sdfs sdf 
-  includes: Ever dreamt of flying... enough said!
-  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  includes: Includes paragliding and paramotoring. Ever dreamt of flying... enough said!
+  dyk: Paragliders can soar like birds, flying for hundreds of kilometers on currents of rising air. | You can be taught to fly solo at low altitude on your first day of learning. 
 -
   slug: survival
   title: Survival
   layout: activity-category-layout-2
-  quote: sdfs sdf sdf sdf sdf sdf sdf
-  quoth: sdfs sdf sd
-  includes: Anyone ready to go off grid and live in the forest?
-  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  quote: “…knowing how to feed yourself in the wilds is empowering since it is not dependent on “the system.”  Hunting and gathering is also your birthrite as a member of the human race.  Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being.”  
+  quoth: Tony Nester
+  includes: Includes turning off your phone and going off the grid to learn the skills of primitive forest dwellers
+  dyk: Survival is 100% mental because the mind controls the body, its actions and reasoning. | There is nothing more deeply satisfying than living off the land!  
   
 -
   slug: caving
@@ -187,8 +187,8 @@
   layout: activity-category-layout-2
   quote: "I wanna borrow it. For, uh, spelunking."
   quoth: Bruce Wayne
-  includes: Squeeze yourself into a new underground world... not for me thanks!  
-  dyk: sdfs sdf sdf sdf sdf sdf sdf
+  includes: Includes climbing, crawling and abseling to dicover underground cave systems  
+  dyk: Cave systems take thousands of years to evolve their fantastic shapes, and crystal & clay formations. | Guides provide helmet, lamp and battery pack, karabiner, boiler suit and boots.
   
 -
   slug: family-adventure
