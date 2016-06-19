@@ -9,7 +9,7 @@
   quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
   quoth: Jack Kerouac
   includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
-  dyk: UK mountains rival the Alps in beauty and remoteness. | Winter mountaineering runs from December to April, a must for adventure seekers. 
+  dyk: UK mountains rival the Alps in beauty and remoteness. | Winter mountaineering runs from December to April, a must for adventure seekers.
 
 -
   slug: skiing
@@ -34,8 +34,8 @@
   layout: activity-category-layout-2
   quote: "When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle."
   quoth: Arthur Conan Doyle
-  includes: Includes mountain biking and cycle touring through stunning mountains, moorland and forest 
-  dyk: The UK is home to world class mountain bike trails. | Touring benefits include guilt-free snacks, younger looks and fun! 
+  includes: Includes mountain biking and cycle touring through stunning mountains, moorland and forest
+  dyk: The UK is home to world class mountain bike trails. | Touring benefits include guilt-free snacks, younger looks and fun!
 
 -
   slug: fishing
@@ -47,8 +47,8 @@
   layout: activity-category-layout-2
   quote: "If people concentrated on the really important things in life, there'd be a shortage of fishing poles."
   quoth: Doug Larson
-  includes: Includes fly fishing and sea fishing with expert local guides 
-  dyk: The Scottish salmon fishing season runs from February to September. | There are no permit or licence hassles when you go with a local guide. 
+  includes: Includes fly fishing and sea fishing with expert local guides
+  dyk: The Scottish salmon fishing season runs from February to September. | There are no permit or licence hassles when you go with a local guide.
 
 -
   slug: kitesurfing
@@ -59,8 +59,8 @@
   layout: activity-category-layout-2
   quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
   quoth: Henry David Thoreau
-  includes: Includes kitesurfing in the UK's favorite secret spots with local pros 
-  dyk: Kitesurfing is on the rise, join the tribe! | There are amazing spots within easy reach of London and other major cities. 
+  includes: Includes kitesurfing in the UK's favorite secret spots with local pros
+  dyk: Kitesurfing is on the rise, join the tribe! | There are amazing spots within easy reach of London and other major cities.
 
 -
   slug: paddle
@@ -72,8 +72,8 @@
   quote: "Thousands have lived without love, not one without water."
   quoth: W.H. Auden
   includes: Includes kayaking, canoeing, rafting on beautiful rivers, lakes and sea
-  dyk: The UK has a massive selection of rivers, offering beginner to extreme challenges. | All equipment is provided by your guide. | Snuggled inside a dry suit, you can paddle all year round without getting cold!  
-  
+  dyk: The UK has a massive selection of rivers, offering beginner to extreme challenges. | All equipment is provided by your guide. | Snuggled inside a dry suit, you can paddle all year round without getting cold!
+
 -
   slug: surfing
   title: Surfing
@@ -94,13 +94,13 @@
   image-wide: activities/trekking/trekking-wilderness-now-wide.jpg
   quote: "Life is either a daring adventure or nothing."
   quoth: Helen Keller
-  includes: From gentle day-hikes to fortnight-long yomps: your wilderness is here
+  includes: 'From gentle day-hikes to fortnight-long yomps: your wilderness is here'
   featured: true
   grid: 7
   multiply: 0.65
   layout: activity-category-layout-2
   dyk: Once the height of the Himalayas, UK mountains are old and wise, eroded down over millions of years. | A day spent in the great outdoors must always be followed by a hearty meal in a cosy pub!
-  
+
 -
   slug: canyoning
   title: Canyoning
@@ -125,7 +125,7 @@
   layout: activity-category-layout-2
   quote: "For us hunting wasn’t a sport. It was a way to be intimate with nature."
   quoth: Ted Kerasote
-  includes: Includes traditional red deer and roe deer stalking in beautiful landscapes 
+  includes: Includes traditional red deer and roe deer stalking in beautiful landscapes
   dyk:  The most popular type of deer stalking in Scotland is for red deer, with a July to February season. | Stalking is a vital part of modern day land management, essential for protecting native flora and fauna.
 
 -
@@ -134,8 +134,8 @@
   layout: activity-category-layout-2
   quote: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor."
   quoth: Mark Twain
-  includes: Includes cruising and offshore sailing, discovering the magnificent UK coastline 
-  dyk: The sailing season runs from April to November. | Nothing beats sitting round the galley table, below deck, enjoying a warm meal with friends.  
+  includes: Includes cruising and offshore sailing, discovering the magnificent UK coastline
+  dyk: The sailing season runs from April to November. | Nothing beats sitting round the galley table, below deck, enjoying a warm meal with friends.
 
 -
   slug: diving
@@ -144,7 +144,7 @@
   quote: "How inappropriate to call this planet Earth when it is quite clearly Ocean."
   quoth: Arthur C. Clarke
   includes: Includes onshore and offshore scuba diving with experienced professionals
-  dyk: Guides provide high quality wetsuits, so you stay warm all year round. | Diving is easy to learn and you don't need to be a good swimmer. 
+  dyk: Guides provide high quality wetsuits, so you stay warm all year round. | Diving is easy to learn and you don't need to be a good swimmer.
 
 -
   slug: coasteering
@@ -169,27 +169,27 @@
   title: Paragliding
   layout: activity-category-layout-2
   quote: sdfs sdf sdf sdf sdf sdf sdf
-  quoth: sdfs sdf 
+  quoth: sdfs sdf
   includes: "Includes paragliding and paramotoring. Ever dreamt of flying... enough said!"
-  dyk: Paragliders can soar like birds, flying for hundreds of kilometers on currents of rising air. | You can be taught to fly solo at low altitude on your first day of learning. 
+  dyk: Paragliders can soar like birds, flying for hundreds of kilometers on currents of rising air. | You can be taught to fly solo at low altitude on your first day of learning.
 -
   slug: survival
   title: Survival
   layout: activity-category-layout-2
-  quote: "…knowing how to feed yourself in the wilds is empowering since it is not dependent on “the system.”  Hunting and gathering is also your birthrite as a member of the human race.  Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being." 
+  quote: "…knowing how to feed yourself in the wilds is empowering since it is not dependent on “the system.”  Hunting and gathering is also your birthrite as a member of the human race.  Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being."
   quoth: Tony Nester
   includes: Includes turning off your phone and going off the grid to learn the skills of primitive forest dwellers
-  dyk: Survival is 100% mental because the mind controls the body, its actions and reasoning. | There is nothing more deeply satisfying than living off the land!  
-  
+  dyk: Survival is 100% mental because the mind controls the body, its actions and reasoning. | There is nothing more deeply satisfying than living off the land!
+
 -
   slug: caving
   title: Caving
   layout: activity-category-layout-2
   quote: "I wanna borrow it. For, uh, spelunking."
   quoth: Bruce Wayne
-  includes: Includes climbing, crawling and abseling to dicover underground cave systems  
+  includes: Includes climbing, crawling and abseling to dicover underground cave systems
   dyk: Cave systems take thousands of years to evolve their fantastic shapes, and crystal & clay formations. | Guides provide helmet, lamp and battery pack, karabiner, boiler suit and boots.
-  
+
 -
   slug: family-adventure
   title: Family Adventure
@@ -197,8 +197,8 @@
   quote: "Build traditions of family vacations and trips and outings. These memories will never be forgotten by your children."
   quoth: Ezra Taft Benson
   includes: Includes quality family time and sporting challenge in stunning locations
-  dyk: Modern children play outdoors just half as much as their parents did.  | Research has proven the incredible positive effects of nature on young people. 
-  
+  dyk: Modern children play outdoors just half as much as their parents did.  | Research has proven the incredible positive effects of nature on young people.
+
 -
   slug: endurance
   title: Endurance
