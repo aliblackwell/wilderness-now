@@ -3,7 +3,7 @@ source:      .
 destination: ./_site
 layouts_dir:     ./_layouts
 data_dir: ./_data
-# collections: null
+exclude: ['node_modules']
 
 # Serving
 detach:  false
@@ -19,5 +19,3 @@ page_gen:
     template: 'homepage'
     name: 'slug'
     dir: ''
-
-

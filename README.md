@@ -25,3 +25,7 @@ Once you are finished, create a pull request into the master branch. All Pull Re
 Coming soon
 
 curl -I -s -X GET -H "Origin: www.github.com" http://d3fybqvnrweshl.cloudfront.net/fonts/Oswald.ttf
+
+### NB
+
+Had to update path to image_optim: ln -s /Users/AlasdairBlackwell/.rvm/gems/ruby-2.3.0/bin/image_optim /usr/local/bin/image_optim

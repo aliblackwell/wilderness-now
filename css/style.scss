@@ -26,20 +26,23 @@ body {
   }
 }
 
-#activities {
-  border-bottom: 10px solid $blockHighlight;
-}
-
 .navbar {
   background: white;
   text-align: center;
-  h2 {
-    color: black;
+  p {
+    a {
+      color: black;
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+    }
+
     position: absolute;
     right: 1rem;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.725rem;
     line-height: 1.4rem;
   }
   // .activities-dropdown-wrap {
@@ -52,6 +55,10 @@ body {
     text-transform: uppercase;
     font-size: 0.9rem;
     text-decoration: none;
+    @media screen and (max-width: $break-small) {
+      float: right;
+      margin-top: 3px;
+    }
     :active, :hover {
       text-decoration: none;
     }
@@ -66,13 +73,16 @@ body {
 
 .introduction {
   font-size: 1.4rem;
+  @media screen and (max-width: $break-small) {
+    font-size: 1rem;
+  }
   color: $greyText;
   text-align: center;
   p {
     margin-bottom: 0;
   }
   .down-arrow {
-    margin: 1.5rem auto 0rem;
+    margin: 1rem auto 0rem;
     width: 100px;
     display: block;
   }
@@ -87,6 +97,9 @@ body {
   text-align: center;
   padding: 30vh 0vw;
   margin: 0;
+  @media screen and (max-width: $break-small) {
+    padding: 6vh 0vw;
+  }
   h1 {
     color: black;
     font-size: 3vw;
@@ -123,54 +136,69 @@ body {
 
 .card.activity-card {
 
+  @media screen and (max-width: $break-small) {
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  transition: opacity 0.5s ease-out;
+  &.not-selected {
+    opacity: 0.2;
+  }
+
   &.selected {
     a {
       .card-block {
-        border-top: 10px solid $minty;
+        border-top: 10px solid black;
       }
     }
   }
   a {
-    img {
-      height: 300px;
-      width: 100%;
-    }
     .card-img-bottom {
       position: relative;
       background-size: cover;
       min-height: 300px;
+      @media screen and (max-width: $break-small) {
+        min-height: 200px;
+      }
     }
     .card-block {
       background: white;
-      border-top: 10px solid black;
+      transition: border-top 0.2s ease-out;
+      border-top: 10px solid $grey;
       .card-title {
         color: #000;
       }
       .card-text {
         color: #999;
       }
-      .btn-primary {
-        background: white;
-        color: black;
-        border: 1px solid black;
-        &:active, &:hover {
-          color: white;
-          background: $minty;
-          border: 1px solid $minty;
-        }
-      }
+
     }
   }
   a:hover, a:active {
     text-decoration: none;
     .card-block {
-      border-top: 10px solid $minty;
-      .btn-primary {
-        background: $minty;
-        color: white;
-        border: 1px solid $minty;
-      }
+      border-top: 10px solid black;
     }
+  }
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  &:active, &:hover {
+    color: white;
+    background: black;
+    border: 1px solid black;
+  }
+}
+
+a:hover, a:active {
+  .btn-primary {
+    background: black;
+    color: white;
+    border: 1px solid black;
   }
 }
 
@@ -220,11 +248,14 @@ header.banner { // Logo
     margin-bottom: 0vh;
     font-family: "Oswald";
     position: relative;
-    font-size: 6vw;
+    font-size: 5.8vw;
     z-index: 2;
     text-transform: uppercase;
     color: white;
     line-height: 1;
+    @media screen and (max-width: $break-small) {
+      font-size: 9.8vw;
+    }
     img {
       width: 2.03em;
       margin: 0 auto 0.25em
@@ -253,7 +284,7 @@ header.banner { // Logo
 
 .full-width-white {
   background: white;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .full-width-grey {
@@ -283,6 +314,9 @@ header.banner { // Logo
   .container {
     position: relative;
     z-index: 3;
+    @media screen and (max-width: $break-small) {
+      z-index: 10; // place title over map on small screens
+    }
   }
 
   h4 {
@@ -295,10 +329,16 @@ header.banner { // Logo
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
   p {
     color: white;
     font-size: 1.2rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -338,13 +378,22 @@ img {
   background-size: cover;
   background-position: center center;
   &:hover {
-    background-color: lighten($ochre, 4%) !important;
+    //background-color: lighten($ochre, 4%) !important;
+    background-blend-mode: multiply;
+    a {
+      background-position: top center;
+      background-size: 400%;
+    }
   }
   a {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0px;
+    background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white_trans.svg');
+    background-size: 0%;
+    background-position: center center;
+    //-webkit-transition:background-size 1s ease-in;
   }
   h4 {
     height: 34px;
@@ -355,6 +404,10 @@ img {
     font-family: "Work Sans Bold";
     color: white;
     font-size: 3vw;
+    @media screen and (max-width: $break-small) {
+      font-size: 10vw;
+      margin-top: -5vw;
+    }
   }
 }
 
@@ -369,12 +422,6 @@ img {
 }
 
 
-
-.btn-primary:hover, .btn-primary:active {
-  border-color: $green;
-  background: none;
-}
-
 .full-width-white .btn-primary {
   color: black;
 }
@@ -386,11 +433,17 @@ img {
 .blockquote {
   border-left: none;
   line-height: 1.5rem;
+  @media screen and (max-width: $break-small) {
+    line-height: 1.2rem;
+  }
   p {
     font-size: 1.3rem;
     color: black;
     display: inline;
     background: rgba(255,255,255,.7);
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
   }
   cite {
     display: inline;
@@ -398,6 +451,9 @@ img {
     background: rgba(0,0,0,1);
     color: white;
     font-size: 1.3rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1rem;
+    }
     &:before {
       content: "–";
     }
@@ -430,21 +486,82 @@ img {
     overflow: visible;
 }
 
+.map-activities {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 7;
+  @media screen and (max-width: $break-small) {
+    opacity: 0.1;
+  }
+  ul {
+    li {
+      font-size: 0.725rem;
+      text-align: right;
+      text-transform: uppercase;
+
+
+      display: inline;
+
+      &.highlighted {
+        span {
+          color: white;
+          background: rgba(0,0,0,.4);
+          display: inline-block;
+        }
+      }
+      a {
+        display: inline-block;
+        color: black;
+        background: rgba(255,255,255,.7);
+        margin-bottom: 0.1rem;
+        text-decoration: none;
+        float: right;
+        clear: right;
+        &:hover {
+          color: white;
+          background: black;
+        }
+      }
+    }
+  }
+}
+
 .banner-map {
   position: absolute;
-  top: -50px;
-  right: 6vw;
-  width: 400px;
-  min-height: 600px;
-  z-index: 0;
+  top: 0;
+  right: -35%;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  z-index: 4;
+  @media screen and (max-width: $break-small) {
+    right: 5%;
+    opacity: 0.3;
+  }
   div {
     position: absolute;
     bottom: 0px;
     width: 100%;
     height: 100%;
+    #bg {
+      width: 100%;
+    }
 
     svg {
       opacity: 1;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+    .text-label {
+      display: none;
+      position: relative;
+      tspan {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
     }
   }
 }

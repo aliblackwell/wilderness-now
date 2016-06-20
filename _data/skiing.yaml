@@ -1,12 +1,20 @@
 -
-  title: Cairngorm crossing
-  location: Aviemore, Scotland
-  slug: cairngorm-crossing
+  title: Ski Touring - Ben Macdui
+  location: Cairngorms, Scotland
+  slug: ski-touring-ben-macdui
+  image: activities/skiing/ski-touring-ben-macdui.jpeg
+  coords: 57.078600, -3.610382
+  
 -
-  title: Steep skiing Nevis range
-  location: Fort William, Scotland
+  title: Steep Skiing - Nevis Range
+  location: West Highlands, Scotland
   slug: steep-skiing-nevis-range
+  image: activities/skiing/steep-skiing-nevis-range.jpeg
+  coords: 56.852331, -4.998700
+  
 -
-  title: Glenshee backcountry
-  location: Glenshee, Scotland
-  slug: glenshee-bankcountry
+  title: Backcountry Skiing - Glenshee
+  location: Central Highlands, Scotland
+  slug: backcountry-skiing-glenshee
+  image: activities/skiing/backcountry-skiing-glenshee.jpeg
+  coords: 56.887163, -3.415429
