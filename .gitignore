@@ -5,5 +5,7 @@ _site
 _photos
 _misc
 assets
+node_modules
 cdn
 Prototype pictures for Ali
+cdn_for_upload

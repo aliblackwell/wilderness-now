@@ -2,7 +2,6 @@
   slug: mountaineering
   title: Mountaineering
   image: activities/mountaineering/mountaineering-wilderness-now.jpg
-  image-wide: activities/mountaineering/mountaineering-wilderness-now-wide.jpg
   featured: true
   grid: 6
   layout: activity-category-layout-2
@@ -15,7 +14,6 @@
   slug: skiing
   title: Skiing
   image: activities/skiing/skiing-wilderness-now.jpg
-  image-wide: activities/skiing/skiing-wilderness-now.jpg
   featured: true
   grid: 6
   opacity: 0.45
@@ -28,7 +26,7 @@
 -
   slug: biking
   title: Biking
-  image: activities/biking.jpg
+  image: activities/biking/biking-wilderness-now.jpg
   featured: true
   grid: 7
   layout: activity-category-layout-2
@@ -41,7 +39,6 @@
   slug: fishing
   title: Fishing
   image:  activities/fishing/fishing-wilderness-now.jpg
-  image-wide: activities/fishing/fishing-wilderness-now-wide.jpg
   featured: true
   grid: 5
   layout: activity-category-layout-2
@@ -53,7 +50,7 @@
 -
   slug: kitesurfing
   title: Kitesurfing
-  image: activities/Kitesurfing.jpg
+  image: activities/kitesurfing/kitesurfing-wilderness-now.jpg
   featured: true
   grid: 6
   layout: activity-category-layout-2
@@ -65,7 +62,7 @@
 -
   slug: paddle
   title: Paddle
-  image: activities/paddle.jpg
+  image: activities/paddle/paddle-wilderness-now.jpg
   featured: true
   grid: 6
   layout: activity-category-layout-2
@@ -77,7 +74,7 @@
 -
   slug: surfing
   title: Surfing
-  image: activities/surfing.jpg
+  image: activities/surfing/surfing-wilderness-now.jpg
   featured: true
   grid: 5
   opacity: 0.45
@@ -90,8 +87,7 @@
 -
   slug: trekking
   title: Trekking
-  image: activities/trekking/trekking.jpg
-  image-wide: activities/trekking/trekking-wilderness-now-wide.jpg
+  image: activities/trekking/trekking-wilderness-now.jpg
   quote: "Life is either a daring adventure or nothing."
   quoth: Helen Keller
   includes: 'From gentle day-hikes to fortnight-long yomps: your wilderness is here'
@@ -104,6 +100,7 @@
 -
   slug: canyoning
   title: Canyoning
+  image: activities/canyoning/canyoning-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "Somebody should tell us, right at the start of our lives, that we are dying. Then we might live life to the limit, every minute of every day. Do it! I say. Whatever you want to do, do it now! There are only so many tomorrows."
   quoth: Pope Paul IV
@@ -113,6 +110,7 @@
 -
   slug: horse-trekking
   title: Horse Trekking
+  image: activities/horse-trekking/horse-trekking-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "There’s nothing better for the inside of a man than the outside of a horse."
   quoth: Ronald Reagan
@@ -122,6 +120,7 @@
 -
   slug: stalking
   title: Stalking
+  image: activities/stalking/stalking-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "For us hunting wasn’t a sport. It was a way to be intimate with nature."
   quoth: Ted Kerasote
@@ -131,6 +130,7 @@
 -
   slug: sailing
   title: Sailing
+  image: activities/sailing/sailing-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor."
   quoth: Mark Twain
@@ -140,6 +140,7 @@
 -
   slug: diving
   title: Diving
+  image: activities/diving/diving-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "How inappropriate to call this planet Earth when it is quite clearly Ocean."
   quoth: Arthur C. Clarke
@@ -149,6 +150,7 @@
 -
   slug: coasteering
   title: Coasteering
+  imgage: activities/coasteering/coasteering-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "Watching a coast is like thinking about an enigma. There it is before you, smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.'"
   quoth: Joseph Conrad
@@ -158,7 +160,7 @@
 -
   slug: rock-climbing
   title: Rock Climbing
-  image: activities/rock-climbing.jpg
+  image: activities/rock-climbing/rock-climbing-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner."
   quoth: Chris Sharma
@@ -167,6 +169,7 @@
 -
   slug: paragliding
   title: Paragliding
+  image: activities/paragliding/paragliding-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: sdfs sdf sdf sdf sdf sdf sdf
   quoth: sdfs sdf
@@ -175,6 +178,7 @@
 -
   slug: survival
   title: Survival
+  image: activities/survival/survival-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "…knowing how to feed yourself in the wilds is empowering since it is not dependent on “the system.”  Hunting and gathering is also your birthrite as a member of the human race.  Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being."
   quoth: Tony Nester
@@ -184,6 +188,7 @@
 -
   slug: caving
   title: Caving
+  image: activities/caving/caving-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "I wanna borrow it. For, uh, spelunking."
   quoth: Bruce Wayne
@@ -193,6 +198,7 @@
 -
   slug: family-adventure
   title: Family Adventure
+  image: activities/family-adventure/family-adventure-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "Build traditions of family vacations and trips and outings. These memories will never be forgotten by your children."
   quoth: Ezra Taft Benson
@@ -202,7 +208,7 @@
 -
   slug: endurance
   title: Endurance
-  image: activities/endurance.jpg
+  image: activities/endurance/endurance-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "I don't run to add days to my life, I run to add life to my days"
   quoth: Ronald Rook
@@ -212,7 +218,7 @@
 -
   slug: wildlife
   title: Wildlife
-  image: activities/wildlife.jpg
+  image: activities/wildlife/wildlife-wilderness-now.jpg
   layout: activity-category-layout-2
   quote: "We need the tonic of wildness...At the same time that we are earnest to explore and learn all things, we require that all things be mysterious and unexplorable, that land and sea be indefinitely wild, unsurveyed and unfathomed by us because unfathomable. We can never have enough of nature."
   quoth: Henri David Thoreau

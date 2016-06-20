@@ -1,0 +1,11 @@
+---
+---
+Image Name, Site Path
+{% for parent in site.data.parent-activities %}
+{{parent.image}}, http://aws-website-wildernessnow-yib3s.s3-website-us-east-1.amazonaws.com/{{parent.slug}}
+{%for activity in site.data.[parent.slug] %}
+{{ activity.image }}{% endfor %}
+
+{% endfor %}
+{% for parent in site.data.parent-activities %}
+{% endfor %}

@@ -1,4 +1,0 @@
----
----
-{% for parent in site.data.parent-activities %}{%for activity in site.data.[parent.slug] %}
-{{ activity.image }}{% endfor %}{% endfor %}
