@@ -6,12 +6,16 @@ $(function() {
 
   function parallax(){
       var scrolled = $(window).scrollTop();
-      $('.banner-map').css('top', (20 + (-scrolled * 0.05) + 'px'));
+      //$('.banner-map').css('top', (20 + (scrolled * 0.05) + 'px'));
       $('header .wn').css('top', (scrolled * 0.1) + 'px');
+      var percent = scrolled * 0.08;
+      percent = 50 - percent;
+      $('header.banner.logo-overlay').css('background-position', '50% '+ percent +'%');
   }
 
 
-  var symbols, userPosition, map;
+  var symbols, userPosition, map,
+    activitiesList, allLocations;
   var circleRadius = 3;
   var highlightColor = '#EC971F';
 
@@ -24,7 +28,7 @@ $(function() {
             styles: {
                 stroke: '#fff',
                 fill: '#fff',
-                opacity: 0.9
+                opacity: 1
             }
         });
 
@@ -33,7 +37,7 @@ $(function() {
             styles: {
                 stroke: '#fff',
                 fill: '#fff',
-                opacity: 0.6
+                opacity: 1
             }
         });
 
@@ -46,26 +50,7 @@ $(function() {
 
 
 
-        function pulseActivity(activityGroup) {
-          // $('.text-label').fadeOut();
-          // $('.'+activityGroup.data.item.slug).fadeIn();
-          $('.map-activities li').removeClass('highlighted');
-          $('.map-activities .'+activityGroup.data.item.slug).addClass('highlighted')
 
-          var animationLength = 600;
-          activityGroup.update({
-            attrs: {
-              r: 10
-            }
-          }, animationLength);
-          setTimeout(function() {
-            activityGroup.update({
-              attrs: {
-                r: 3
-              }
-            }, animationLength);
-          }, animationLength)
-        }
 
         function createActivity(item, style, radius) {
           var activity = map.addSymbols({
@@ -85,7 +70,7 @@ $(function() {
 
 
 
-        var allLocations = {}
+        allLocations = {}
         for (var i=0; i<allLocationsObj.length; i++) {
           // style should match object called resetStyles
           var style = 'fill:#ccc; fill-opacity: 0.5; stroke-width: 0';
@@ -93,7 +78,7 @@ $(function() {
           allLocations[allLocationsObj[i].slug] = createActivity(allLocationsObj[i], style, radius);
         }
 
-        var activitiesList = {}
+        activitiesList = {}
         for (var i=0; i<locations.length; i++) {
           var style = 'fill: '+ highlightColor+'; fill-opacity: 1; stroke-width: 0;'
           var radius = 3;
@@ -154,11 +139,13 @@ $(function() {
 
        // loopThroughActivities( 0, 0 );
         $('.map-activities a').hover(function() {
-          var aLength = 500;
+          var aLength = 250;
           var slug = $(this).attr('data-slug');
 
 
           var distance = $(this).attr('data-dist');
+
+          activitiesList[slug]["hovered"] = true;
 
           $('.text-label.'+ slug + ' tspan').html(distance + ' miles');
 
@@ -169,7 +156,7 @@ $(function() {
 
           activitiesList[slug].update({
             attrs: {
-              r: 20,
+              r: 25,
               'fill-opacity': 1,
               stroke: '#fff',
               'stroke-width': 0
@@ -186,7 +173,9 @@ $(function() {
               stroke: 'none',
               'stroke-width': 0
            }
-          }, 500);
+          }, 500, function() {
+            activitiesList[slug]["hovered"] = false;
+          });
         })
 
         function fadeOutActivitiesAnimation() {
@@ -225,6 +214,30 @@ $(function() {
     }, animationLength)
   }
 
+  function pulseActivity(activityGroup) {
+
+    var animationLength = 750;
+    if (activityGroup.hovered !== true) {
+      activityGroup.update({
+        attrs: {
+          r: 4
+        }
+      }, animationLength);
+    }
+    setTimeout(function() {
+      if (activityGroup.hovered !== true) {
+        activityGroup.update({
+          attrs: {
+            r: 3
+          }
+        }, animationLength);
+      }
+      setTimeout(function() {
+        pulseActivity(activityGroup);
+      }, animationLength)
+    }, animationLength)
+  }
+
   navigator.geolocation.getCurrentPosition(success, error);
   drawMap('#map0');
   function success(position) {
@@ -255,6 +268,10 @@ $(function() {
     })
 
     pulseUserLocation(userPosition);
+    console.log(activitiesList)
+    $.each(activitiesList, function(k,activity) {
+      //pulseActivity(activity);
+    })
 
   }
 

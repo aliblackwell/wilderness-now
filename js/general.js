@@ -11,6 +11,20 @@ $(function() {
     return c/2*((t-=2)*t*t + 2) + b;
   };
 
+  $('.arrow-scroll').click(function(event) {
+    var target = $(this).attr('href');
+    $(window).scrollTo(target, {
+      interrupt: true,
+      offset: {
+        top: 0
+      },
+      duration: 500,
+      easing: 'easeInOutCubic'
+    });
+    event.preventDefault();
+    return false
+  })
+
   $('a.activity-link-jump').click(function(event){
     var target = $(this).attr('href');
     var slug = $(this).attr('data-slug');

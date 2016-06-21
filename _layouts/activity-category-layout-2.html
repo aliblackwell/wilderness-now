@@ -38,7 +38,8 @@
       <div class="map-activities">
         <ul>
         {% for activity in site.data[page.slug] %}
-          <li class="{{activity.slug}}"><a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}" class="activity-link-jump">{{activity.title}}</a></li>
+          {% assign title = activity.title | split: "-" %}
+          <li class="{{activity.slug}}"><a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}" class="activity-link-jump">{{title[1]}} \\ {{title[0]}}</a></li>
         {% endfor %}
         </ul>
       </div>
@@ -77,46 +78,37 @@
           <div class="col-md-10 col-md-offset-1 col-sm-12">
             <section class="introduction">
               <p>{{page.includes}}</p>
-              <img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down">
+              <a class="arrow-scroll" href="#{{page.slug}}-activities"><img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down"></a>
             </section>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="full-width-grey">
-      <div class="container">
-        <div class="row">
-<!--           <div class="col-md-3">
+    <div class="full-width-grey" id="{{page.slug}}-activities">
+      <div class="container-fluid">
+      <div class="activities-background" style="background-image: url({{site.data.config.cdn}}/{{page.background-image}});"></div>
+      {% assign dyk = page.dyk | split: "|" %}
 
-            <div class="row">
-              <div class="col-md-12">
 
-              </div>
+
+          <div class="row activities-wrapper">
+
+            <div class="col-md-12">
+              <h2>{{page.title}} Adventures</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <p class="dyk">{{dyk[0]}}</p>
             </div>
 
+            <div class="col-md-8">
 
-          </div>
-          <div class="col-md-9">
-            <div class="row"> -->
-              <div class="col-md-12">
-                {% include activities-table.html %}
-              </div>
-<!--             </div>
-         </div>
- -->
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-inverse" style="background-color: #333; border-color: #333;">
-              <div class="card-block">
-                <h3 class="card-title">Did you know</h3>
-                <p class="card-text">{{page.dyk}}</p>
-              </div>
+              {% include activities-table.html %}
             </div>
           </div>
         </div>
-
       </div>
     </div>
     {% include footer.html %}
