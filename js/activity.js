@@ -6,13 +6,14 @@ $(function() {
 
   function parallax(){
       var scrolled = $(window).scrollTop();
-      $('.banner-map').css('top', ((-scrolled * 0.05) + 'px'));
+      $('.banner-map').css('top', (20 + (-scrolled * 0.05) + 'px'));
       $('header .wn').css('top', (scrolled * 0.1) + 'px');
   }
 
 
   var symbols, userPosition, map;
   var circleRadius = 3;
+  var highlightColor = '#EC971F';
 
 
   function drawMap(cont, position) {
@@ -42,21 +43,7 @@ $(function() {
 
 
 
-        function pulseUserLocation(activityGroup) {
-          var animationLength = 150;
-          activityGroup.update({
-            attrs: {
-              r: 8
-            }
-          }, animationLength);
-          setTimeout(function() {
-            activityGroup.update({
-              attrs: {
-                r: 5
-              }
-            }, animationLength);
-          }, animationLength)
-        }
+
 
 
         function pulseActivity(activityGroup) {
@@ -96,12 +83,7 @@ $(function() {
           return activity;
         }
 
-        var activitiesList = {}
-        for (var i=0; i<locations.length; i++) {
-          var style = 'fill:#000; fill-opacity: 0.5; stroke-width: 0;'
-          var radius = 3;
-          activitiesList[locations[i].slug] = createActivity(locations[i], style, radius);
-        }
+
 
         var allLocations = {}
         for (var i=0; i<allLocationsObj.length; i++) {
@@ -109,6 +91,13 @@ $(function() {
           var style = 'fill:#ccc; fill-opacity: 0.5; stroke-width: 0';
           var radius = 3;
           allLocations[allLocationsObj[i].slug] = createActivity(allLocationsObj[i], style, radius);
+        }
+
+        var activitiesList = {}
+        for (var i=0; i<locations.length; i++) {
+          var style = 'fill: '+ highlightColor+'; fill-opacity: 1; stroke-width: 0;'
+          var radius = 3;
+          activitiesList[locations[i].slug] = createActivity(locations[i], style, radius);
         }
 
         map.addSymbols({
@@ -178,22 +167,22 @@ $(function() {
           }
 
 
-          allLocations[slug].update({
+          activitiesList[slug].update({
             attrs: {
               r: 20,
-              'fill-opacity': 0.8,
+              'fill-opacity': 1,
               stroke: '#fff',
-              'stroke-width': 2
+              'stroke-width': 0
            }
           }, aLength);
           fadeOutActivitiesAnimation();
         }, function() {
           $('.text-label').hide();
           var slug = $(this).attr('data-slug');
-          allLocations[slug].update({
+          activitiesList[slug].update({
             attrs: {
               r: 3,
-              'fill-opacity': 0.5,
+              'fill-opacity': 1,
               stroke: 'none',
               'stroke-width': 0
            }
@@ -217,6 +206,25 @@ $(function() {
       }, { padding: -75 } );
   }
 
+  function pulseUserLocation(activityGroup) {
+    var animationLength = 750;
+    activityGroup.update({
+      attrs: {
+        r: 10
+      }
+    }, animationLength);
+    setTimeout(function() {
+      activityGroup.update({
+        attrs: {
+          r: 5
+        }
+      }, animationLength);
+      setTimeout(function() {
+        pulseUserLocation(activityGroup);
+      }, animationLength);
+    }, animationLength)
+  }
+
   navigator.geolocation.getCurrentPosition(success, error);
   drawMap('#map0');
   function success(position) {
@@ -234,7 +242,7 @@ $(function() {
       sortBy: 'radius desc',
       id: 'your-position',
       radius: 5,
-      style: 'fill:#000; stroke: #000; fill-opacity: 1'
+      style: 'fill:'+highlightColor+'; stroke: #000; stroke-width: 0; fill-opacity: 1'
     })
 
     $.each(locations, function(k,location) {
@@ -245,6 +253,8 @@ $(function() {
       $('.map-activities .'+location.slug +' a').attr('data-dist', location.distance );
 
     })
+
+    pulseUserLocation(userPosition);
 
   }
 

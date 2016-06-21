@@ -1,14 +1,18 @@
     {% for activity in site.data[page.slug] %}
-      {% assign loopmod = forloop.index0 | modulo: 3 %}
+      {% assign loopmod = forloop.index0 | modulo: 2 %}
       {% if loopmod == 0 %}
         <div class="card-deck-wrapper ">
           <div class="card-deck cd-{{forloop.index}}">
       {% endif %}
 
+          {% assign title = activity.title | split: "-" %}
+          {% assign subtitle = title[0] %}
+          {% assign maintitle = title[1] %}
+
             <div class="card activity-card" id="{{activity.slug}}">
               <a  class="typeform-share link"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.site_url}}" data-mode="1" target="_blank">
                 <div class="card-block">
-                  <h4 class="card-title">{{activity.title}}</h4>
+                  <h4 class="card-title">{{maintitle}} <span>{{subtitle}}</span></h4>
                   <p class="card-text">{{activity.location}}</p>
                   <button class="btn btn-primary">Explore</button>
                 </div>
@@ -18,7 +22,7 @@
               </a>
             </div>
 
-      {% if loopmod == 2 or forloop.last %}
+      {% if loopmod == 1 or forloop.last %}
           </div><!-- / .card -->
         </div><!-- / .card-deck-wrapper -->
       {% endif %}
