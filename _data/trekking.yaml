@@ -2,40 +2,40 @@
   slug: trek-west-highland-way
   title: Trek - West Highland Way
   location: West Highlands, Scotland
-  image: activities/trekking/trek-west-highland-way.jpg
+  image: activities/trekking/1trek-west-highland-way.jpg
   coords: 55.873490, -4.249632, 56.821112, -5.105037
   
 -
   slug: trek-coast-to-coast
   title: Trek - Coast-to-Coast 
   location: Northern England
-  image: activities/trekking/trek-coast-to-coast.jpg
+  image: activities/trekking/1trek-coast-to-coast.jpg
   coords: 54.491787, -3.589699, 54.434690, -0.535064
   
 -
   slug: trek-the-lost-valley
   title: Trek - The Lost Valley
   location: West Highlands, Scotland
-  image: activities/trekking/trek-the-lost-valley.jpg
+  image: activities/trekking/1trek-the-lost-valley.jpg
   coords: 56.651580, -4.840870
   
 -
   slug: trek-mount-snowdon
   title: Trek - Mount Snowdon
   location: Snowdonia, Wales
-  image: activities/trekking/trek-mount-snowdon.jpg
+  image: activities/trekking/1trek-mount-snowdon.jpg
   coords: 53.106795, -3.912274
   
 -
   slug: Trek - Southern Fells
   title: trek-southern-fells
   location: Lake District, England
-  image: activities/trekking/trek-southern-fells.jpg
+  image: activities/trekking/1trek-southern-fells.jpg
   coords: 54.545182, -2.949720
 
 -
   slug: trek-kinder-scout
   title: Trek - Kinder Scout
   location: Peak District, England
-  image: activities/trekking/trek-kinder-scout.jpg
+  image: activities/trekking/1trek-kinder-scout.jpg
   coords: 53.387730, -1.873234
