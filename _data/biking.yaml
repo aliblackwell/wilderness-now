@@ -9,33 +9,33 @@
   title: MTB - Rhyd Ddu
   location: Snowdonia, Wales
   slug: mtb-rhyd-ddu
-  image: activities/biking/mtb-rhyd-ddu.jpg
+  image: activities/biking/1mtb-rhyd-ddu.jpg
   coords: 53.055643, -4.135950
 
 -
   title: MTB - Cut Gate
   location: Peak District, England
   slug: mtb-cut-gate
-  image: activities/biking/mtb-cut-gate.jpg
+  image: activities/biking/1mtb-cut-gate.jpg
   coords: 53.414057, -1.696593
   
 -
   title: MTB - Quantocks
   location: Exmoor, England
   slug: mtb-quantocks
-  image: activities/biking/mtb-quantocks.jpg
+  image: activities/biking/1mtb-quantocks.jpg
   coords: 51.141446, -3.210892
   
 -
   title: Touring - Coast to Coast
   location: Lake District to Sunderland, England
   slug: touring-coast-to-coast
-  image: activities/biking/touring-coast-to-coast.jpg
+  image: activities/biking/1touring-coast-to-coast.jpg
   coords: 54.491887, -3.589699, 54.912617, -1.384496
   
 -
   title: Touring - Lochs and Glens
   location: Inverness to Glasgow, Scotland
   slug: touring-lochs-and-glens
-  image: activities/biking/touring-lochs-and-glens
+  image: activities/biking/1touring-lochs-and-glens
   coords: 57.480083, -4.224433, 55.874646, -4.253065
