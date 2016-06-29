@@ -11,7 +11,7 @@
         <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg" alt="WN">
         Wilderness Now
       </h1>
-      <a href="#introduction" class="hp-arrow arrow-scroll"><img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow_white.svg" alt="Down"></a>
+      <a href="#introduction" class="hp-arrow arrow-scroll"><img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow_white.svg?123" alt="Down"></a>
 
     </header>
 
@@ -35,7 +35,7 @@
 
          {% for activity in site.data.parent-activities %}
           {% if activity.featured %}
-            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/{{activity.image}}); background-color: rgba(208, 159, 0, 0.4);">
+            <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}}); background-color: rgba(208, 159, 0, 0.4);">
               <a href="{{activity.slug}}">
                 <h4>{{activity.title}}</h4>
               </a>

@@ -2,20 +2,20 @@
   title: Wild Swim - Mountain Lakes
   location: Snowdonia, Wales
   slug: wild-swim-mountain-lakes
-  image: activities/endurance/wild-swim-mountain-lakes.jpg
+  image: wild-swim-mountain-lakes.jpg
   coords: 53.107748, -3.912618
 
 -
   title: Trail Run - Dartmoor
   location: Devon, England
   slug: trail-run-dartmoor
-  image: activities/endurance/trail-run-dartmoor.jpg
+  image: trail-run-dartmoor.jpg
   coords: 50.571892, -3.920710
-  
+
 -
-  title: Fell Run - Helvellyn 
+  title: Fell Run - Helvellyn
   location: Lake District, England
   slug: fell-run-helvellyn
-  image: activities/endurance/fell-run-helvellyn.jpg
+  image: fell-run-helvellyn.jpg
   coords: 54.545170, -2.949763
-  
+

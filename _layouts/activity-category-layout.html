@@ -6,9 +6,6 @@
   </head>
   <body class="activity-category-layout-2 overlay-closed">
 
-
-
-
     {% include navigation.html %}
 
 
@@ -33,7 +30,7 @@
       ]
     </script>
 
-    <header class="full-width-image banner logo-overlay" style="background-image: url({{site.data.config.cdn}}/{% if page.image-wide %}{{page.image-wide}}{% else %}{{page.image}}{%endif%})">
+    <header class="full-width-image banner logo-overlay" style="background-image: url({{site.data.config.cdn}}/activity-images/{{page.image}})">
       <div class="wn"></div>
       <div class="map-activities">
         <ul>
@@ -69,11 +66,7 @@
     </header>
 
     <div class="full-width-white">
-
-
-
       <div class="container">
-
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-sm-12">
             <section class="introduction">
@@ -87,30 +80,25 @@
 
     <div class="full-width-grey" id="{{page.slug}}-activities">
       <div class="container-fluid">
-      <div class="activities-background" style="background-image: url({{site.data.config.cdn}}/{{page.background-image}});"></div>
-      {% assign dyk = page.dyk | split: "|" %}
-
-
-
-          <div class="row activities-wrapper">
-
-            <div class="col-md-12">
-              <h2>{{page.title}} Adventures</h2>
-            </div>
+        {% assign dyk = page.dyk | split: "|" %}
+        <div class="row activities-wrapper">
+          <div class="col-md-12">
+            <h2>{{page.title}} Adventures</h2>
           </div>
-          <div class="row">
-            <div class="col-md-2 col-md-offset-1">
-              <p class="dyk">{{dyk[0]}}</p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1">
+            <p class="dyk">{{dyk[0]}}</p>
+          </div>
 
-            <div class="col-md-8">
+          <div class="col-md-8">
 
-              {% include activities-table.html %}
-            </div>
+            {% include activities-table.html %}
           </div>
         </div>
       </div>
     </div>
+
     {% include cta-users.html %}
     {% include footer.html %}
     {% include scripts-activity.html %}

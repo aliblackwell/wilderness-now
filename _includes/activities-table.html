@@ -16,11 +16,11 @@
                   <h4 class="card-title">{{maintitle}}</h4>
                   <p class="card-text">{{activity.location}}</p>
                   <p class="cost-estimate">£100 – £300pp</p>
-
                   <a class="typeform-share link btn btn-primary"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}" data-mode="1">Explore</a>
                 </div>
-                <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/{% if activity.image != undefined %}{{activity.image}}{%else%}{{page.image}}{%endif%});" alt="Card image cap">
-                  <div class="wn"></div>
+                {% assign image = activity.image | split: "/" %}
+                <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
+                  <!-- <div class="wn"></div> -->
                 </div>
               </a>
             </div>
@@ -46,7 +46,8 @@
                   <p class="dyk">{{dyk[1]}}</p>
                 </div>
               </div>
-
+            </div><!-- / .card-deck -->
+          </div><!-- / .card-deck-wrapper -->
 
             {% endif %}
 

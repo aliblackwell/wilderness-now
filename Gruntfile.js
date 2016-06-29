@@ -8,11 +8,11 @@ module.exports = function(grunt) {
           widths: [ 1280 ],
           widthAsDir: true
         },
-        files: [{
+        files: [ {
             expand: true,
-            cwd: 'cdn/optimise',
+            cwd: 'raw/act4',
             src: ['**.jpg'],
-            dest: 'cdn/img'
+            dest: 'new_cdn/act4'
           }]
         }
       }

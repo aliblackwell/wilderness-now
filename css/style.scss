@@ -166,7 +166,7 @@ body {
 
   &.selected {
     .card-block {
-      border-top: 10px solid $mapHighlight;
+      border-top: 10px solid $highlight;
     }
   }
 
@@ -219,6 +219,17 @@ body {
   }
 }
 
+.btn.btn-primary {
+  background-color: $highlight;
+  border-color: $highlight;
+  &:hover {
+    background-color: darken($highlight, 5%);
+  }
+}
+
+.users-signup .btn {
+  margin-top: 1rem;
+}
 
 
 a:hover, a:active {
@@ -304,6 +315,19 @@ header.banner { // Logo
     margin: 0rem auto 0rem;
     position: relative;
     top: 14vw;
+  }
+}
+
+.activity-arrow {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  display: block;
+  top: 5vw;
+  .down-arrow {
+    width: 100px;
+
   }
 }
 
@@ -617,11 +641,10 @@ img {
 }
 
 
-footer.full-width-footer {
+footer.site-footer {
+  text-align: center;
+  padding: 1rem;
   .details {
-
-  }
-  .terms {
     text-align: center;
     a {
       color: black;
@@ -634,15 +657,26 @@ footer.full-width-footer {
       }
     }
   }
+  .copyright {
+    text-align: center;
+  }
   .social {
-
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      padding: 0 1rem;
+    }
   }
 }
 
 .activities-wrapper {
   text-align: center;
   h2 {
-    margin: 4rem 0rem 4rem;
+    margin: 3rem 0rem 4rem;
   }
 }
 
