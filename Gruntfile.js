@@ -4,11 +4,15 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     respimg: {
       default: {
+        options: {
+          widths: [ 1280 ],
+          widthAsDir: true
+        },
         files: [{
-          expand: true,
-          cwd: 'cdn/test',
-          src: ['**.jpg'],
-          dest: 'cdn_for_upload/activities/'
+            expand: true,
+            cwd: 'cdn/optimise',
+            src: ['**.jpg'],
+            dest: 'cdn/img'
           }]
         }
       }

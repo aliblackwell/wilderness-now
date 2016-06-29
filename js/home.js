@@ -7,4 +7,6 @@ $(function() {
     $('header.banner').css('background-position', '50% '+ percent +'%');
   });
 
+
+
 });

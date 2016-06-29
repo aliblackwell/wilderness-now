@@ -21,8 +21,18 @@
 
 body {
   font-family: "Work Sans", "Work Sans Local";
+  overflow-y: scroll;
   &.overlay-open {
     overflow: hidden;
+  }
+}
+
+.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image {
+  max-width: 1800px;
+  @media screen and (min-width: 1800px) {
+    margin: 0px auto;
+    border-left: 1rem solid $greyBg;
+    border-right: 1rem solid $greyBg;
   }
 }
 
@@ -135,7 +145,10 @@ body {
   margin-bottom: 0;
 }
 
-
+.card.quote-card {
+  border: none;
+  background: transparent;
+}
 
 .card.activity-card {
   border: none;
@@ -259,7 +272,7 @@ header.banner { // Logo
   background-blend-mode: multiply;
   background-size: cover;
   background-position: 50% 50%;
-  padding: 45vh 0vh;
+  padding: 40vh 0vh;
   margin-top: 40px;
   h1 {
     margin-bottom: 0vh;
@@ -286,12 +299,25 @@ header.banner { // Logo
   }
 }
 
-
-
-.banner.signup {
-  background-image: url('{{site.data.config.cdn}}/img/mailing-list-bg.jpg');
+.hp-arrow {
+  text-decoration: none;
+  color: white;
+  .down-arrow {
+    width: 100px;
+    margin: 0rem auto 0rem;
+    position: relative;
+    top: 14vw;
+  }
 }
 
+
+
+.banner.users-signup {
+  background-image: url('{{site.data.config.cdn}}/img/mailing-list-bg.jpg');
+}
+.banner.guides-signup {
+  background-image: url('{{site.data.config.cdn}}/img/guides-signup-bg.jpg');
+}
 .banner.logo-overlay {
   background-color: $ochre;
   background-blend-mode: multiply;

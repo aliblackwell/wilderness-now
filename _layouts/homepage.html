@@ -11,6 +11,7 @@
         <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg" alt="WN">
         Wilderness Now
       </h1>
+      <a href="#introduction" class="hp-arrow arrow-scroll"><img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow_white.svg" alt="Down"></a>
 
     </header>
 
@@ -19,9 +20,8 @@
 
         <div class="row">
           <div class="col-md-8 col-md-offset-2 col-sm-12">
-            <section class="introduction">
-              <p>Wilderness Now is a link between you and the feeling of being fully alive. Choose your next Great British adventure by clicking on the images below, or via the 'Our Activities' dropdown at the top of our homepage.</p>
-              <img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down">
+            <section class="introduction" id="introduction">
+              <p>Wilderness Now is a link between you and the feeling of being fully alive. Choose your next Great British adventure.</p>
             </section>
           </div>
         </div>
@@ -52,14 +52,15 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 col-sm-12">
+          <div class="col-md-8 col-md-offset-2 col-sm-12">
             <section class="introduction">
-              <p>Wilderness Now is an innovative platform linking you to the UK's best adventures and guides. We’d love the chance to organise your next trip for free (we’re currently testing our site, to make it as good as we can). Click on an adventure, fill our 30 second form, and we’ll sort you out with a belter of an experience.</p>
+              <p>Wilderness Now is an innovative platform linking you to the UK's best adventures and guides. We’d love the chance to organise your next trip. Choose an adventure, fill out our 30 second form, and we'll sort you out with a belter of an experience.</p>
             </section>
           </div>
         </div>
       </div>
     </div>
+    {% include cta-guides.html %}
     {% include footer.html %}
     {% include scripts-home.html %}
     {% include scripts-general.html %}

@@ -23,9 +23,36 @@
                 </div>
               </a>
             </div>
+            {% if forloop.last and loopmod == 1 %}
+                </div><!-- / .card-deck -->
+              </div><!-- / .card-deck-wrapper -->
+              <div class="card-deck-wrapper">
+                <div class="card-deck">
+                  <div class="card quote-card own-line">
+                    <div class="col-md-6 col-md-offset-3">
+                      <p class="dyk">{{dyk[1]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      {% if loopmod == 1 or forloop.last %}
-          </div><!-- / .card -->
+            {% endif %}
+
+
+            {% if forloop.last and loopmod == 0 %}
+              <div class="card quote-card shared-line">
+                <div class="col-md-10 col-md-offset-2">
+                  <p class="dyk">{{dyk[1]}}</p>
+                </div>
+              </div>
+
+
+            {% endif %}
+
+
+      {% if loopmod == 1 %}
+          </div><!-- / .card-deck -->
         </div><!-- / .card-deck-wrapper -->
       {% endif %}
+
     {% endfor %}
