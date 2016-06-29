@@ -13,7 +13,6 @@ $(function() {
       $('header.banner.logo-overlay').css('background-position', '50% '+ percent +'%');
   }
 
-
   var symbols, userPosition, map,
     activitiesList, allLocations;
   var circleRadius = 3;

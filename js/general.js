@@ -16,7 +16,7 @@ $(function() {
     $(window).scrollTo(target, {
       interrupt: true,
       offset: {
-        top: -50
+        top: -57
       },
       duration: 500,
       easing: 'easeInOutCubic'

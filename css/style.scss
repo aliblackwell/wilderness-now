@@ -165,64 +165,61 @@ body {
   }
 
   &.selected {
-    a {
-      .card-block {
-        border-top: 10px solid $mapHighlight;
-      }
-    }
-  }
-  a {
-    .card-img-bottom {
-      position: relative;
-      background-size: cover;
-      min-height: 24vw;
-      @media screen and (max-width: $break-small) {
-        min-height: 58vw;
-      }
-    }
     .card-block {
-      background: white;
-      transition: border-top 0.2s ease-out;
-      border-top: 10px solid $grey;
-      position: relative;
-      .activity-category {
-        font-size: 1em;
-      }
-      .card-title {
-        color: #000;
-        span {
-          color: #ccc;
-        }
-      }
-      .card-text {
-        color: #999;
-      }
-      p.cost-estimate {
-        position: absolute;
-        right: 1.5rem;
-        bottom: 0.5rem;
-      }
-
+      border-top: 10px solid $mapHighlight;
     }
   }
+
+  .card-img-bottom {
+    position: relative;
+    background-size: cover;
+    min-height: 24vw;
+    @media screen and (max-width: $break-small) {
+      min-height: 58vw;
+    }
+  }
+  .card-block {
+    background: white;
+    transition: border-top 0.2s ease-out;
+    border-top: 10px solid $grey;
+    position: relative;
+    .activity-category {
+      font-size: 1em;
+    }
+    .card-title {
+      color: #000;
+      span {
+        color: #ccc;
+      }
+    }
+    .card-text {
+      color: #999;
+    }
+    p.cost-estimate {
+      position: absolute;
+      right: 1.5rem;
+      bottom: 0.5rem;
+    }
+
+  }
+
+  a.btn-primary {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    &:active, &:hover {
+      color: white;
+      background: black;
+      border: 1px solid black;
+    }
+  }
+
   a:hover, a:active {
     text-decoration: none;
-    .card-block {
-      border-top: 10px solid black;
-    }
   }
 }
 
-.btn-primary {
-  background: white;
-  color: black;
-  border: 1px solid black;
-  &:active, &:hover {
-    color: white;
-    background: black;
-    border: 1px solid black;
-  }
-}
+
 
 a:hover, a:active {
   .btn-primary {
