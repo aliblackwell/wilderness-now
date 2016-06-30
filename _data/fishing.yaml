@@ -4,12 +4,15 @@
   slug: fly-fishing-rivers-of-dartmoor
   image: fly-fishing-rivers-of-dartmoor.jpg
   coords: 50.571777, -3.911505
+  cost: From £90pp
+  
 -
   title: Sea Fishing - Whitby
   location: North Yorkshire, England
   slug: sea-fishing-whitby
   image: sea-fishing-whitby.jpg
   coords: 54.489246, -0.613297
+  cost: From £45pp
 
 -
   title: Loch Fishing - South Uist
@@ -17,3 +20,4 @@
   slug: loch-fishing-south-uist
   image: loch-fishing-south-uist.jpg
   coords: 57.285905, -7.332555
+  cost: From £90pp
