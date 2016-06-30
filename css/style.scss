@@ -27,12 +27,10 @@ body {
   }
 }
 
-.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image {
+.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner {
   max-width: 1800px;
   @media screen and (min-width: 1800px) {
     margin: 0px auto;
-    border-left: 1rem solid $greyBg;
-    border-right: 1rem solid $greyBg;
   }
 }
 
@@ -243,6 +241,12 @@ body {
   }
 }
 
+.btn.btn-primary.btn-lg {
+  @media screen and (max-width: $break-small) {
+    font-size: 1rem;
+  }
+}
+
 .users-signup .btn {
   margin-top: 1rem;
 }
@@ -394,17 +398,15 @@ header.banner { // Logo
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: white;
-    font-family: "Oswald";
+    font-family: "Work Sans Bold";
     font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     @media screen and (max-width: $break-small) {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   }
   p {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     @media screen and (max-width: $break-small) {
       font-size: 1rem;
     }
@@ -450,22 +452,19 @@ img {
     height: 10rem;
   }
   &:hover {
-    //background-color: lighten($ochre, 4%) !important;
-    background-blend-mode: multiply;
-    a {
-      background-position: center center;
-      background-size: 85%;
-    }
+    background-color: darken($ochre, 0.5%) !important;
+
+    //background-color: red;
   }
   a {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0px;
-    background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white_trans.svg');
-    background-size: 0%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    // background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white_trans.svg');
+    // background-size: 0%;
+    // background-repeat: no-repeat;
+    // background-position: center center;
     //-webkit-transition:background-size 1s ease-in;
   }
   h4 {
@@ -655,7 +654,7 @@ footer.site-footer {
       text-align: center;
       margin-bottom: 1rem;
     }
-    a {
+    p {
       color: black;
       letter-spacing: 1px;
       font-family: "Work Sans Bold", "Work Sans Local";
@@ -667,24 +666,29 @@ footer.site-footer {
         letter-spacing: 0px;
         font-size: 0.8rem;
       }
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
   .copyright {
     text-align: center;
-    color: black;
-    letter-spacing: 1px;
-    font-family: "Work Sans Bold", "Work Sans Local";
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    margin: 0;
-    @media screen and (max-width: $break-small) {
-      font-family: "Work Sans Local";
-      letter-spacing: 0px;
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
+    p {
+      color: black;
+      letter-spacing: 1px;
+      font-family: "Work Sans Bold", "Work Sans Local";
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin: 0;
+      @media screen and (max-width: $break-small) {
+        font-family: "Work Sans Local";
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
     }
   }
   .social {
