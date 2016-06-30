@@ -1,8 +1,6 @@
 $(function() {
 
-  $(window).scroll(function(e){
-      parallax();
-  });
+
 
   function parallax(){
       var scrolled = $(window).scrollTop();
@@ -237,8 +235,8 @@ $(function() {
     }, animationLength)
   }
 
-  navigator.geolocation.getCurrentPosition(success, error);
-  drawMap('#map0');
+
+
   function success(position) {
     userPosition = map.addSymbols({
       type: kartograph.Bubble,
@@ -304,6 +302,12 @@ $(function() {
     c.height( c.width() / ratio );
     map.resize();
   };
-  $(window).resize(resizeMap);
+
+  if (isMobile.phone != true) {
+    navigator.geolocation.getCurrentPosition(success, error);
+    drawMap('#map0');
+    $(window).resize(resizeMap);
+    $(window).scroll(parallax);
+  }
 
 });

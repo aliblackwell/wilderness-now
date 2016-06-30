@@ -38,29 +38,37 @@ body {
 
 .navbar {
   background: white;
-  text-align: center;
   box-shadow: 0px 0px 5px rgba(0,0,0,.4);
-  p {
-    a {
-      color: black;
-      &:hover {
-        text-decoration: underline;
-        color: black;
-      }
+  .logo {
+    text-align: center;
+    img {
+      width: 52px;
+      margin: 0;
     }
-    font-family: 'Work Sans Bold';
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    position: absolute;
-    letter-spacing: 1px;
-    right: 1.5rem;
+  }
+  .words {
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+  }
+  .contact-us {
+    right: 1rem;
     margin: 0;
     padding: 0;
+    text-align: right;
+    @media screen and (max-width: $break-small) {
+      right: 0;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    &:focus {
+      outline: 0;
+    }
   }
-  // .activities-dropdown-wrap {
-  //   text-align: right;
-  // }
-  .activities-dropdown {
+
+  .activities-dropdown, .contact-us {
     color: black;
     letter-spacing: 1px;
     font-family: "Work Sans Bold", "Work Sans Local";
@@ -70,26 +78,26 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
+    top: 1px;
     @media screen and (max-width: $break-small) {
-      float: right;
-      margin-top: 3px;
+      font-family: "Work Sans Local";
+      letter-spacing: 0;
     }
-    :active, :hover {
-      text-decoration: none;
+    &:active, &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: 0;
     }
   }
-  img {
-    width: 52px;
-    position: absolute;
-    margin: 0;
-    left: 1rem;
-  }
+
 }
 
 .introduction {
   font-size: 1.4rem;
   @media screen and (max-width: $break-small) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   color: $greyText;
   text-align: center;
@@ -116,13 +124,16 @@ body {
   padding: 30vh 0vw;
   margin: 0;
   @media screen and (max-width: $break-small) {
-    padding: 6vh 0vw;
+    padding: 2rem 0;
   }
   h1 {
     color: black;
     font-size: 3vw;
     img {
       margin: 0 auto 2vh auto;
+      @media screen and (max-width: $break-small) {
+        margin: 0 auto 2rem auto;
+      }
     }
   }
   h2 {
@@ -133,15 +144,15 @@ body {
   }
 }
 
-.activity-category-layout-1 header.banner {
-  padding: 20vh 0vh;
-}
-
 .activity-category-layout header.banner {
   padding: 27vh 0vh;
   height: 78vh;
   text-align: left;
   overflow: hidden;
+  @media screen and (max-width: $break-small) {
+    padding: 5rem 0rem;
+    height: 20rem;
+  }
 }
 
 
@@ -180,7 +191,7 @@ body {
     background-size: cover;
     min-height: 24vw;
     @media screen and (max-width: $break-small) {
-      min-height: 58vw;
+      min-height: 12rem;
     }
   }
   .card-block {
@@ -259,24 +270,6 @@ a:hover, a:active {
 
 }
 
-.activity-page {
-  header.banner {
-    padding: 10vh 0vh;
-    text-align: left;
-    h2 {
-      text-transform: uppercase;
-      margin: 0;
-      margin-bottom: -1vh;
-      position: relative;
-      z-index: 10;
-      a {
-        color: white;
-        display: block;
-        cursor: pointer;
-      }
-    }
-  }
-}
 header.banner { // Logo
   position: relative;
   background-color: $ochre;
@@ -287,6 +280,9 @@ header.banner { // Logo
   background-position: 50% 50%;
   padding: 40vh 0vh;
   margin-top: 37px;
+  @media screen and (max-width: $break-small) {
+    padding: 11rem 0rem;
+  }
   h1 {
     margin-bottom: 0vh;
     font-family: "Oswald";
@@ -450,7 +446,9 @@ img {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-
+  @media screen and (max-width: $break-small) {
+    height: 10rem;
+  }
   &:hover {
     //background-color: lighten($ochre, 4%) !important;
     background-blend-mode: multiply;
@@ -567,7 +565,7 @@ img {
   right: 1.5rem;
   z-index: 7;
   @media screen and (max-width: $break-small) {
-    opacity: 0.1;
+    display: none;
   }
   ul {
     list-style: none;
@@ -611,8 +609,7 @@ img {
   min-height: 70vh;
   z-index: 4;
   @media screen and (max-width: $break-small) {
-    right: 5%;
-    opacity: 0.3;
+    display: none;
   }
   div {
     position: absolute;
@@ -653,13 +650,23 @@ footer.site-footer {
   text-align: center;
   padding: 1rem;
   .details {
-    text-align: center;
+    text-align: left;
+    @media screen and (max-width: $break-small) {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
     a {
       color: black;
       letter-spacing: 1px;
       font-family: "Work Sans Bold", "Work Sans Local";
       text-transform: uppercase;
       font-size: 0.9rem;
+      margin: 0;
+      @media screen and (max-width: $break-small) {
+        font-family: "Work Sans Local";
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+      }
       &:hover {
         text-decoration: underline;
       }
@@ -667,16 +674,39 @@ footer.site-footer {
   }
   .copyright {
     text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    font-family: "Work Sans Bold", "Work Sans Local";
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 0;
+    @media screen and (max-width: $break-small) {
+      font-family: "Work Sans Local";
+      letter-spacing: 0px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
   }
   .social {
+    text-align: right;
+    @media screen and (max-width: $break-small) {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
     ul, li {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+    ul {
+      margin-right: 1rem;
+    }
     li {
       display: inline;
-      padding: 0 1rem;
+      padding: 0 0rem 0 2rem;
+      @media screen and (max-width: $break-small) {
+        padding: 0rem 1rem;
+      }
     }
   }
 }
