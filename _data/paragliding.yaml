@@ -4,15 +4,20 @@
   slug: paraglide-surrey-hills
   image: paraglide-surrey-hills.jpg
   coords: 51.336693, -0.029760
+  cost: From £90pp
+  
 -
   title: Paramotoring - South Downs
   location: Sussex, England
   slug: paramotoring-south-downs
   image: paramotoring-south-downs.jpg
   coords: 50.860976, 0.069891
+  cost: From £100pp
+  
 -
   title: Paraglide - Mountains and Lochs
   location: Isle of Arran, Scotland
   slug: paraglide-mountains-and-lochs
   image: paraglide-mountains-and-lochs.jpg
   coords: 55.599736, -5.209730
+  cost: From £140pp
