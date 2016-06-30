@@ -4,6 +4,7 @@
   slug: dive-trearddur-bay
   image: dive-trearddur-bay.jpg
   coords: 53.283722, -4.617327
+  cost: From £35pp
 
 -
   title: Dive - Wrecks and reefs
@@ -11,6 +12,7 @@
   slug: dive-wrecks-and-reefs
   image: dive-wrecks-and-reefs.jpg
   coords: 50.376024, -4.138664
+  cost: From £60pp
 
 -
   title: Dive - Open Water
@@ -18,4 +20,5 @@
   slug: dive-open-water
   image: dive-open-water.jpg
   coords: 50.050419, -5.087921
+  cost: From £60pp
 
