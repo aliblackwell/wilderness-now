@@ -10,9 +10,9 @@ module.exports = function(grunt) {
         },
         files: [ {
             expand: true,
-            cwd: 'raw/act4',
+            cwd: 'cdn/optimise',
             src: ['**.jpg'],
-            dest: 'new_cdn/act4'
+            dest: 'cdn/img'
           }]
         }
       }

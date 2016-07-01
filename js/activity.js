@@ -12,7 +12,8 @@ $(function() {
   }
 
   var symbols, userPosition, map,
-    activitiesList, allLocations;
+    activitiesList, allLocations,
+    labels;
   var circleRadius = 3;
   var highlightColor = '#EC971F';
 
@@ -82,7 +83,7 @@ $(function() {
           activitiesList[locations[i].slug] = createActivity(locations[i], style, radius);
         }
 
-        map.addSymbols({
+        labels = map.addSymbols({
           type: kartograph.Label,
           data: allLocationsLabels,
           class: function(d) { return 'text-label '+ d[1].slug },
@@ -303,10 +304,14 @@ $(function() {
     map.resize();
   };
 
-  if (isMobile.phone != true) {
+  if ($(window).width() >= 768) {
     navigator.geolocation.getCurrentPosition(success, error);
     drawMap('#map0');
     $(window).resize(resizeMap);
+
+  }
+
+  if ($(window).width() > 1024) {
     $(window).scroll(parallax);
   }
 

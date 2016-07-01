@@ -16,7 +16,7 @@
                   <h4 class="card-title">{{maintitle}}</h4>
                   <p class="card-text">{{activity.location}}</p>
                   <p class="cost-estimate">£100 – £300pp</p>
-                  <a class="typeform-share link btn btn-primary"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}" data-mode="1">Explore</a>
+                  <a class="typeform-share link btn btn-primary"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}?form=enquiry-{{activity.slug}}" data-mode="1">Explore</a>
                 </div>
                 {% assign image = activity.image | split: "/" %}
                 <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
@@ -30,8 +30,8 @@
               <div class="card-deck-wrapper">
                 <div class="card-deck">
                   <div class="card quote-card own-line">
-                    <div class="col-md-6 col-md-offset-3">
-                      <p class="dyk">{{dyk[1]}}</p>
+                    <div class="col-lg-6 col-lg-offset-3">
+                      <p class="dyk dyk2">{{dyk[1]}}</p>
                     </div>
                   </div>
                 </div>
@@ -42,8 +42,8 @@
 
             {% if forloop.last and loopmod == 0 %}
               <div class="card quote-card shared-line">
-                <div class="col-md-10 col-md-offset-2">
-                  <p class="dyk">{{dyk[1]}}</p>
+                <div class="col-lg-10 col-lg-offset-2">
+                  <p class="dyk dyk2">{{dyk[1]}}</p>
                 </div>
               </div>
             </div><!-- / .card-deck -->
