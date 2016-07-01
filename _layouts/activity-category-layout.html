@@ -8,45 +8,20 @@
 
     {% include navigation.html %}
 
-
-    <script>
-      var locations = [
-
-      {% for activity in site.data[page.slug] %}
-
-      {% assign coords = activity.coords | split: ', ' %}
-      {% assign latitude = coords[0] %}
-      {% assign longitude = coords[1] %}
-        {% if latitude %}
-          {
-            'name': '{{activity.title}}',
-            'lat': {{latitude}},
-            'long': {{longitude}},
-            'slug': '{{activity.slug}}',
-            'nb_visits':87
-          }{% if forloop.last != true %},{% endif %}
-        {% endif %}
-      {% endfor %}
-      ]
-    </script>
-
     <header class="full-width-image banner logo-overlay" style="background-image: url({{site.data.config.cdn}}/activity-images/{{page.image}})">
       <div class="wn"></div>
       <div class="map-activities">
-        <ul>
-        {% for activity in site.data[page.slug] %}
-          {% assign title = activity.title | split: "-" %}
-          <li class="{{activity.slug}}"><a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}" class="activity-link-jump">{{title[1]}} \\ {{title[0]}}</a></li>
-        {% endfor %}
+        <ul>{% for activity in site.data[page.slug] %} {% assign title = activity.title | split: "-" %}
+          <li class="{{activity.slug}}">
+            <a href="#{{activity.slug}}" title="Wilderness Now: {{activity.title}}" data-slug="{{activity.slug}}" class="activity-link-jump">
+              {{title[1]}} \\ {{title[0]}}
+            </a>
+          </li>{% endfor %}
         </ul>
       </div>
-
       <div class="banner-map uk-map">
         <div id="map0"></div>
       </div>
-
-
-
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -57,7 +32,8 @@
           </div>
           <div class="col-lg-6 col-lg-offset-2 col-md-8">
             <blockquote class="blockquote">
-              <p class="m-b-0">{{page.quote}}</p><br>
+              <p class="m-b-0">{{page.quote}}</p>
+              <br>
               <cite>{{page.quoth}}</cite>
             </blockquote>
           </div>
@@ -71,39 +47,34 @@
           <div class="col-md-10 col-md-offset-1 col-sm-12">
             <section class="introduction">
               <p>{{page.includes}}</p>
-              <a class="arrow-scroll" href="#{{page.slug}}-activities"><img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down"></a>
+              <a class="arrow-scroll" href="#{{page.slug}}-activities">
+                <img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow.svg" alt="Down">
+              </a>
             </section>
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- / .full-width-white -->
 
     <div class="full-width-grey" id="{{page.slug}}-activities">
       <div class="container-fluid">
-
         <div class="row">
           <div class="col-lg-11 col-lg-offset-1 col-md-9">
           {% include breadcrumbs.html %}
           </div>
         </div>
-
         {% assign dyk = page.dyk | split: "|" %}
         <div class="row activities-wrapper">
-          <div class="col-xs-12">
-            {% if page.title != 'Family Adventure' %}
-            <h2>Choose your {{page.title | downcase}} adventure:</h2>
-            {% else %}
-            <h2>Choose your family adventure</h2>
-            {% endif %}
+          <div class="col-xs-12">{% if page.title != 'Family Adventure' %}
+            <h2>Choose your {{page.title | downcase}} adventure:</h2>{% else %}
+            <h2>Choose your family adventure</h2>{% endif %}
           </div>
         </div>
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1 col-md-12 col-md-offset-0">
             <p class="dyk dyk1">{{dyk[0]}}</p>
           </div>
-
           <div class="col-lg-8 col-md-12">
-
             {% include activities-table.html %}
           </div>
         </div>

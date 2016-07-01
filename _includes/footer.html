@@ -1,86 +1,106 @@
     {% include capture-email.html %}
     <footer class="site-footer">
-        <!-- Contact Us -->
-        <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contactUs" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="contactUs">Contact Us</h4>
-              </div>
-              <div class="modal-body">
-                <p>We'd love to hear from you. Please email us with any questions and we'll get back pronto.</p>
-                <a href="mailto:info@wilderness-now.com" title="Email us">info@wilderness-now.com</a>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+
+      <!-- Contact Us -->
+      <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contactUs" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="contactUs">Contact Us</h4>
+            </div>
+            <div class="modal-body">
+              <p>We'd love to hear from you. Please email us with any questions and we'll get back pronto.</p>
+              <a href="mailto:info@wilderness-now.com" title="Email us">info@wilderness-now.com</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div><!-- / #contact-us -->
 
-        <!-- Terms and Conditions -->
-        <div class="modal fade" id="terms-and-conditions" tabindex="-1" role="dialog" aria-labelledby="termsAndConditions" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="termsAndConditions">Terms and Conditions</h4>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <!-- Terms and Conditions -->
+      <div class="modal fade" id="terms-and-conditions" tabindex="-1" role="dialog" aria-labelledby="termsAndConditions" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="termsAndConditions">Terms and Conditions</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div><!-- / #terms-and-conditions -->
 
-        <!-- Privacy Policy -->
-        <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="privacyPolicy" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="privacyPolicy">Privacy Policy</h4>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <!-- Privacy Policy -->
+      <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="privacyPolicy" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="privacyPolicy">Privacy Policy</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div><!-- / #privacy-policy -->
 
-
-        <div class="row">
-          <div class="col-lg-4 details">
-            <p>
-              <a href="#privacy-policy" title="Wilderness Now Privacy Policy" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
-              \\
-              <a href="#terms-and-conditions" title="Wilderness Now Terms and Conditions"  data-toggle="modal" data-target="#terms-and-conditions">Terms &amp; Conditions</a>
-            </p>
-          </div>
-          <div class="col-lg-4 copyright">
-            <p>2016 &copy; Wilderness Now Ltd.</p>
-          </div>
-          <div class="col-lg-4 social">
-              <ul>
-                <li class="mailing-list"><a href="#get-notified" title="Get notified" class="trigger-email-capture">Mailing List</a></li>
-                <li class="facebook"><a href="https://www.facebook.com/wildernessnow/" target="new" title="Wilderness Now Facebook"><img src="{{site.data.config.cdn}}/img/iconmonstr-facebook-3.svg"></a></li>
-                <li class="instagram"><a href="https://www.instagram.com/wilderness_now_uk/" target="new" title="Wilderness Now Instagram"><img src="{{site.data.config.cdn}}/img/iconmonstr-instagram-3.svg"></a></li>
-                <li class="twitter"><a href="https://twitter.com/Wilderness_Now" target="new" title="Wilderness Now Twitter"><img src="{{site.data.config.cdn}}/img/iconmonstr-twitter-3.svg"></a></li>
-              </ul>
-          </div>
+      <div class="row">
+        <div class="col-lg-4 details">
+          <p>
+            <a href="#privacy-policy" title="Wilderness Now Privacy Policy" data-toggle="modal" data-target="#privacy-policy">
+              Privacy Policy
+            </a>
+            \\
+            <a href="#terms-and-conditions" title="Wilderness Now Terms and Conditions"  data-toggle="modal" data-target="#terms-and-conditions">
+              Terms &amp; Conditions
+            </a>
+          </p>
+        </div><!-- / .details -->
+        <div class="col-lg-4 copyright">
+          <p>2016 &copy; Wilderness Now Ltd.</p>
         </div>
+        <div class="col-lg-4 social">
+          <ul>
+            <li class="mailing-list">
+              <a href="#get-notified" title="Get notified" class="trigger-email-capture">
+                Mailing List
+              </a>
+            </li>
+            <li class="facebook">
+              <a href="https://www.facebook.com/wildernessnow/" target="new" title="Wilderness Now Facebook">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-facebook-3.svg">
+              </a>
+            </li>
+            <li class="instagram">
+              <a href="https://www.instagram.com/wilderness_now_uk/" target="new" title="Wilderness Now Instagram">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-instagram-3.svg">
+              </a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/Wilderness_Now" target="new" title="Wilderness Now Twitter">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-twitter-3.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </footer>

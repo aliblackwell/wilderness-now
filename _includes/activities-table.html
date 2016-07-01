@@ -1,64 +1,39 @@
-    {% for activity in site.data[page.slug] %}
-      {% assign loopmod = forloop.index0 | modulo: 2 %}
-      {% if loopmod == 0 %}
+    {% for activity in site.data[page.slug] %} {% assign loopmod = forloop.index0 | modulo: 2 %} {% if loopmod == 0 %}
         <div class="card-deck-wrapper ">
-          <div class="card-deck cd-{{forloop.index}}">
-      {% endif %}
-
-          {% assign title = activity.title | split: "-" %}
-          {% assign subtitle = title[0] %}
-          {% assign maintitle = title[1] %}
-
+          <div class="card-deck cd-{{forloop.index}}"> {% endif %}
             <div class="card activity-card" id="{{activity.slug}}">
-
-                <div class="card-block">
-                  <h4 class="activity-category">{{subtitle}}</h4>
-                  <h4 class="card-title">{{maintitle}}</h4>
-                  <p class="card-text">{{activity.location}}</p>
-                  <p class="cost-estimate">£100 – £300pp</p>
-                  <a class="typeform-share link btn btn-primary"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}?form=enquiry-{{activity.slug}}" data-mode="1">Explore</a>
-                </div>
-                {% assign image = activity.image | split: "/" %}
-                <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
-                  <div class="wn-small"></div>
-                </div>
-              </a>
-            </div>
-            {% if forloop.last and loopmod == 1 %}
-                </div><!-- / .card-deck -->
-              </div><!-- / .card-deck-wrapper -->
-              <div class="card-deck-wrapper">
-                <div class="card-deck">
-                  <div class="card quote-card own-line">
-                    <div class="row">
-                      <div class="col-lg-6 col-lg-offset-3">
-                        <p class="dyk dyk2">{{dyk[1]}}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-block">{% assign title = activity.title | split: "-" %} {% assign subtitle = title[0] %} {% assign maintitle = title[1] %}
+                <h4 class="activity-category">{{subtitle}}</h4>
+                <h4 class="card-title">{{maintitle}}</h4>
+                <p class="card-text">{{activity.location}}</p>
+                <p class="cost-estimate">£100 – £300pp</p>
+                <a class="typeform-share link btn btn-primary"  href="https://mcb2.typeform.com/to/fR5QxL?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}?form=enquiry-{{activity.slug}}" data-mode="1">Explore</a>
+              </div>{% assign image = activity.image | split: "/" %}
+              <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
+                <div class="wn-small"></div>
               </div>
-
-            {% endif %}
-
-
-            {% if forloop.last and loopmod == 0 %}
-              <div class="card quote-card shared-line">
-                <div class="row">
-                  <div class="col-lg-10 col-lg-offset-2">
-                    <p class="dyk dyk2">{{dyk[1]}}</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- / .card-deck -->
-          </div><!-- / .card-deck-wrapper -->
-
-            {% endif %}
-
-
-      {% if loopmod == 1 %}
+            </div>{% if forloop.last and loopmod == 1 %}
           </div><!-- / .card-deck -->
         </div><!-- / .card-deck-wrapper -->
-      {% endif %}
-
-    {% endfor %}
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card quote-card own-line">
+              <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                  <p class="dyk dyk2">{{dyk[1]}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>{% endif %} {% if forloop.last and loopmod == 0 %}
+        <div class="card quote-card shared-line">
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-2">
+              <p class="dyk dyk2">{{dyk[1]}}</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- / .card-deck 1 -->
+    </div><!-- / .card-deck-wrapper 1 --> {% endif %} {% if loopmod == 1 %}
+          </div><!-- / .card-deck 2 -->
+        </div><!-- / .card-deck-wrapper 2 -->{% endif %} {% endfor %}

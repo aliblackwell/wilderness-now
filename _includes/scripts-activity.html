@@ -1,3 +1,14 @@
+
+    <script>
+      var locations = [ {% for activity in site.data[page.slug] %} {% assign coords = activity.coords | split: ', ' %} {% assign latitude = coords[0] %} {% assign longitude = coords[1] %} {% if latitude %}
+          {
+            'name': '{{activity.title}}',
+            'lat': {{latitude}},
+            'long': {{longitude}},
+            'slug': '{{activity.slug}}'
+          }{% if forloop.last != true %},{% endif %} {% endif %} {% endfor %}
+      ]
+    </script>
     <script src="{{site.data.config.site_url}}/js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="{{site.data.config.site_url}}/js/raphael-min.js"></script>
     <script type="text/javascript" src="{{site.data.config.site_url}}/js/kartograph.min.js"></script>

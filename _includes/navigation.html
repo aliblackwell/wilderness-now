@@ -1,42 +1,34 @@
-<div class="navbar navbar-light navbar-fixed-top">
-        <div class="row">
-          <div class="col-xs-4  activities-dropdown-wrap">
 
-
-            <a class="activities-dropdown" href="#activities" id="trigger-overlay">
-              <span class="words">
+    <div class="navbar navbar-light navbar-fixed-top">
+      <div class="row">
+        <div class="col-xs-4  activities-dropdown-wrap">
+          <a class="activities-dropdown" href="#activities" id="trigger-overlay">
+            <span class="words">
               <div id="nav-icon3">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-              Our</span> Activities
-            </a>
-          </div>
-          <div class="col-xs-4 logo">
-
-          <a href="{{ site.data.config.site_url }}"><img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_black.svg" alt="Wilderness Now"></a>
-
-          </div>
-          <div class="col-xs-4">
-
-            <a class="contact-us" href="#contact-us" data-toggle="modal" data-target="#contact-us">Contact <span class="words">Us</span></a>
-
-          </div>
+              Our
+            </span>
+            Activities
+          </a>
         </div>
-    </div>
+        <div class="col-xs-4 logo">
+          <a href="{{ site.data.config.site_url }}"><img src="{{ site.data.config.cdn }}/img/wilderness_now_logo_01_black.svg" alt="Wilderness Now"></a>
+        </div><!-- / .logo -->
+        <div class="col-xs-4">
+          <a class="contact-us" href="#contact-us" data-toggle="modal" data-target="#contact-us">Contact <span class="words">Us</span></a>
+        </div>
+      </div>
+    </div><!-- / .navbar -->
     <div id="activities" class="overlay overlay-slidedown">
-      <nav class="row">
-      {% for activity in site.data.parent-activities %}
-        {% assign loopmod = forloop.index0 | modulo: 7 %}
-        {% if loopmod == 0 %}
-        <ul class="col-md-4 col-xs-12">
-        {% endif %}
-          <li><a href="{{ site.data.config.site_url }}/{{ activity.slug }}">{{ activity.title }}</a></li>
-        {% if loopmod == 6 %}
-        </ul>
-        {% endif %}
-      {% endfor %}
+      <nav class="row">{% for activity in site.data.parent-activities %}{% assign loopmod = forloop.index0 | modulo: 7 %}{% if loopmod == 0 %}
+        <ul class="col-md-4 col-xs-12">{% endif %}
+          <li>
+            <a href="{{ site.data.config.site_url }}/{{ activity.slug }}" title="Wilderness Now: {{activity.title}}">{{ activity.title }}</a>
+          </li>{% if loopmod == 6 %}
+        </ul>{% endif %}{% endfor %}
       </nav>
-    </div>
+    </div><!-- / #activities -->
