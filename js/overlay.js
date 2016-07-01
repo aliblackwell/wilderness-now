@@ -1,5 +1,6 @@
 (function() {
   var triggerBttn = document.getElementById( 'trigger-overlay' ),
+    breadcrumbBttn = document.getElementById( 'breadcrumb-activities'),
     overlay = document.querySelector( 'div.overlay' ),
     body = document.querySelector('body'),
     closeBttn = overlay.querySelector( 'button.overlay-close' );
@@ -46,7 +47,9 @@
       classie.add( overlay, 'open' );
     }
   }
-
+  if (breadcrumbBttn != null) {
+    breadcrumbBttn.addEventListener( 'click', toggleOverlay );
+  }
   triggerBttn.addEventListener( 'click', toggleOverlay );
-  closeBttn.addEventListener( 'click', toggleOverlay );
+  //closeBttn.addEventListener( 'click', toggleOverlay );
 })();

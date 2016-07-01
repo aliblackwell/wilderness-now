@@ -19,8 +19,12 @@
 @import 'bootstrap';
 @import 'variables';
 
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
 body {
-  font-family: "Work Sans Local", Helvetica, sans-serif;
+  font-family: "Work Sans Local", "Helvetica", sans-serif;
   overflow-y: scroll;
   &.overlay-open {
     overflow: hidden;
@@ -73,7 +77,7 @@ body {
   .activities-dropdown, .contact-us {
     color: black;
     letter-spacing: 1px;
-    font-family: "Work Sans Bold", "Work Sans Local";
+    font-family: "Work Sans Bold", "Work Sans Local", "Helvetica";
     text-transform: uppercase;
     font-size: 0.9rem;
     text-decoration: none;
@@ -83,7 +87,7 @@ body {
     position: relative;
     top: 1px;
     @media screen and (max-width: $break-small) {
-      font-family: "Work Sans Local";
+      font-family: "Work Sans Local", "Helvetica", sans-serif;
       letter-spacing: 0;
     }
     &:active, &:hover {
@@ -214,6 +218,7 @@ body {
     position: relative;
     .activity-category {
       font-size: 1em;
+      color: $dyk;
     }
     .card-title {
       color: #000;
@@ -397,6 +402,20 @@ header.banner { // Logo
   z-index: 2;
 }
 
+.wn-small {
+  position: absolute;
+  background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg');
+  background-size: 7vw;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  width: 96%;
+  height: 96%;
+}
+
+.wn-small:nth-child(2) {
+  background-image: url('{{site.data.config.cdn}}/img/wilderness_now_logo_01_black.svg');
+}
+
 .full-width-image {
   position: relative;
   .container {
@@ -551,6 +570,7 @@ img {
     padding: 0 0.5rem;
     background: rgba(0,0,0,1);
     color: white;
+    font-style: normal;
     font-size: 1.3rem;
     @media screen and (max-width: $break-small) {
       font-size: 1rem;
@@ -669,9 +689,7 @@ img {
       display: none;
       position: relative;
       tspan {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+
       }
     }
   }
@@ -679,6 +697,19 @@ img {
 
 #typeform-overlay {
   opacity: 0.3 !important;
+}
+
+.breadcrumbs {
+  p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Work Sans Bold";
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    a {
+      color: $dyk;
+    }
+  }
 }
 
 .capture-email {
@@ -706,11 +737,13 @@ img {
 
     margin-bottom: 0;
     width: 100%;
+    height: 200px;
     p, button {
       font-size: 1.2rem;
     }
   }
   @media screen and (max-width: $break-small) {
+    height: 160px;
     padding: 0.8rem;
     p, button {
       font-size: 0.8rem;
@@ -753,7 +786,7 @@ footer.site-footer {
     p {
       color: black;
       letter-spacing: 1px;
-      font-family: "Work Sans Bold", "Work Sans Local";
+      font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
       text-transform: uppercase;
       font-size: 0.9rem;
       margin: 0;
@@ -764,7 +797,7 @@ footer.site-footer {
         font-size: 0.9rem;
       }
       @media screen and (max-width: $break-small) {
-        font-family: "Work Sans Local";
+        font-family: "Work Sans Local", "Helvetica", sans-serif;
         letter-spacing: 0px;
         font-size: 0.8rem;
       }
@@ -781,7 +814,7 @@ footer.site-footer {
     p {
       color: black;
       letter-spacing: 1px;
-      font-family: "Work Sans Bold", "Work Sans Local";
+      font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
       text-transform: uppercase;
       font-size: 0.9rem;
       margin: 0;
@@ -793,7 +826,7 @@ footer.site-footer {
         font-size: 0.9rem;
       }
       @media screen and (max-width: $break-small) {
-        font-family: "Work Sans Local";
+        font-family: "Work Sans Local", "Helvetica", sans-serif;
         letter-spacing: 0px;
         font-size: 0.8rem;
       }
@@ -813,10 +846,40 @@ footer.site-footer {
     }
     ul {
       margin-right: 1rem;
+      position: relative;
+      top: -3px;
+      @include media-breakpoint-down(md) {
+        top: 0;
+      }
     }
     li {
       display: inline;
       padding: 0 0rem 0 2rem;
+      letter-spacing: 1px;
+      font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin: 0;
+      &.mailing-list {
+        position: relative;
+        padding-left: 0;
+      }
+      @media screen and (max-width: $break-landscape-tablet) {
+        font-size: 0.8rem;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: $break-small) {
+        font-family: "Work Sans Local", "Helvetica", sans-serif;
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+      }
+      a {
+        color: $dyk;
+      }
+
       @media screen and (max-width: $break-small) {
         padding: 0rem 1rem;
       }
@@ -828,11 +891,12 @@ footer.site-footer {
   text-align: center;
   h2 {
     margin: 3rem 0rem 4rem;
-
+    font-size: 3vw;
+    font-family: "Work Sans Bold", "Helvetica", sans-serif;
 
 
     @include media-breakpoint-down(md) {
-      margin: 1rem 0rem 2rem;
+      margin: 2rem 0rem 2rem;
     }
 
     @media screen and (max-width: $break-small) {
@@ -848,7 +912,7 @@ footer.site-footer {
   @media screen and (max-width: $break-landscape-tablet) {
     font-size: 1.2rem;
     &.dyk1 {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
     &.dyk2 {
       margin-bottom: 0;
@@ -859,7 +923,7 @@ footer.site-footer {
     font-size: 1.7rem;
   }
   @media screen and (max-width: $break-small) {
-    font-family: "Work Sans Local";
+    font-family: "Work Sans Local", "Helvetica", sans-serif;
     letter-spacing: 0px;
     font-size: 1rem;
   }

@@ -20,7 +20,7 @@
                 </div>
                 {% assign image = activity.image | split: "/" %}
                 <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
-                  <!-- <div class="wn"></div> -->
+                  <div class="wn-small"></div>
                 </div>
               </a>
             </div>
@@ -30,8 +30,10 @@
               <div class="card-deck-wrapper">
                 <div class="card-deck">
                   <div class="card quote-card own-line">
-                    <div class="col-lg-6 col-lg-offset-3">
-                      <p class="dyk dyk2">{{dyk[1]}}</p>
+                    <div class="row">
+                      <div class="col-lg-6 col-lg-offset-3">
+                        <p class="dyk dyk2">{{dyk[1]}}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -42,8 +44,10 @@
 
             {% if forloop.last and loopmod == 0 %}
               <div class="card quote-card shared-line">
-                <div class="col-lg-10 col-lg-offset-2">
-                  <p class="dyk dyk2">{{dyk[1]}}</p>
+                <div class="row">
+                  <div class="col-lg-10 col-lg-offset-2">
+                    <p class="dyk dyk2">{{dyk[1]}}</p>
+                  </div>
                 </div>
               </div>
             </div><!-- / .card-deck -->

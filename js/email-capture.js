@@ -51,7 +51,11 @@ var openSecondSection = function() {
 var closeEmailCapture = function() {
   $('.capture-email').animate({
     'bottom': '-200px'
-  }, 'fast', 'easeInOutCubic');
+  }, 'fast', 'easeInOutCubic', function() {
+    $('.ask-consent').show();
+    $('.ask-email').hide();
+  });
+
 }
 
 var setSeenAsk = function() {
@@ -89,7 +93,13 @@ $(function() {
 
   $('.submit-email').on('click', processSubmittedEmail);
 
-  if (askedForEmail != 'true') {
+  $('.trigger-email-capture').on('click', function(event) {
+    openEmailCapture();
+    event.preventDefault();
+    return false;
+  });
+
+  if (askedForEmail != 'true' && $('.featured-activity').length === 0) {
     setTimeout(function(){
       openEmailCapture(timeToAsk);
     }, timeToAsk);
@@ -97,7 +107,7 @@ $(function() {
 
   $('body').on('keypress', function(keypress){
     console.log(keypress)
-    if (keypress.keyCode === 33) { // Shift-1
+    if (keypress.keyCode === 33 || keypress.charCode === 33) { // Shift-1
       localStorage.setItem('askedForEmail', false);
       localStorage.setItem('seenAskForEmail', false);
     }

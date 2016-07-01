@@ -27,7 +27,6 @@
         </div>
     </div>
     <div id="activities" class="overlay overlay-slidedown">
-      <button type="button" class="overlay-close">Close</button>
       <nav class="row">
       {% for activity in site.data.parent-activities %}
         {% assign loopmod = forloop.index0 | modulo: 7 %}
