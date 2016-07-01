@@ -1,9 +1,8 @@
 (function() {
-  var triggerBttn = document.getElementById( 'trigger-overlay' ),
-    breadcrumbBttn = document.getElementById( 'breadcrumb-activities'),
-    overlay = document.querySelector( 'div.overlay-navigation' ),
+  var triggerBttn = document.getElementById( 'trigger-contact-overlay' ),
+    overlay = document.querySelector( 'div.overlay-contact' ),
     body = document.querySelector('body'),
-    //closeBttn = overlay.querySelector( 'button.overlay-close' );
+    closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
       'MozTransition': 'transitionend',
@@ -15,14 +14,14 @@
     support = { transitions : Modernizr.csstransitions };
 
   function toggleOverlay() {
-    if (classie.has( body, 'overlay-closed')) {
-      classie.remove( body, 'overlay-closed');
-      classie.add (body, 'overlay-open');
+    if (classie.has( body, 'contact-overlay-closed')) {
+      classie.remove( body, 'contact-overlay-closed');
+      classie.add (body, 'contact-overlay-open');
       classie.add( triggerBttn, 'open');
       classie.remove( triggerBttn, 'closed');
     } else {
-      classie.add( body, 'overlay-closed');
-      classie.remove ( body, 'overlay-open');
+      classie.add( body, 'contact-overlay-closed');
+      classie.remove ( body, 'contact-overlay-open');
       classie.add( triggerBttn, 'closed');
       classie.remove( triggerBttn, 'open');
     }
@@ -47,9 +46,7 @@
       classie.add( overlay, 'open' );
     }
   }
-  if (breadcrumbBttn != null) {
-    breadcrumbBttn.addEventListener( 'click', toggleOverlay );
-  }
+
   triggerBttn.addEventListener( 'click', toggleOverlay );
   //closeBttn.addEventListener( 'click', toggleOverlay );
 })();

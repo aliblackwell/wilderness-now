@@ -26,7 +26,7 @@ html {
 body {
   font-family: "Work Sans Local", "Helvetica", sans-serif;
   overflow-y: scroll;
-  &.overlay-open {
+  &.overlay-open, &.contact-overlay-open {
     overflow: hidden;
   }
 }
@@ -57,7 +57,7 @@ body {
       display: none;
     }
   }
-  .contact-us {
+  #trigger-contact-overlay {
     right: 1rem;
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@ body {
     }
   }
 
-  .activities-dropdown, .contact-us {
+  .activities-dropdown, #trigger-contact-overlay {
     color: black;
     letter-spacing: 1px;
     font-family: "Work Sans Bold", "Work Sans Local", "Helvetica";
@@ -956,4 +956,18 @@ footer.site-footer {
 
 .overflow-fix {
   overflow-x: hidden;
+}
+
+#contact-us {
+  padding-top: 5rem;
+  .profile {
+    text-align: center;
+    img {
+      border: 1px solid $dyk;
+      margin-bottom: 1rem;
+    }
+    h3 {
+
+    }
+  }
 }
