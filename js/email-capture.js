@@ -106,7 +106,6 @@ $(function() {
   }
 
   $('body').on('keypress', function(keypress){
-    console.log(keypress)
     if (keypress.keyCode === 33 || keypress.charCode === 33) { // Shift-1
       localStorage.setItem('askedForEmail', false);
       localStorage.setItem('seenAskForEmail', false);

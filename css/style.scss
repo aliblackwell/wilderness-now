@@ -772,6 +772,12 @@ img {
   .no-thanks {
     opacity: 0.4;
   }
+  form {
+    display: inline;
+    #mc_embed_signup_scroll {
+      display: inline;
+    }
+  }
 }
 
 footer.site-footer {
