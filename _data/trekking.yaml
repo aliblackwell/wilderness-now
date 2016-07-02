@@ -4,6 +4,7 @@
   location: West Highlands, Scotland
   image: trek-west-highland-way.jpg
   coords: 55.873490, -4.249632, 56.821112, -5.105037
+  cost: From £550pp
 
 -
   slug: trek-coast-to-coast
@@ -11,6 +12,7 @@
   location: Northern England
   image: trek-coast-to-coast.jpg
   coords: 54.491787, -3.589699, 54.434690, -0.535064
+  cost: From £700pp
 
 -
   slug: trek-the-lost-valley
@@ -18,6 +20,7 @@
   location: West Highlands, Scotland
   image: trek-the-lost-valley.jpg
   coords: 56.651580, -4.840870
+  cost: From £40pp
 
 -
   slug: trek-mount-snowdon
@@ -25,6 +28,7 @@
   location: Snowdonia, Wales
   image: trek-mount-snowdon.jpg
   coords: 53.106795, -3.912274
+  cost: From £35pp
 
 -
   slug: Trek - Southern Fells
@@ -32,6 +36,7 @@
   location: Lake District, England
   image: trek-southern-fells.jpg
   coords: 54.545182, -2.949720
+  cost: From £35pp
 
 -
   slug: trek-kinder-scout
@@ -39,3 +44,4 @@
   location: Peak District, England
   image: trek-kinder-scout.jpg
   coords: 53.387730, -1.873234
+  cost: From £35pp

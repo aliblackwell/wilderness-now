@@ -4,15 +4,20 @@
   slug: caving-titan-cave
   image: caving-titan-cave.jpg
   coords: 53.257357, -1.714261
+  cost: From £45pp
+
 -
   title: Caving - Clydach Gorge
   location: Brecon Beacons, Wales
   slug: caving-clydach-gorge
   image: caving-clydach-gorge.jpg
   coords: 51.985428, -3.155008
+  cost: From £45pp
+  
 -
   title: Caving - Coniston Mines
   location: Lake Distict, England
   slug: caving-coniston-mines
   image: caving-coniston-mines.jpg
   coords: 54.599117, -3.134230
+  cost: From £45pp

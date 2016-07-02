@@ -4,54 +4,71 @@
   location: West Highlands, Scotland
   image: scramble-ben-nevis-north-face.jpg
   coords: 56.821719, -5.105474
+  cost: From £45pp
+  
 -
   slug: scramble-stob-dearg
   title: Scramble - Stob Dearg
   location: West Highlands, Scotland
   image: scramble-stob-dearg.jpg
   coords: 56.651580, -4.840870
+  cost: From £45pp
+  
 -
   slug: scramble-black-cuillin
   title: Scramble - Black Cuillin
   location: Isle of Skye, Scotland
   image: scramble-black-cuillin.jpg
   coords: 57.065539, -5.901292
+  cost: From £160pp
+  
 -
   slug: scramble-beinn-alligin
   title: Scramble - Beinn Alligin
   location: North-West Highlands, Scotland
   image: scramble-beinn-alligin.jpg
   coords: 57.547562, -5.513143
+  cost: From £45pp
+  
 -
   slug: scramble-striding-edge
   title: Scramble - Striding Edge
   location: Lake District, England
   image: scramble-striding-edge.jpg
   coords: 54.545182, -2.949720
+  cost: From £35pp
+  
 -
   slug: winter-ascents-snowdon-and-tryfan
   title: Winter Ascents - Snowdon and Tryfan
   location: Snowdonia, Wales
   image: winter-ascents-snowdon-and-tryfan.jpg
   coords: 53.106795, -3.912274
+  cost: From £50pp
+  
 -
   slug: winter-ascent-ben-nevis
   title: Winter Ascent - Ben Nevis
   location: West Highlands, Scotland
   image: winter-ascent-ben-nevis.jpg
   coords: 56.821394, -5.105388
+  cost: From £70pp
+  
 -
   slug: winter-climb-northen-corries
   title: Winter Climb - Northen Corries
   location: Cairngorms, Scotland
   image: winter-climb-northen-corries.jpg
   coords: 57.195555, -3.823784
+  cost: From £90pp
+  
 -
   slug: winter-ridges-the-buachaille
   title: Winter Ridges - The Buachaille
   location: West Highlands, Scotland
   image: winter-ridges-the-buachaille.jpg
   coords: 56.667218, -5.056534
+  cost: From £70pp
 
 
 

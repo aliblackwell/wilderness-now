@@ -4,6 +4,7 @@
   slug: survival-randwick-forest
   image: survival-randwick-forest.jpg
   coords: 51.760947, -2.250456
+  cost: From £90pp
 
 -
   title: Survival - High Weald Forest
@@ -11,6 +12,7 @@
   slug: survival-high-weald-forest
   image: survival-high-weald-forest.jpg
   coords: 51.017264, 0.422510
+  cost: From £90pp
 
 -
   title: Survival - Mountains and Lochs
@@ -18,4 +20,5 @@
   slug: survival-mountains-and-lochs
   image: survival-mountains-and-lochs.jpg
   coords: 57.195436, -3.823578
+  cost: From £80pp
 

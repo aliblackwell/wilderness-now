@@ -4,6 +4,7 @@
   slug: ski-touring-ben-macdui
   image: ski-touring-ben-macdui.jpg
   coords: 57.078600, -3.610382
+  cost: From £70pp
 
 -
   title: Steep Skiing - Nevis Range
@@ -11,6 +12,7 @@
   slug: steep-skiing-nevis-range
   image: steep-skiing-nevis-range.jpg
   coords: 56.852331, -4.998700
+  cost: From £100pp
 
 -
   title: Backcountry Skiing - Glenshee
@@ -18,3 +20,4 @@
   slug: backcountry-skiing-glenshee
   image: backcountry-skiing-glenshee.jpg
   coords: 56.887163, -3.415429
+  cost: From £70pp

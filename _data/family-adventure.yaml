@@ -4,6 +4,7 @@
   slug: glamping-koa-tree-camp
   image: glamping-koa-tree-camp.jpg
   coords: 50.939192, -4.525155
+  cost: From £120pp
 
 -
   title: Father and Son - Woodland Survival
@@ -11,6 +12,7 @@
   slug: father-and-son-woodland-survival
   image: father-and-son-woodland-survival.jpg
   coords: 52.756073, -1.430147
+  cost: From £115pp
 
 -
   title: Family Kayaking - Sandbanks
@@ -18,3 +20,4 @@
   slug: family-kayaking-sandbanks
   image: family-kayaking-sandbanks.jpg
   coords: 50.685744, -1.945734
+  cost: From £30pp

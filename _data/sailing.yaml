@@ -4,6 +4,7 @@
   slug: cruising-isle-of-wight
   image: cruising-isle-of-wight.jpg
   coords: 50.761151, -1.542625
+  cost: From £100pp
 
 -
   title: Cruising - West Coast Islands
@@ -11,6 +12,7 @@
   slug: cruising-west-coast-islands
   image: cruising-west-coast-islands.jpg
   coords: 56.418070, -5.470908
+  cost: From £150pp
 
 -
   title: Open Sea Passage - Scilly Isles
@@ -18,3 +20,4 @@
   slug: open-sea-passage-scilly-isles
   image: open-sea-passage-scilly-isles.jpg
   coords: 50.155174, -5.066547
+  cost: From £150pp

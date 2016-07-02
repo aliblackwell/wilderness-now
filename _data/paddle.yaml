@@ -4,6 +4,7 @@
   slug: white-water-kayak-river-findhorn
   image: white-water-kayak-river-findhorn.jpg
   coords: 57.460251, -3.927225
+  cost: From £70pp
 
 -
   title: Sea Kayak - Arisaig
@@ -11,12 +12,15 @@
   slug: sea-kayak-arisaig
   image: sea-kayak-arisaig.jpg
   coords: 56.933100, -5.835135
+  cost: From £70pp
+  
 -
   title: Canoe - River Wye
   location: Monmouth, Wales
   slug: canoe-river-wye
   image: canoe-river-wye.jpg
   coords: 52.085149, -3.141194
+  cost: From £45pp
 
 -
   title: Kayak - River Ure
@@ -24,6 +28,7 @@
   slug: kayak-river-ure
   image: kayak-river-ure.jpg
   coords: 54.138708, -1.523551
+  cost: From £50pp
 
 -
   title: Sea Kayak - Lundy Island Crossing
@@ -31,6 +36,7 @@
   slug: sea-kayak-lundy-island-crossing
   image: sea-kayak-lundy-island.jpg
   coords: 51.181086, -4.667349
+  cost: From £90pp
 
 -
   title: White Water Rafting - River Tryweryn
@@ -38,3 +44,4 @@
   slug: white-water-rafting-river-Tryweryn
   image: white-water-rafting-river-Tryweryn.jpg
   coords: 52.947162, -3.651699
+  cost: From £50pp

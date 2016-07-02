@@ -4,6 +4,7 @@
   slug: surf-coldingham-bay
   image: surf-coldingham-bay.jpg
   coords: 55.887452, -2.158450
+  cost: From £35pp
 
 -
   title: Surf Glamping - Koa Tree Camp
@@ -11,6 +12,7 @@
   slug: surf-glamping-koa-tree-camp
   image: surf-glamping-koa-tree-camp.jpg
   coords: 50.939571, -4.524983
+  cost: From £35pp
 
 -
   title: Surf - Isle of Lewis
@@ -18,6 +20,7 @@
   slug: surf-isle-of-lewis
   image: surf-isle-of-lewis.jpg
   coords: 58.276551, -6.654864
+  cost: From £35pp
 
 -
   title: Surf - Thurso
@@ -25,6 +28,7 @@
   slug: surf-thurso
   image: surf-thurso.jpg
   coords: 58.594462, -3.521894
+  cost: From £35pp
 
 -
   title: Surf - Polzeath
@@ -32,6 +36,7 @@
   slug: surf-polzeath
   image: surf-polzeath.jpg
   coords: 50.573676, -4.910715
+  cost: From £35pp
 
 -
   title: Surf - Pembroke
@@ -39,6 +44,7 @@
   slug: surf-pembroke
   image: surf-pembroke.jpg
   coords: 51.785904, -5.085852
+  cost: From £35pp
 
 
 

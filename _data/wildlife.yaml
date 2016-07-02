@@ -4,6 +4,7 @@
   slug: wildlife-south-uist
   image: wildlife-south-uist.jpg
   coords: 57.282194, -7.333925
+  cost: From £35pp
 
 -
   title: Wildlife - Atholl Estate
@@ -11,6 +12,7 @@
   slug: wildlife-atholl-estate
   image: wildlife-atholl-estate.jpg
   coords: 56.705635, -3.729521
+  cost: From £70pp
 
 -
   title: Wildlife - New Forest
@@ -18,3 +20,4 @@
   slug: wildlife-new-forest
   image: wildlife-new-forest.jpg
   coords: 50.827089, -1.483651
+  cost: From £45pp
