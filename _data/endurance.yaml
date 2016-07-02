@@ -4,6 +4,7 @@
   slug: wild-swim-mountain-lakes
   image: wild-swim-mountain-lakes.jpg
   coords: 53.107748, -3.912618
+  cost: From £35pp
 
 -
   title: Trail Run - Dartmoor
@@ -11,6 +12,7 @@
   slug: trail-run-dartmoor
   image: trail-run-dartmoor.jpg
   coords: 50.571892, -3.920710
+  cost: From £35pp
 
 -
   title: Fell Run - Helvellyn
@@ -18,4 +20,5 @@
   slug: fell-run-helvellyn
   image: fell-run-helvellyn.jpg
   coords: 54.545170, -2.949763
+  cost: From £35pp
 

@@ -4,6 +4,7 @@
   slug: stalking-isle-of-mull
   image: stalking-isle-of-mull.jpg
   coords: 56.475909, -5.993859
+  cost: From £120pp
 
 -
   title: Stalking - Atholl Estate
@@ -11,6 +12,7 @@
   slug: stalking-atholl-estate
   image: stalking-atholl-estate.jpg
   coords: 56.705635, -3.729521
+  cost: From £140pp
 
 -
   title: Stalking - Forestland
@@ -18,3 +20,4 @@
   slug: stalking-forestland
   image: stalking-forestland.jpg
   coords: 51.396477, -1.986190
+  cost: From £100pp

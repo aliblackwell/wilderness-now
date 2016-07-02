@@ -4,6 +4,7 @@
   slug: sport-climb-sea-cliffs
   image: sport-climb-sea-cliffs.jpg
   coords: 50.550430, -2.434267
+  cost: From £80pp
 
 -
   title: Climb - Cheddar Gorge
@@ -11,6 +12,7 @@
   slug: climb-cheddar-gorge
   image: climb-cheddar-gorge.jpg
   coords: 51.287944, -2.759334
+  cost: From £80pp
 
 -
   title: Climb - Harrison\'s Rocks
@@ -18,6 +20,7 @@
   slug: climb-harrisons-rocks
   image: climb-harrisons-rocks.jpg
   coords: 51.109564, 0.190801
+  cost: From £90pp
 
 -
   title: Climb - Multipitch Walls
@@ -25,6 +28,7 @@
   slug: climb-multipitch-walls
   image: climb-multipitch-walls.jpg
   coords: 53.107129, -3.912188
+  cost: From £80pp
 
 -
   title: Climb - Stanage Edge
@@ -32,6 +36,7 @@
   slug: climb-stanage-edge
   image: climb-stanage-edge.jpg
   coords: 53.348417, -1.633690
+  cost: From £100pp
 
 -
   title: Climb - Northern Corries
@@ -39,4 +44,5 @@
   slug: climb-northern-corries
   image: climb-northern-corries.jpg
   coords: 57.113753, -3.664547
+  cost: From £90pp
 

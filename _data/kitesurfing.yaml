@@ -4,15 +4,20 @@
   location: Northolk, England
   image: kitesurf-hunstanton.jpg
   coords: 52.941778, 0.486654
+  cost: From £80pp
+  
 -
   slug: kitesurf-hayling-island
   title: Kitesurf - Hayling Island
   location: Portsmouth, England
   image: kitesurf-hayling-island.jpg
   coords: 50.800870, -0.974891
+  cost: From £100pp
+  
 -
   slug: kitesurf-north-berwick
   title: Kitesurf - North Berwick
   location: East Coast, Scotland
   image: kitesurf-north-berwick.jpg
   coords: 55.976600, -3.299634
+  cost: From £120pp
