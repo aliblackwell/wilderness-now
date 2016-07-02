@@ -6,7 +6,7 @@
                 <h4 class="activity-category">{{subtitle}}</h4>
                 <h4 class="card-title">{{maintitle}}</h4>
                 <p class="card-text">{{activity.location}}</p>
-                <p class="cost-estimate">{{activity.cost}}</p>
+                <p class="cost-estimate"><a href="#price-disclaimer">{{activity.cost}}</a></p>
                 <a class="typeform-share link btn btn-primary"  href="{{site.data.config.typeform_enquiry}}?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}?form=enquiry-{{activity.slug}}&category={{page.slug}}" data-mode="1">Explore</a>
               </div>{% assign image = activity.image | split: "/" %}
               <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">

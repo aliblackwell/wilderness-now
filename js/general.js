@@ -1,3 +1,16 @@
+
+var createScroll = function(jqel, scrollOffset, animLength) {
+  var target = jqel.attr('href');
+  $(window).scrollTo(target, {
+    interrupt: true,
+    offset: {
+      top: scrollOffset
+    },
+    duration: animLength,
+    easing: 'easeInOutCubic'
+  });
+}
+
 $(function() {
 
   $('.activities-dropdown').click(function() {
@@ -11,16 +24,23 @@ $(function() {
     return c/2*((t-=2)*t*t + 2) + b;
   };
 
-  $('.arrow-scroll').click(function(event) {
-    var target = $(this).attr('href');
-    $(window).scrollTo(target, {
-      interrupt: true,
-      offset: {
-        top: -57
-      },
-      duration: 500,
-      easing: 'easeInOutCubic'
-    });
+  $('.home .arrow-scroll').click(function(event) {
+    var scrollOffset = -57;
+    createScroll($(this), scrollOffset, 750);
+    event.preventDefault();
+    return false
+  });
+
+  $('.activity-category-layout .arrow-scroll').click(function(event) {
+    var scrollOffset = -37;
+    createScroll($(this), scrollOffset, 750);
+    event.preventDefault();
+    return false
+  });
+
+  $('.cost-estimate a').click(function(event) {
+    var scrollOffset = -57;
+    createScroll($(this), scrollOffset, 750);
     event.preventDefault();
     return false
   })
@@ -38,14 +58,9 @@ $(function() {
       }, 1500);
     }, 1000);
 
-    $(window).scrollTo(target, {
-      interrupt: true,
-      offset: {
-        top: -60
-      },
-      duration: 1000,
-      easing: 'easeInOutCubic'
-    });
+    createScroll($(this), -60, 1000);
+
+
     event.preventDefault();
     return false
   })

@@ -233,6 +233,9 @@ body {
       position: absolute;
       right: 1.5rem;
       bottom: 0.5rem;
+      a {
+        color: $bootstrapBody;
+      }
     }
 
   }
@@ -377,7 +380,7 @@ header.banner { // Logo
 
 .full-width-white {
   background: white;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 .full-width-grey {
@@ -966,6 +969,13 @@ footer.site-footer {
 
 #contact-us {
   padding-top: 5rem;
+  h1 {
+    font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
+  }
+  a {
+    color: $dyk;
+  }
+
   .profile {
     text-align: center;
     img {
@@ -975,5 +985,11 @@ footer.site-footer {
     h3 {
 
     }
+  }
+}
+
+#price-disclaimer {
+  p {
+    color: $grey;
   }
 }
