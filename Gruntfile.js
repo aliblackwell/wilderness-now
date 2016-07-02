@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'cdn/optimise',
             src: ['**.jpg'],
-            dest: 'cdn/img'
+            dest: 'cdn/optimised'
           }]
         }
       }

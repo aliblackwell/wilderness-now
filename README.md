@@ -1,6 +1,6 @@
 # Wilderness Now
 
-The site is served using Amazon S3: http://aws-website-wildernessnow-yib3s.s3-website-us-east-1.amazonaws.com/
+The site is served using Amazon S3.
 
 The 'develop' branch is where the majority of development work takes place.
 
