@@ -1,9 +1,8 @@
 (function() {
-  var triggerBttn = document.getElementById( 'trigger-overlay' ),
+  var triggerBttns = document.getElementsByClassName( 'trigger-overlay' )
     breadcrumbBttn = document.getElementById( 'breadcrumb-activities'),
     overlay = document.querySelector( 'div.overlay-navigation' ),
     body = document.querySelector('body'),
-    //closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
       'MozTransition': 'transitionend',
@@ -18,13 +17,17 @@
     if (classie.has( body, 'overlay-closed')) {
       classie.remove( body, 'overlay-closed');
       classie.add (body, 'overlay-open');
-      classie.add( triggerBttn, 'open');
-      classie.remove( triggerBttn, 'closed');
+      for (var i=0; i<triggerBttns.length; i++) {
+        classie.add( triggerBttns[i], 'open' );
+        classie.remove( triggerBttns[i], 'closed' );
+      }
     } else {
       classie.add( body, 'overlay-closed');
       classie.remove ( body, 'overlay-open');
-      classie.add( triggerBttn, 'closed');
-      classie.remove( triggerBttn, 'open');
+      for (var i=0; i<triggerBttns.length; i++) {
+        classie.add( triggerBttns[i], 'closed' );
+        classie.remove( triggerBttns[i], 'open' );
+      }
     }
     if( classie.has( overlay, 'open' ) ) {
       classie.remove( overlay, 'open' );
@@ -50,6 +53,7 @@
   if (breadcrumbBttn != null) {
     breadcrumbBttn.addEventListener( 'click', toggleOverlay );
   }
-  triggerBttn.addEventListener( 'click', toggleOverlay );
-  //closeBttn.addEventListener( 'click', toggleOverlay );
+  for (var i=0; i<triggerBttns.length; i++) {
+    triggerBttns[i].addEventListener( 'click' , toggleOverlay );
+  }
 })();

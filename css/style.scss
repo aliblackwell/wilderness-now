@@ -45,11 +45,13 @@ body {
 .navbar {
   background: white;
   box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+  padding: 0.8rem 0rem;
   .logo {
-    text-align: center;
+    text-align: left;
     img {
       width: 52px;
       margin: 0;
+      margin-left: 1rem;
     }
   }
   .words {
@@ -62,9 +64,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: right;
-    @media screen and (max-width: $break-small) {
-      right: 0;
-    }
+    // @media screen and (max-width: $break-small) {
+    //   right: 0;
+    // }
     &:hover {
       text-decoration: underline;
       color: black;
@@ -74,8 +76,16 @@ body {
     }
   }
 
-  .activities-dropdown, #trigger-contact-overlay {
+  .activities-dropdown {
+    text-align: center;
+    color: $dyk;
+  }
+
+  #trigger-contact-overlay {
     color: black;
+  }
+
+  .activities-dropdown, #trigger-contact-overlay {
     letter-spacing: 1px;
     font-family: "Work Sans Bold", "Work Sans Local", "Helvetica";
     text-transform: uppercase;
@@ -109,6 +119,10 @@ body {
   text-align: center;
   p {
     margin-bottom: 0;
+    a {
+      color: $dyk;
+      font-family: "Work Sans Local", "Helvetica", sans-serif;
+    }
   }
   .down-arrow {
     margin: 1rem auto 0rem;
