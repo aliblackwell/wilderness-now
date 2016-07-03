@@ -13,7 +13,7 @@ var createScroll = function(jqel, scrollOffset, animLength) {
 
 $(function() {
 
-  $('.activities-dropdown').click(function() {
+  $('.trigger-overlay, .trigger-contact-overlay').click(function() {
     event.preventDefault();
   });
 
