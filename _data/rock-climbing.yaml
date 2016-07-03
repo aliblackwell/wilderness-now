@@ -7,41 +7,41 @@
   cost: From £80pp
 
 -
-  title: Climb - Cheddar Gorge
+  title: Trad Climb - Cheddar Gorge
   location:  Somerset, England
-  slug: climb-cheddar-gorge
+  slug: trad-climb-cheddar-gorge
   image: climb-cheddar-gorge.jpg
   coords: 51.287944, -2.759334
   cost: From £80pp
 
 -
-  title: Climb - Harrison\'s Rocks
+  title: Top Rope - Harrison's Rocks
   location:  Sussex, England
-  slug: climb-harrisons-rocks
+  slug: top-rope-harrisons-rocks
   image: climb-harrisons-rocks.jpg
   coords: 51.109564, 0.190801
   cost: From £90pp
 
 -
-  title: Climb - Multipitch Walls
+  title: Trad Climb - Multipitch Walls
   location: Snowdonia, Wales
-  slug: climb-multipitch-walls
+  slug: trad-climb-multipitch-walls
   image: climb-multipitch-walls.jpg
   coords: 53.107129, -3.912188
   cost: From £80pp
 
 -
-  title: Climb - Stanage Edge
+  title: Trad Climb - Stanage Edge
   location:  Peak District, England
-  slug: climb-stanage-edge
+  slug: trad-climb-stanage-edge
   image: climb-stanage-edge.jpg
   coords: 53.348417, -1.633690
   cost: From £100pp
 
 -
-  title: Climb - Northern Corries
+  title: Trad Climb - Northern Corries
   location: Cairngorms, Scotland
-  slug: climb-northern-corries
+  slug: trad-climb-northern-corries
   image: climb-northern-corries.jpg
   coords: 57.113753, -3.664547
   cost: From £90pp
