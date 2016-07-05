@@ -8,8 +8,8 @@
 
 -
   slug: trek-coast-to-coast
-  title: Trek - Coast-to-Coast
-  location: Northern England
+  title: Trek - Coast to Coast
+  location: Cumbria and Yorkshire, England
   image: trek-coast-to-coast.jpg
   coords: 54.491787, -3.589699, 54.434690, -0.535064
   cost: From £700pp
@@ -31,8 +31,8 @@
   cost: From £35pp
 
 -
-  slug: Trek - Southern Fells
-  title: trek-southern-fells
+  slug: trek-southern-lakes
+  title: Trek - Southern Lakes
   location: Lake District, England
   image: trek-southern-fells.jpg
   coords: 54.545182, -2.949720
