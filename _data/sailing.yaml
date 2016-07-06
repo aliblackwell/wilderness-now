@@ -12,7 +12,8 @@
   slug: cruising-west-coast-islands
   image: cruising-west-coast-islands.jpg
   coords: 56.418070, -5.470908
-  cost: From £150pp
+  cost: From £450pp
+  duration: 7 days
 
 -
   title: Open Sea Passage - Scilly Isles
@@ -20,4 +21,6 @@
   slug: open-sea-passage-scilly-isles
   image: open-sea-passage-scilly-isles.jpg
   coords: 50.155174, -5.066547
-  cost: From £150pp
+  cost: From £645pp
+  duration: 7 days
+  
