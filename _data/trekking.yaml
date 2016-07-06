@@ -4,7 +4,8 @@
   location: West Highlands, Scotland
   image: trek-west-highland-way.jpg
   coords: 55.873490, -4.249632, 56.821112, -5.105037
-  cost: From £550pp
+  cost: From £650pp
+  duration: 8 days
 
 -
   slug: trek-coast-to-coast
@@ -12,7 +13,8 @@
   location: Cumbria and Yorkshire, England
   image: trek-coast-to-coast.jpg
   coords: 54.491787, -3.589699, 54.434690, -0.535064
-  cost: From £700pp
+  cost: From £1,160pp
+  duration: 15 days
 
 -
   slug: trek-the-lost-valley
