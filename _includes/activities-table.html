@@ -1,18 +1,25 @@
-    {% for activity in site.data[page.slug] %} {% assign loopmod = forloop.index0 | modulo: 2 %} {% if loopmod == 0 %}
+    {% for activity in site.data[page.slug] %}
+      {% assign loopmod = forloop.index0 | modulo: 2 %}
+      {% if loopmod == 0 %}
         <div class="card-deck-wrapper ">
-          <div class="card-deck cd-{{forloop.index}}"> {% endif %}
+          <div class="card-deck cd-{{forloop.index}}">
+      {% endif %}
             <div class="card activity-card" id="{{activity.slug}}">
-              <div class="card-block">{% assign title = activity.title | split: "-" %} {% assign subtitle = title[0] %} {% assign maintitle = title[1] %}
+              <div class="card-block">
+      {% assign title = activity.title | split: "-" %}
+        {% assign subtitle = title[0] %}
+        {% assign maintitle = title[1] %}
                 <h4 class="activity-category">{{subtitle}}</h4>
                 <h4 class="card-title">{{maintitle}}</h4>
                 <p class="card-text">{{activity.location}}</p>
-                <p class="cost-estimate"><a href="#price-disclaimer">{{activity.cost}}</a></p>
+                <p class="cost-estimate"><a href="#price-disclaimer">{{activity.cost}}{% if forloop.index0 == 0 %}<span class="ast">*</span>{% endif %}</a></p>
                 <a class="typeform-share link btn btn-primary"  href="{{site.data.config.typeform_enquiry}}?activity={{activity.title}}&redirect={{site.data.config.redirect_url}}/{{page.slug}}?form=enquiry-{{activity.slug}}&category={{page.slug}}" data-mode="1">Explore</a>
               </div>{% assign image = activity.image | split: "/" %}
               <div class="card-img-bottom" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}});" alt="Card image cap">
                 <div class="wn-small"></div>
               </div>
-            </div>{% if forloop.last and loopmod == 1 %}
+            </div>
+      {% if forloop.last and loopmod == 1 %}
           </div><!-- / .card-deck -->
         </div><!-- / .card-deck-wrapper -->
         <div class="card-deck-wrapper">
@@ -25,7 +32,9 @@
               </div>
             </div>
           </div>
-        </div>{% endif %} {% if forloop.last and loopmod == 0 %}
+        </div>
+      {% endif %}
+      {% if forloop.last and loopmod == 0 %}
         <div class="card quote-card shared-line">
           <div class="row">
             <div class="col-lg-10 col-lg-offset-2">
@@ -34,6 +43,10 @@
           </div>
         </div>
       </div><!-- / .card-deck 1 -->
-    </div><!-- / .card-deck-wrapper 1 --> {% endif %} {% if loopmod == 1 %}
+    </div><!-- / .card-deck-wrapper 1 -->
+      {% endif %}
+      {% if loopmod == 1 %}
           </div><!-- / .card-deck 2 -->
-        </div><!-- / .card-deck-wrapper 2 -->{% endif %} {% endfor %}
+        </div><!-- / .card-deck-wrapper 2 -->
+      {% endif %}
+    {% endfor %}

@@ -27,14 +27,7 @@ var openEmailCaptureAnimated = function() {
   setSeenAsk();
   $('.capture-email').animate({
     'bottom': '0rem'
-  }, 'fast', 'easeInOutCubic', function() {
-    setTimeout(function() {
-      $('.ask-consent .btn-primary').fadeIn();
-      setTimeout(function() {
-        $('.ask-consent .no-thanks').fadeIn();
-      }, 1000)
-    }, 1000);
-  });
+  }, 'fast', 'easeInOutCubic');
 }
 
 var openEmailCaptureNoAnimation = function() {
@@ -81,12 +74,7 @@ $(function() {
     timeToAsk = 4000;
   }
 
-  $('.ask-email, .ask-consent .btn-primary, .ask-consent .no-thanks').hide();
-  //$('.ask-consent .btn').css('opacity', 0);
-
-  $('.go-on').on('click', openSecondSection);
-
-  $('.no-thanks').on('click', function(){
+  $('.capture-email .no-thanks').on('click', function(){
     closeEmailCapture();
     setDismissedAsk();
   });
