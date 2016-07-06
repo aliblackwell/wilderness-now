@@ -37,6 +37,7 @@
   image: touring-coast-to-coast.jpg
   coords: 54.491887, -3.589699, 54.912617, -1.384496
   cost: From £315pp
+  duration: 4 days
 
 -
   title: Touring - Lochs and Glens
@@ -45,3 +46,4 @@
   image: touring-lochs-and-glens.jpg
   coords: 57.480083, -4.224433, 55.874646, -4.253065
   cost: From £470pp
+  duration: 6 days
