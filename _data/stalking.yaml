@@ -4,7 +4,7 @@
   slug: red-deer-stalking-isle-of-mull
   image: stalking-isle-of-mull.jpg
   coords: 56.475909, -5.993859
-  cost: From £120pp
+  cost: From £365pp
 
 -
   title: Red Deer Stalking - Cairngorms Border
@@ -12,7 +12,7 @@
   slug: red-deer-stalking-cairngorms-border
   image: stalking-atholl-estate.jpg
   coords: 56.705635, -3.729521
-  cost: From £140pp
+  cost: From £250pp
 
 -
   title: Roe Deer Stalking - Wiltshire
@@ -20,4 +20,4 @@
   slug: roe-deer-stalking-wiltshire
   image: stalking-forestland.jpg
   coords: 51.396477, -1.986190
-  cost: From £100pp
+  cost: From £200pp
