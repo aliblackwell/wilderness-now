@@ -17,6 +17,7 @@
     if (classie.has( body, 'overlay-closed')) {
       classie.remove( body, 'overlay-closed');
       classie.add (body, 'overlay-open');
+      classie.add (body, 'an-overlay-open');
       for (var i=0; i<triggerBttns.length; i++) {
         classie.add( triggerBttns[i], 'open' );
         classie.remove( triggerBttns[i], 'closed' );
@@ -31,6 +32,7 @@
     }
     if( classie.has( overlay, 'open' ) ) {
       classie.remove( overlay, 'open' );
+      classie.remove (body, 'an-overlay-open');
       classie.add( overlay, 'shut' );
       var onEndTransitionFn = function( ev ) {
         if( support.transitions ) {

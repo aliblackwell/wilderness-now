@@ -1,9 +1,9 @@
-site_url: http://localhost:4000
-redirect_url: localhost:4000
-cdn: http://localhost:4000/cdn
-ga: UA-80145536-1
-typeform_enquiry: https://mcb2.typeform.com/to/FYJe07
-typeform_guide_signup: https://mcb2.typeform.com/to/TcoLi1
+# site_url: http://localhost:4000
+# redirect_url: localhost:4000
+# cdn: http://localhost:4000/cdn
+# ga: UA-80145536-1
+# typeform_enquiry: https://mcb2.typeform.com/to/FYJe07
+# typeform_guide_signup: https://mcb2.typeform.com/to/TcoLi1
 
 # site_url: https://staging.wilderness-now.com
 # redirect_url: staging.wilderness-now.com
@@ -12,10 +12,10 @@ typeform_guide_signup: https://mcb2.typeform.com/to/TcoLi1
 # typeform_enquiry: https://mcb2.typeform.com/to/FYJe07
 # typeform_guide_signup: https://mcb2.typeform.com/to/TcoLi1
 
-# site_url: https://www.wilderness-now.com
-# redirect_url: www.wilderness-now.com
-# cdn: https://cdn.wilderness-now.com
-# ga: UA-80145536-2
-# typeform_enquiry: https://mcb2.typeform.com/to/roZWv3
-# typeform_guide_signup: https://mcb2.typeform.com/to/HZmPUP
+site_url: https://www.wilderness-now.com
+redirect_url: www.wilderness-now.com
+cdn: https://cdn.wilderness-now.com
+ga: UA-80145536-2
+typeform_enquiry: https://mcb2.typeform.com/to/fO1JNv
+typeform_guide_signup: https://mcb2.typeform.com/to/Xwn1ho
 

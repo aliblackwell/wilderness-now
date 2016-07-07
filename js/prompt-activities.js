@@ -18,12 +18,20 @@ var closeActivitiesPrompt = function() {
   });
 }
 
+var launchActivitiesPrompt = function() {
+  setTimeout(function() {
+    if ($('body').hasClass('an-overlay-open') != true) {
+      openActivitiesPrompt()
+    } else {
+      launchActivitiesPrompt();
+    }
+  }, 8000);
+}
+
 
 $(function() {
 
-  setTimeout(function() {
-    openActivitiesPrompt()
-  }, 8000);
+  launchActivitiesPrompt();
 
   $('.encourage-activities-click .no-thanks').on('click', function(){
     closeActivitiesPrompt();

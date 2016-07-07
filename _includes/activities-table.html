@@ -9,7 +9,9 @@
       {% assign title = activity.title | split: "-" %}
         {% assign subtitle = title[0] %}
         {% assign maintitle = title[1] %}
-                <h4 class="activity-category">{{subtitle}}</h4>
+                <h4 class="activity-category">
+                  {{subtitle}}{% if activity.duration %} ({{activity.duration}}){% endif %}
+                </h4>
                 <h4 class="card-title">{{maintitle}}</h4>
                 <p class="card-text">{{activity.location}}</p>
                 <p class="cost-estimate"><a href="#price-disclaimer">{{activity.cost}}{% if forloop.index0 == 0 %}<span class="ast">*</span>{% endif %}</a></p>
@@ -45,8 +47,12 @@
       </div><!-- / .card-deck 1 -->
     </div><!-- / .card-deck-wrapper 1 -->
       {% endif %}
-      {% if loopmod == 1 %}
-          </div><!-- / .card-deck 2 -->
-        </div><!-- / .card-deck-wrapper 2 -->
+      {% if forloop.last == false %}
+        {% if loopmod == 1  %}
+            </div><!-- / .card-deck 2 -->
+          </div><!-- / .card-deck-wrapper 2 -->
+        {% endif %}
       {% endif %}
     {% endfor %}
+
+    {% include price-disclaimer.html %}

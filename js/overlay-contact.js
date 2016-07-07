@@ -17,11 +17,13 @@
     if (classie.has( body, 'contact-overlay-closed')) {
       classie.remove( body, 'contact-overlay-closed');
       classie.add (body, 'contact-overlay-open');
+      classie.add (body, 'an-overlay-open');
       classie.add( triggerBttn, 'open');
       classie.remove( triggerBttn, 'closed');
     } else {
       classie.add( body, 'contact-overlay-closed');
       classie.remove ( body, 'contact-overlay-open');
+      classie.remove (body, 'an-overlay-open');
       classie.add( triggerBttn, 'closed');
       classie.remove( triggerBttn, 'open');
     }

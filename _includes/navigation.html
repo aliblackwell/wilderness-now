@@ -19,12 +19,12 @@
           </a>
         </div>
         <div class="col-xs-4">
-          <a id="trigger-contact-overlay" href="#contact-us">Contact <span class="words">Us</span></a>
+          <a id="trigger-contact-overlay" href="#about-us">About <span class="words">Us</span></a>
         </div>
       </div>
     </div><!-- / .navbar -->
 
-    {% include contact-us.html %}
+    {% include about-us.html %}
 
     <div id="activities" class="overlay-navigation overlay overlay-slidedown">
       <nav class="row">{% for activity in site.data.parent-activities %}{% assign loopmod = forloop.index0 | modulo: 7 %}{% if loopmod == 0 %}

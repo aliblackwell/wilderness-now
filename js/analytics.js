@@ -65,7 +65,6 @@ $(function() {
     event.preventDefault();
     var socialMedia = $(this).parent('li').attr('class');
     var socialMediaUrl = $(this).attr('href');
-    console.log(socialMedia);
 
     // ga('send', 'social', socialMedia, 'visit', socialMediaUrl, {
     //   hitCallback: createFunctionWithTimeout(function() {
@@ -82,7 +81,6 @@ $(function() {
   // Detect returns from TypeForm
   if (QueryString.form != undefined) {
     var formType = QueryString.form;
-    console.log('got it!')
     ga('send', 'event', 'Form', 'completed', formType)
   }
 

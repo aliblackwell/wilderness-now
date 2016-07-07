@@ -56,7 +56,6 @@ var drawThisPageTextLabels = function() {
     style: function(d) { return 'font-family: Oswald; fill:#000; fill-opacity: .75; font-size: 11px;' },
     text: function(d) { return '0' }
   });
-  console.log(labels)
 }
 
 var initMapInteractions = function() {
@@ -101,16 +100,7 @@ var initMapInteractions = function() {
   })
 
   function fadeOutActivitiesAnimation() {
-    // $.each(activitiesList, function(i, item) {
 
-    //   item.update({
-    //     attrs: {
-    //       'fill-opacity': 0
-    //     }
-    //   }, 500)
-    //   console.log(item)
-    // })
-    // $('circle.bubble').hide()
   }
 }
 

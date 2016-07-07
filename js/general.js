@@ -13,8 +13,9 @@ var createScroll = function(jqel, scrollOffset, animLength) {
 
 $(function() {
 
-  $('.trigger-overlay, .trigger-contact-overlay').click(function() {
+  $('.trigger-overlay, .trigger-contact-overlay, .trigger-email-capture').click(function() {
     event.preventDefault();
+    return false;
   });
 
   //borrowed from jQuery easing plugin
