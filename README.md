@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aliblackwell/wilderness-now.svg?branch=master)](https://travis-ci.org/aliblackwell/wilderness-now)
+
 # Wilderness Now
 
 The site is served using Amazon S3.
