@@ -85,7 +85,15 @@ body {
     color: black;
   }
 
-  .activities-dropdown, #trigger-contact-overlay {
+  p {
+    margin: 0;
+    text-align: right;
+    position: relative;
+    right: 1rem;
+    top: -1px;
+  }
+
+  .activities-dropdown, .wn-link {
     letter-spacing: 1px;
     font-family: "Work Sans Bold", "Work Sans Local", "Helvetica";
     text-transform: uppercase;
@@ -105,6 +113,22 @@ body {
     }
     &:focus {
       outline: 0;
+    }
+  }
+
+  #trigger-contact-overlay {
+    @media screen and (max-width: $break-small) {
+      margin-left: 0.2rem;
+    }
+  }
+
+  .wn-link {
+    display: inline;
+    position: static;
+    color: black;
+    top: 0px;
+    @media screen and (max-width: $break-small) {
+      font-size: 0.8rem;
     }
   }
 
