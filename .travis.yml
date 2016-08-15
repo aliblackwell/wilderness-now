@@ -13,7 +13,6 @@ deploy:
   secret_access_key:
     secure: D/zxd9uWt0NusvW0PkArs5QA+pbWXzaR9ijacpMOkbgv8alzDUbAmKtBk9OF3PnuUvPza4aXWzTT9ELI4lm6dQhQgMEFgEwFNDsLsCqD0K37eDWwlgNDJX1i80F++KrDYelT0T47xvHywZd0aABFtL5Wsdw+PJmLn7pl1QIADlScm7wrEqm39vDin3k5nzo0uipJr1Azo4TkZwyJabTujNxLXi/SzTraJzQPOqMyechr/kyaLdv3rh87RYAeo0dbqe5LVLJW9MLmKD3eD9h4iJCiV8pyd+7ZFulRhMF02Y82PLXaQfEjkTBEfNWWK/MqyKdUA5PXB/ywxH0wDc/q5rYKpyDNtUZhn6gU0on8we3lV3JizPTkSDf4XK7XouH4SYDA6kAtR1C58rXAFoZNYOtWwiNl/6OtnUEfDJeR2eKTOUzxjamtUnX5QymBKY5VZp4Ys7tMs0W54RbNfFipSL2Z4CGp/V5g1PSQOXdAL+y7mmJ8CvUWmqagHpGQHXFf3KyZUraGpzRfmK/jEL+yJ5WDCBOtqJI9DJ0GmsHt6gVbuIGAsQW+ZqOf9CmSLJud+5Hj+QGCArRLSVhuOwt+FrbqYF6aGRdMvWmiVSpdz5V+e4Gg8Zyh7RsaJM2MH3scJx73F8m8Gn64R+9qJfu5OV1kTMp7q9qtyX+eVYfLIkI=
   bucket: staging.wilderness-now.com
-  local-dir: "./site"
   on:
     repo: aliblackwell/wilderness-now
     branch: auto-deploy
