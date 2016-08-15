@@ -2,19 +2,25 @@
   title: Cruising - Isle of Wight
   location: Hampshire, England
   slug: cruising-isle-of-wight
-  image: activities/sailing/cruising-isle-of-wight.jpeg
+  image: cruising-isle-of-wight.jpg
   coords: 50.761151, -1.542625
-  
+  cost: From £100pp
+
 -
   title: Cruising - West Coast Islands
   location: Inner Hebrides, Scotland
   slug: cruising-west-coast-islands
-  image: activities/sailing/cruising-west-coast-islands.jpeg
+  image: cruising-west-coast-islands.jpg
   coords: 56.418070, -5.470908
-  
+  cost: From £450pp
+  duration: 7 days
+
 -
   title: Open Sea Passage - Scilly Isles
   location: Cornwall, England
   slug: open-sea-passage-scilly-isles
-  image: activities/sailing/open-sea-passage-scilly-isles.jpeg
+  image: open-sea-passage-scilly-isles.jpg
   coords: 50.155174, -5.066547
+  cost: From £645pp
+  duration: 7 days
+  

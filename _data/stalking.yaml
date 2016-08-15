@@ -1,20 +1,24 @@
 -
-  title: Stalking - Isle of Mull 
+  title: Red Deer Stalking - Isle of Mull
   location: Inner Hebrides, Scotland
-  slug: stalking-isle-of-mull
-  image: activities/stalking/stalking-isle-of-mull.jpeg
+  slug: red-deer-stalking-isle-of-mull
+  image: stalking-isle-of-mull.jpg
   coords: 56.475909, -5.993859
-  
--
-  title: Stalking - Atholl Estate
-  location: Perthshire, Scotland
-  slug: stalking-atholl-estate
-  image: activities/stalking/stalking-atholl-estate.jpeg
-  coords: 56.705635, -3.729521
+  cost: From £365pp
+  duration: 3 days
 
 -
-  title: Stalking - Forestland
-  location: Wiltshire, England
-  slug: stalking-forestland
-  image: activities/stalking/stalking-forestland.jpeg
+  title: Red Deer Stalking - Cairngorms Border
+  location: Central Highlands, Scotland
+  slug: red-deer-stalking-cairngorms-border
+  image: stalking-atholl-estate.jpg
+  coords: 56.705635, -3.729521
+  cost: From £250pp
+
+-
+  title: Roe Deer Stalking - Wiltshire
+  location: South-West, England
+  slug: roe-deer-stalking-wiltshire
+  image: stalking-forestland.jpg
   coords: 51.396477, -1.986190
+  cost: From £200pp

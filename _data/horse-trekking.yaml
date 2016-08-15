@@ -2,19 +2,23 @@
   title: Trail Ride - Black Mountains
   location: Brecon Beacons, Wales
   slug: trail-ride-black-mountains
-  image: activities/horse-trekking/trail-ride-black-mountains.jpeg
+  image: trail-ride-black-mountains.jpg
   coords: 51.975701, -3.153806
-  
--  
+  cost: From £50pp
+
+-
   title: Trail Ride - Coast to Coast
   location: North Highlands, Scotland
   slug: trail-ride-coast-to-coast
-  image: activities/horse-trekking/trail-ride-coast-to-coast.jpeg
+  image: trail-ride-coast-to-coast.jpg
   coords: 58.013340, -3.852449, 58.344137, -5.159061
+  cost: From £1,290pp
+  duration: 7 days
 
 -
   title: Trail Ride - South Downs
   location: Sussex, England
   slug: trail-ride-south-downs
-  image: activities/horse-trekking/trail-ride-south-downs.jpeg 
+  image: trail-ride-south-downs.jpg
   coords: 50.855566, -0.883708
+  cost: From £45pp

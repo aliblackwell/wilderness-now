@@ -2,56 +2,73 @@
   slug: scramble-ben-nevis-north-face
   title: Scramble - Ben Nevis North Face
   location: West Highlands, Scotland
-  image: activities/mountaineering/scramble-ben-nevis-north-face.jpg
+  image: scramble-ben-nevis-north-face.jpg
   coords: 56.821719, -5.105474
+  cost: From £45pp
+  
 -
   slug: scramble-stob-dearg
   title: Scramble - Stob Dearg
   location: West Highlands, Scotland
-  image: activities/mountaineering/scramble-stob-dearg.jpg
+  image: scramble-stob-dearg.jpg
   coords: 56.651580, -4.840870
+  cost: From £45pp
+  
 -
   slug: scramble-black-cuillin
   title: Scramble - Black Cuillin
   location: Isle of Skye, Scotland
-  image: activities/mountaineering/scramble-black-cuillin.jpg
+  image: scramble-black-cuillin.jpg
   coords: 57.065539, -5.901292
+  cost: From £160pp
+  
 -
   slug: scramble-beinn-alligin
   title: Scramble - Beinn Alligin
   location: North-West Highlands, Scotland
-  image: activities/mountaineering/scramble-beinn-alligin.jpg
+  image: scramble-beinn-alligin.jpg
   coords: 57.547562, -5.513143
+  cost: From £45pp
+  
 -
   slug: scramble-striding-edge
   title: Scramble - Striding Edge
   location: Lake District, England
-  image: activities/mountaineering/scramble-striding-edge.jpg
+  image: scramble-striding-edge.jpg
   coords: 54.545182, -2.949720
+  cost: From £35pp
+  
 -
   slug: winter-ascents-snowdon-and-tryfan
   title: Winter Ascents - Snowdon and Tryfan
   location: Snowdonia, Wales
-  image: activities/mountaineering/winter-ascents-snowdon-and-tryfan.jpg
+  image: winter-ascents-snowdon-and-tryfan.jpg
   coords: 53.106795, -3.912274
+  cost: From £50pp
+  
 -
   slug: winter-ascent-ben-nevis
   title: Winter Ascent - Ben Nevis
   location: West Highlands, Scotland
-  image: activities/mountaineering/winter-ascent-ben-nevis.jpg
+  image: winter-ascent-ben-nevis.jpg
   coords: 56.821394, -5.105388
+  cost: From £70pp
+  
 -
-  slug: winter-climb-northen-corries
-  title: Winter Climb - Northen Corries
+  slug: winter-climb-northern-corries
+  title: Winter Climb - Northern Corries
   location: Cairngorms, Scotland
-  image: activities/mountaineering/winter-climb-northen-corries.jpg
+  image: winter-climb-northen-corries.jpg
   coords: 57.195555, -3.823784
+  cost: From £90pp
+  
 -
   slug: winter-ridges-the-buachaille
   title: Winter Ridges - The Buachaille
   location: West Highlands, Scotland
-  image: activities/mountaineering/winter-ridges-the-buachaille.jpg
+  image: winter-ridges-the-buachaille.jpg
   coords: 56.667218, -5.056534
+  cost: From £70pp
 
 
 

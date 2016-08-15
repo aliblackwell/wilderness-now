@@ -1,21 +1,24 @@
 -
-  title: Wild Swim - Mountain Lakes
+  title: Wild Swim - Bala Lake
   location: Snowdonia, Wales
-  slug: wild-swim-mountain-lakes
-  image: activities/endurance/wild-swim-mountain-lakes.jpg
+  slug: wild-swim-bala-lake
+  image: wild-swim-mountain-lakes.jpg
   coords: 53.107748, -3.912618
+  cost: From £35pp
 
 -
   title: Trail Run - Dartmoor
   location: Devon, England
   slug: trail-run-dartmoor
-  image: activities/endurance/trail-run-dartmoor.jpg
+  image: trail-run-dartmoor.jpg
   coords: 50.571892, -3.920710
-  
+  cost: From £35pp
+
 -
-  title: Fell Run - Helvellyn 
+  title: Fell Run - Helvellyn Peak
   location: Lake District, England
-  slug: fell-run-helvellyn
-  image: activities/endurance/fell-run-helvellyn.jpg
+  slug: fell-run-helvellyn-peak
+  image: fell-run-helvellyn.jpg
   coords: 54.545170, -2.949763
-  
+  cost: From £35pp
+

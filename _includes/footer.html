@@ -1,39 +1,44 @@
-
-
-
-
-
-
-
-    <div class="full-width-image banner signup logo-overlay">
-      <div class="wn"></div>
-      <div class="container">
-
+    {% include prompt-email.html %}
+    <footer class="site-footer">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h4>Let us bring the adventure to you</h4>
-          <p>To receive details of UK adventures tailored specifically for you, please give us your email and we will be in touch.</p>
+        <div class="col-lg-4 details">
+          <p>
+            <a href="{{site.data.config.cdn}}/files/wilderness-now-privacy-policy.pdf" title="Wilderness Now Privacy Policy">
+              Privacy Policy
+            </a>
+            \\
+            <a href="{{site.data.config.cdn}}/files/wilderness-now-terms-of-use.pdf" title="Wilderness Now Terms of Use">
+              Terms of Use
+            </a>
+          </p>
+        </div><!-- / .details -->
+        <div class="col-lg-4 copyright">
+          <p>2016 &copy; Wilderness Now Ltd.</p>
+        </div>
+        <div class="col-lg-4 social">
+          <ul>
+            <li class="mailing-list">
+              <a href="#get-notified" title="Get notified" class="trigger-email-capture">
+                Mailing List
+              </a>
+            </li>
+            <li class="facebook">
+              <a href="https://www.facebook.com/wildernessnow/" target="new" title="Wilderness Now Facebook">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-facebook-3.svg">
+              </a>
+            </li>
+            <li class="instagram">
+              <a href="https://www.instagram.com/wilderness_now_uk/" target="new" title="Wilderness Now Instagram">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-instagram-3.svg">
+              </a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/Wilderness_Now" target="new" title="Wilderness Now Twitter">
+                <img src="{{site.data.config.cdn}}/img/iconmonstr-twitter-3.svg">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
-        <form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail3">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
-          </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="morse-divider"></div>
-
-    <footer class="full-width-footer">
-      <div class="container">
-
-      </div>
     </footer>
-
-
-

@@ -2,19 +2,22 @@
   title: Glamping - Koa Tree Camp
   location: Devon, England
   slug: glamping-koa-tree-camp
-  image: activities/family-adventure/glamping-koa-tree-camp.jpg
+  image: glamping-koa-tree-camp.jpg
   coords: 50.939192, -4.525155
+  cost: From £120pp
 
 -
-  title: Father and Son - Woodland Survival 
+  title: Father and Son - Spring Wood Survival
   location: Leicestershire, England
-  slug: father-and-son-woodland-survival
-  image: activities/family-adventure/father-and-son-woodland-survival.jpg
+  slug: father-and-son-spring-wood-survival
+  image: father-and-son-woodland-survival.jpg
   coords: 52.756073, -1.430147
+  cost: From £115pp
 
 -
   title: Family Kayaking - Sandbanks
   location: Dorset, England
   slug: family-kayaking-sandbanks
-  image: activities/family-adventure/family-kayaking-sandbanks.jpg
+  image: family-kayaking-sandbanks.jpg
   coords: 50.685744, -1.945734
+  cost: From £30pp

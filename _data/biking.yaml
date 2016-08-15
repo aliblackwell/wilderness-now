@@ -2,40 +2,48 @@
   title: MTB - Nan Bield Pass
   location: Lake District, England
   slug: mtb-nan-bield-pass
-  image: activities/biking/mtb-nan-bield-pass.jpg
+  image: mtb-nan-bield-pass.jpg
   coords: 54.481884, -2.834889
+  cost: From £50pp
 
 -
   title: MTB - Rhyd Ddu
   location: Snowdonia, Wales
   slug: mtb-rhyd-ddu
-  image: activities/biking/mtb-rhyd-ddu.jpg
+  image: mtb-rhyd-ddu.jpg
   coords: 53.055643, -4.135950
+  cost: From £50pp
 
 -
   title: MTB - Cut Gate
   location: Peak District, England
   slug: mtb-cut-gate
-  image: activities/biking/mtb-cut-gate.jpg
+  image: mtb-cut-gate.jpg
   coords: 53.414057, -1.696593
-  
+  cost: From £50pp
+
 -
   title: MTB - Quantocks
   location: Exmoor, England
   slug: mtb-quantocks
-  image: activities/biking/mtb-quantocks.jpg
+  image: mtb-quantocks.jpg
   coords: 51.141446, -3.210892
-  
+  cost: From £50pp
+
 -
   title: Touring - Coast to Coast
-  location: Lake District to Sunderland, England
+  location: Lake District to Newcastle, England
   slug: touring-coast-to-coast
-  image: activities/biking/touring-coast-to-coast.jpg
+  image: touring-coast-to-coast.jpg
   coords: 54.491887, -3.589699, 54.912617, -1.384496
-  
+  cost: From £315pp
+  duration: 4 days
+
 -
   title: Touring - Lochs and Glens
   location: Inverness to Glasgow, Scotland
   slug: touring-lochs-and-glens
-  image: activities/biking/touring-lochs-and-glens
+  image: touring-lochs-and-glens.jpg
   coords: 57.480083, -4.224433, 55.874646, -4.253065
+  cost: From £470pp
+  duration: 6 days

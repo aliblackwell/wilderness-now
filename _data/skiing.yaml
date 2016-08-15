@@ -2,19 +2,22 @@
   title: Ski Touring - Ben Macdui
   location: Cairngorms, Scotland
   slug: ski-touring-ben-macdui
-  image: activities/skiing/ski-touring-ben-macdui.jpeg
+  image: ski-touring-ben-macdui.jpg
   coords: 57.078600, -3.610382
-  
+  cost: From £70pp
+
 -
   title: Steep Skiing - Nevis Range
   location: West Highlands, Scotland
   slug: steep-skiing-nevis-range
-  image: activities/skiing/steep-skiing-nevis-range.jpeg
+  image: steep-skiing-nevis-range.jpg
   coords: 56.852331, -4.998700
-  
+  cost: From £100pp
+
 -
   title: Backcountry Skiing - Glenshee
   location: Central Highlands, Scotland
   slug: backcountry-skiing-glenshee
-  image: activities/skiing/backcountry-skiing-glenshee.jpeg
+  image: backcountry-skiing-glenshee.jpg
   coords: 56.887163, -3.415429
+  cost: From £70pp

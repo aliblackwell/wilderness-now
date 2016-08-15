@@ -1,10 +1,11 @@
 -
   slug: mountaineering
   title: Mountaineering
-  image: activities/mountaineering/mountaineering-wilderness-now.jpg
+  image: mountaineering-wilderness-now.jpg
+  background-image: activities/mountaineering/scramble-stob-dearg.jpg
   featured: true
   grid: 6
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain."
   quoth: Jack Kerouac
   includes: Includes ice-climbing, scrambling, hill walking and a lot of blown-minds
@@ -13,23 +14,23 @@
 -
   slug: skiing
   title: Skiing
-  image: activities/skiing/skiing-wilderness-now.jpg
+  image: skiing-wilderness-now.jpg
   featured: true
   grid: 6
   opacity: 0.45
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity."
   quoth: John Muir
   includes: Includes ski mountaineering, ski touring, snowboarding and first descents
-  dyk: The secret is out, you can ski in the UK! | The ski season runs from December to April, don't miss out.
+  dyk: The secret is out - you can ski in the UK! | The ski season runs from December to April - don't miss out.
 
 -
   slug: biking
   title: Biking
-  image: activities/biking/biking-wilderness-now.jpg
+  image: biking-wilderness-now.jpg
   featured: true
   grid: 7
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle."
   quoth: Arthur Conan Doyle
   includes: Includes mountain biking and cycle touring through stunning mountains, moorland and forest
@@ -38,10 +39,10 @@
 -
   slug: fishing
   title: Fishing
-  image:  activities/fishing/fishing-wilderness-now.jpg
+  image:  fishing-wilderness-now.jpg
   featured: true
   grid: 5
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "If people concentrated on the really important things in life, there'd be a shortage of fishing poles."
   quoth: Doug Larson
   includes: Includes fly fishing and sea fishing with expert local guides
@@ -50,22 +51,22 @@
 -
   slug: kitesurfing
   title: Kitesurfing
-  image: activities/kitesurfing/kitesurfing-wilderness-now.jpg
+  image: kitesurfing-wilderness-now.jpg
   featured: true
   grid: 6
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "Do not lose hold of your dreams or aspirations. For if you do, you may still exist, but you have ceased to live."
   quoth: Henry David Thoreau
   includes: Includes kitesurfing in the UK's favorite secret spots with local pros
-  dyk: Kitesurfing is on the rise, join the tribe! | There are amazing spots within easy reach of London and other major cities.
+  dyk: Kitesurfing is on the rise - join the tribe! | There are amazing spots within easy reach of London and other major cities.
 
 -
   slug: paddle
   title: Paddle
-  image: activities/paddle/paddle-wilderness-now.jpg
+  image: paddle-wilderness-now.jpg
   featured: true
   grid: 6
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "Thousands have lived without love, not one without water."
   quoth: W.H. Auden
   includes: Includes kayaking, canoeing, rafting on beautiful rivers, lakes and sea
@@ -74,11 +75,11 @@
 -
   slug: surfing
   title: Surfing
-  image: activities/surfing/surfing-wilderness-now.jpg
+  image: surfing-wilderness-now.jpg
   featured: true
   grid: 5
   opacity: 0.45
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   quote: "It’s like the mafia. Once you're in – you’re in. There's no getting out."
   quoth: Kelly Slater
   includes: Includes surfing in some of the UK's most remote and wild locations
@@ -87,41 +88,41 @@
 -
   slug: trekking
   title: Trekking
-  image: activities/trekking/trekking-wilderness-now.jpg
+  image: trekking-wilderness-now.jpg
   quote: "Life is either a daring adventure or nothing."
   quoth: Helen Keller
   includes: 'From gentle day-hikes to fortnight-long yomps: your wilderness is here'
   featured: true
   grid: 7
   multiply: 0.65
-  layout: activity-category-layout-2
+  layout: activity-category-layout
   dyk: Once the height of the Himalayas, UK mountains are old and wise, eroded down over millions of years. | A day spent in the great outdoors must always be followed by a hearty meal in a cosy pub!
 
 -
   slug: canyoning
   title: Canyoning
-  image: activities/canyoning/canyoning-wilderness-now.jpg
-  layout: activity-category-layout-2
-  quote: "Somebody should tell us, right at the start of our lives, that we are dying. Then we might live life to the limit, every minute of every day. Do it! I say. Whatever you want to do, do it now! There are only so many tomorrows."
+  image: canyoning-wilderness-now.jpg
+  layout: activity-category-layout
+  quote: "Do it! I say. Whatever you want to do, do it now! There are only so many tomorrows."
   quoth: Pope Paul IV
   includes: Canyoning involves traversing canyons by way of scrambling, climbing, jumping, abseiling, swimming and being a general badass
-  dyk: Canyoning is done in the UK's mountain regions. | Canyoning was not invented by alpinists or climbers but by intrepid bush walkers.
+  dyk: Canyoning is done in the UK's mountain regions. | Canyoning is an awesome adrenaline rush for you and your mates!
 
 -
   slug: horse-trekking
   title: Horse Trekking
-  image: activities/horse-trekking/horse-trekking-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: horse-trekking-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "There’s nothing better for the inside of a man than the outside of a horse."
   quoth: Ronald Reagan
   includes: Includes well trained horses and the opportunity to go far into the wilderness off the beaten path
-  dyk: Horses have four gaits; walk, trot, canter, and gallop. | A long day of riding is rewarded with a delicious meal in a cosy pub!
+  dyk: Horses have four gaits; walk, trot, canter, and gallop. | A great option for families, and for wannabe Mongol warriors!
 
 -
   slug: stalking
   title: Stalking
-  image: activities/stalking/stalking-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: stalking-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "For us hunting wasn’t a sport. It was a way to be intimate with nature."
   quoth: Ted Kerasote
   includes: Includes traditional red deer and roe deer stalking in beautiful landscapes
@@ -130,18 +131,18 @@
 -
   slug: sailing
   title: Sailing
-  image: activities/sailing/sailing-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: sailing-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor."
   quoth: Mark Twain
   includes: Includes cruising and offshore sailing, discovering the magnificent UK coastline
-  dyk: The sailing season runs from April to November. | Nothing beats sitting round the galley table, below deck, enjoying a warm meal with friends.
+  dyk: The sailing season runs from April to November. | Nothing beats sitting on deck, tucking into some scran with your salty seadog friends!
 
 -
   slug: diving
   title: Diving
-  image: activities/diving/diving-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: diving-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "How inappropriate to call this planet Earth when it is quite clearly Ocean."
   quoth: Arthur C. Clarke
   includes: Includes onshore and offshore scuba diving with experienced professionals
@@ -150,66 +151,67 @@
 -
   slug: coasteering
   title: Coasteering
-  imgage: activities/coasteering/coasteering-wilderness-now.jpg
-  layout: activity-category-layout-2
-  quote: "Watching a coast is like thinking about an enigma. There it is before you, smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.'"
+  image: coasteering-wilderness-now.jpg
+  layout: activity-category-layout
+  quote: "Watching a coast is like thinking about an enigma. There it is before you...always mute with an air of whispering, 'Come and find out.'"
   quoth: Joseph Conrad
-  includes: Includes movement along the intertidal zone of a rocky coastline by climbing, scrambling, jumping, and swimming
-  dyk: The UK's fastest growing sport, there are no ropes or climbing harnesses, just basic safety wear, enabling total freedom of movement. | Thick wetsuits provided by guides keep you warm all year round.
+  includes: "One of the UK's fastest growing sports - this gem of a day out involves climbing, scrambling, jumping, and swimming across rocky coastline"
+  dyk: There are no ropes or climbing harnesses, just safety wear and exhilaration! | Easy to access, quick to do - this is a perfect half day for the gang!
 
 -
   slug: rock-climbing
   title: Rock Climbing
-  image: activities/rock-climbing/rock-climbing-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: rock-climbing-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "Do something you’ve never done before. That’s the beauty of climbing, whether you’re a girl or boy, seasoned veteran or beginner."
   quoth: Chris Sharma
-  includes: Includes trad, top-roping and sport climbing in the UK's pristine national parks
-  dyk: The UK is a world class climbing destination, producing some of the world's top climbers. | Climbing engages and works all muscle groups simultaneously, while improving balance and coordination.
+  includes: "Includes top-roping, trad and sport climbing in the UK's pristine national parks"
+  dyk: "The UK is a world class climbing destination, producing some of the world's top climbers. | Climbing engages and works all muscle groups simultaneously, while improving balance and coordination."
+
 -
   slug: paragliding
   title: Paragliding
-  image: activities/paragliding/paragliding-wilderness-now.jpg
-  layout: activity-category-layout-2
-  quote: sdfs sdf sdf sdf sdf sdf sdf
-  quoth: sdfs sdf
-  includes: "Includes paragliding and paramotoring. Ever dreamt of flying... enough said!"
-  dyk: Paragliders can soar like birds, flying for hundreds of kilometers on currents of rising air. | You can be taught to fly solo at low altitude on your first day of learning.
+  image: paragliding-wilderness-now.jpg
+  layout: activity-category-layout
+  quote: "Once you have tasted flight, you will forever walk the earth with your eyes skyward, for there you have been and there you will always long to return."
+  quoth: Leonardo Da Vinci
+  includes: "Includes paragliding and paramotoring. Ever dreamt of flying..."
+  dyk: Paragliders can soar like birds, flying for hundreds of kilometers on currents of rising air. | You can be taught to fly in tandem with the guide or solo.
 -
   slug: survival
   title: Survival
-  image: activities/survival/survival-wilderness-now.jpg
-  layout: activity-category-layout-2
-  quote: "…knowing how to feed yourself in the wilds is empowering since it is not dependent on “the system.”  Hunting and gathering is also your birthrite as a member of the human race.  Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being."
+  image: survival-wilderness-now.jpg
+  layout: activity-category-layout
+  quote: "Somewhere in your heritage, your forebearers tracked, hunted, foraged, and lived fulltime with the natural world.  It is deep in our being."
   quoth: Tony Nester
-  includes: Includes turning off your phone and going off the grid to learn the skills of primitive forest dwellers
-  dyk: Survival is 100% mental because the mind controls the body, its actions and reasoning. | There is nothing more deeply satisfying than living off the land!
+  includes: Includes turning off your phone and going off the grid...
+  dyk: Survival is 100% mental because the mind controls the body, its actions and reasoning. | There is nothing more satisfying than living off the land!
 
 -
   slug: caving
   title: Caving
-  image: activities/caving/caving-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: caving-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "I wanna borrow it. For, uh, spelunking."
   quoth: Bruce Wayne
-  includes: Includes climbing, crawling and abseling to dicover underground cave systems
-  dyk: Cave systems take thousands of years to evolve their fantastic shapes, and crystal & clay formations. | Guides provide helmet, lamp and battery pack, karabiner, boiler suit and boots.
+  includes: Includes climbing, crawling and abseiling to dicover underground cave systems
+  dyk: Cave systems take thousands of years to evolve their fantastic shapes, and crystal & clay formations. | Guides provide helmets, lamps, harnesses and boiler suits.
 
 -
   slug: family-adventure
   title: Family Adventure
-  image: activities/family-adventure/family-adventure-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: family-adventure-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "Build traditions of family vacations and trips and outings. These memories will never be forgotten by your children."
   quoth: Ezra Taft Benson
   includes: Includes quality family time and sporting challenge in stunning locations
-  dyk: Modern children play outdoors just half as much as their parents did.  | Research has proven the incredible positive effects of nature on young people.
+  dyk: Enjoy nature and hang out as a family. | Modern children play outdoors just half as much as their parents did.
 
 -
   slug: endurance
   title: Endurance
-  image: activities/endurance/endurance-wilderness-now.jpg
-  layout: activity-category-layout-2
+  image: endurance-wilderness-now.jpg
+  layout: activity-category-layout
   quote: "I don't run to add days to my life, I run to add life to my days"
   quoth: Ronald Rook
   includes: Includes trail running, fell running and wild swimming in our incredible national parks
@@ -218,9 +220,9 @@
 -
   slug: wildlife
   title: Wildlife
-  image: activities/wildlife/wildlife-wilderness-now.jpg
-  layout: activity-category-layout-2
-  quote: "We need the tonic of wildness...At the same time that we are earnest to explore and learn all things, we require that all things be mysterious and unexplorable, that land and sea be indefinitely wild, unsurveyed and unfathomed by us because unfathomable. We can never have enough of nature."
+  image: wildlife-wilderness-now.jpg
+  layout: activity-category-layout
+  quote: "We need the tonic of wildness...We can never have enough of nature."
   quoth: Henri David Thoreau
   includes: Includes nature walks led by expert, naturalist guides in the UK's wild places
-  dyk: The reigning monarch of Britain owns all of the whales, sturgeons and porpoises in the water surrounding the UK. | There are around 3,000 different types of mushrooms and toadstools in the UK of which 14 species are classed as deadly.
+  dyk: The reigning monarch of Britain owns all of the whales, sturgeons and porpoises in the water surrounding the UK. | There are around 3,000 different types of mushrooms and toadstools in the UK, of which 14 species are classed as deadly.

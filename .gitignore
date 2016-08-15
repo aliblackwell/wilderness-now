@@ -1,6 +1,5 @@
 bootstrap
 .DS_Store
-_site
 .sass-cache
 _photos
 _misc
@@ -9,3 +8,5 @@ node_modules
 cdn
 Prototype pictures for Ali
 cdn_for_upload
+raw
+cdn_old

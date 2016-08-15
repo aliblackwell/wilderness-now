@@ -13,7 +13,11 @@
   top: 0;
   left: 0;
   background: rgba(10,10,10,0.9);
-  z-index: 20;
+  z-index: 21;
+}
+
+.overlay-contact {
+  background: rgba(255,255,255,0.9);
 }
 
 /* Overlay closing cross */
@@ -49,6 +53,9 @@
   display: inline-block;
   height: 100%;
   position: relative;
+  @media screen and (max-width: $break-small) {
+    height: auto;
+  }
 }
 
 .overlay ul li {
@@ -59,6 +66,9 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   list-style-type: disc;
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 1rem;
+  }
 }
 
 .overlay ul li a {
@@ -134,7 +144,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: black;
+  background: $dyk;
   border-radius: 1px;
   opacity: 1;
   left: 0;
