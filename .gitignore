@@ -1,6 +1,5 @@
 bootstrap
 .DS_Store
-_site
 .sass-cache
 _photos
 _misc
