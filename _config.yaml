@@ -3,7 +3,7 @@ source:      .
 destination: ./_site
 layouts_dir:     ./_layouts
 data_dir: ./_data
-exclude: ['node_modules', 'raw']
+exclude: ['node_modules', 'raw', 'cdn']
 
 # Serving
 detach:  false
