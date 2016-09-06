@@ -27,13 +27,13 @@
     {% include about-us.html %}
 
     <div id="activities" class="overlay-navigation overlay overlay-slidedown">
-      <nav class="row">{% for activity in site.data.parent-activities %}{% assign loopmod = forloop.index0 | modulo: 7 %}{% if loopmod == 0 %}
+      <div class="row nav">{% for activity in site.data.parent-activities %}{% assign loopmod = forloop.index0 | modulo: 7 %}{% if loopmod == 0 %}
         <ul class="col-md-4 col-xs-12">{% endif %}
           <li>
             <a href="{{ site.data.config.site_url }}/{{ activity.slug }}" title="Wilderness Now: {{activity.title}}">{{ activity.title }}</a>
           </li>{% if loopmod == 6 %}
         </ul>{% endif %}{% endfor %}
-      </nav>
+      </div>
     </div><!-- / #activities -->
 
 

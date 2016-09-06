@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Oswald';
-  src: url("https://cdn.wilderness-now.com/fonts/Oswald/Oswald-Regular.ttf") format("truetype"); }
+  src: url("http://localhost:4000/cdn/fonts/Oswald/Oswald-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: 'Work Sans Local';
-  src: url("https://cdn.wilderness-now.com/fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype"); }
+  src: url("http://localhost:4000/cdn/fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: 'Work Sans Bold';
-  src: url("https://cdn.wilderness-now.com/fonts/Work_Sans/WorkSans-SemiBold.ttf") format("truetype"); }
+  src: url("http://localhost:4000/cdn/fonts/Work_Sans/WorkSans-SemiBold.ttf") format("truetype"); }
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -4674,10 +4674,10 @@ body {
   body.overlay-open, body.contact-overlay-open {
     overflow: hidden; }
 
-.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner {
+.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner, div.banner {
   max-width: 1800px; }
   @media screen and (min-width: 1800px) {
-    .container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner {
+    .container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner, div.banner {
       margin: 0px auto; } }
 
 .holding-page .navbar img {
@@ -4887,10 +4887,56 @@ a:hover .btn-primary, a:active .btn-primary {
   color: white;
   border: 1px solid black; }
 
+div.header-banner {
+  position: relative;
+  background-color: rgba(208, 159, 0, 0.75);
+  background-image: url("http://localhost:4000/cdn/img/homepage-background.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 40vh 0vh 30vh;
+  margin-top: 37px;
+  font-size: 5.8vw; }
+  div.header-banner .arrow-scroll {
+    display: block; }
+  @media screen and (max-width: 640px) {
+    div.header-banner {
+      padding: 11rem 0rem;
+      font-size: 9.8vw; } }
+  div.header-banner img {
+    width: 2em;
+    margin: 0 auto 0.25em 0;
+    display: inline-block;
+    right: -1vw;
+    position: relative;
+    top: -0.3vw; }
+  div.header-banner header {
+    display: inline-block; }
+    div.header-banner header h1 {
+      margin-bottom: 0vh;
+      font-family: "Oswald";
+      position: relative;
+      font-size: 5.8vw;
+      z-index: 2;
+      text-transform: uppercase;
+      color: white;
+      line-height: 1; }
+      @media screen and (max-width: 640px) {
+        div.header-banner header h1 {
+          font-size: 9.8vw; } }
+
+ul.site-nav {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+  ul.site-nav li {
+    padding: 0;
+    list-style: none; }
+
 header.banner {
   position: relative;
   background-color: rgba(208, 159, 0, 0.75);
-  background-image: url("https://cdn.wilderness-now.com/img/homepage-background.jpg");
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -4928,8 +4974,7 @@ header.banner {
   .hp-arrow .down-arrow {
     width: 100px;
     margin: 0rem auto 0rem;
-    position: relative;
-    top: 14vw; }
+    position: relative; }
 
 .activity-arrow {
   margin: 0 auto;
@@ -4942,10 +4987,10 @@ header.banner {
     width: 100px; }
 
 .banner.users-signup {
-  background-image: url("https://cdn.wilderness-now.com/img/mailing-list-bg.jpg"); }
+  background-image: url("http://localhost:4000/cdn/img/mailing-list-bg.jpg"); }
 
 .banner.guides-signup {
-  background-image: url("https://cdn.wilderness-now.com/img/guides-signup-bg.jpg"); }
+  background-image: url("http://localhost:4000/cdn/img/guides-signup-bg.jpg"); }
 
 .banner.logo-overlay {
   background-color: rgba(208, 159, 0, 0.75);
@@ -4966,7 +5011,7 @@ header.banner {
   position: absolute;
   width: 100%;
   height: calc(100% - 6rem);
-  background-image: url("https://cdn.wilderness-now.com/img/wilderness_now_logo_01_white.svg");
+  background-image: url("http://localhost:4000/cdn/img/wilderness_now_logo_01_white.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -4979,7 +5024,7 @@ header.banner {
 
 .wn-small {
   position: absolute;
-  background-image: url("https://cdn.wilderness-now.com/img/wilderness_now_logo_01_white.svg");
+  background-image: url("http://localhost:4000/cdn/img/wilderness_now_logo_01_white.svg");
   background-size: 7vw;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -4987,7 +5032,7 @@ header.banner {
   height: 96%; }
 
 .wn-small:nth-child(2) {
-  background-image: url("https://cdn.wilderness-now.com/img/wilderness_now_logo_01_black.svg"); }
+  background-image: url("http://localhost:4000/cdn/img/wilderness_now_logo_01_black.svg"); }
 
 .full-width-image {
   position: relative; }
@@ -5078,8 +5123,11 @@ img {
     font-size: 3vw; }
     @media screen and (max-width: 640px) {
       .featured-activity h4 {
-        font-size: 10vw;
-        margin-top: -5vw; } }
+        font-size: 7.7vw;
+        margin-top: -5vw; }
+        .featured-activity h4:after {
+          content: ' \2192';
+          color: #ff8600; } }
 
 /* Typography */
 .section-title {
@@ -5123,7 +5171,7 @@ img {
 .morse-divider {
   height: 10px;
   width: 80%;
-  background: url("https://cdn.wilderness-now.com/img/wilderness_now_morse.svg") no-repeat center center;
+  background: url("http://localhost:4000/cdn/img/wilderness_now_morse.svg") no-repeat center center;
   background-size: contain;
   margin: 3rem auto;
   opacity: 0.3; }
@@ -5318,34 +5366,34 @@ img {
 footer.site-footer {
   text-align: center;
   padding: 1rem; }
+  footer.site-footer p {
+    color: black;
+    letter-spacing: 1px;
+    font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 0; }
+    @media screen and (max-width: 1024px) {
+      footer.site-footer p {
+        font-size: 0.8rem; } }
+    @media (max-width: 991px) {
+      footer.site-footer p {
+        font-size: 0.9rem; } }
+    @media screen and (max-width: 640px) {
+      footer.site-footer p {
+        font-family: "Work Sans Local", "Helvetica", sans-serif;
+        letter-spacing: 0px;
+        font-size: 0.8rem; } }
+    footer.site-footer p a {
+      color: black; }
+      footer.site-footer p a:hover {
+        text-decoration: underline; }
   footer.site-footer .details {
     text-align: left; }
     @media (max-width: 991px) {
       footer.site-footer .details {
         text-align: center;
         margin-bottom: 1rem; } }
-    footer.site-footer .details p {
-      color: black;
-      letter-spacing: 1px;
-      font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      margin: 0; }
-      @media screen and (max-width: 1024px) {
-        footer.site-footer .details p {
-          font-size: 0.8rem; } }
-      @media (max-width: 991px) {
-        footer.site-footer .details p {
-          font-size: 0.9rem; } }
-      @media screen and (max-width: 640px) {
-        footer.site-footer .details p {
-          font-family: "Work Sans Local", "Helvetica", sans-serif;
-          letter-spacing: 0px;
-          font-size: 0.8rem; } }
-      footer.site-footer .details p a {
-        color: black; }
-        footer.site-footer .details p a:hover {
-          text-decoration: underline; }
   footer.site-footer .copyright {
     text-align: center; }
     footer.site-footer .copyright p {

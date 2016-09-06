@@ -31,7 +31,7 @@ body {
   }
 }
 
-.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner {
+.container-fluid, .full-width-white, .full-width-image.banner, .full-width-image, .banner, .navbar, footer, header.banner, div.banner {
   max-width: 1800px;
   @media screen and (min-width: 1800px) {
     margin: 0px auto;
@@ -335,10 +335,64 @@ a:hover, a:active {
 
 }
 
-header.banner { // Logo
+div.header-banner { // Homepage
   position: relative;
   background-color: $ochre;
   background-image: url('{{site.data.config.cdn}}/img/homepage-background.jpg');
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 40vh 0vh 30vh;
+  margin-top: 37px;
+  font-size: 5.8vw;
+  .arrow-scroll {
+    display: block;
+  }
+  @media screen and (max-width: $break-small) {
+    padding: 11rem 0rem;
+    font-size: 9.8vw;
+  }
+  img {
+    width: 2em;
+    margin: 0 auto 0.25em 0;
+    display: inline-block;
+    right: -1vw;
+    position: relative;
+    top: -0.3vw;
+  }
+  header {
+    display: inline-block;
+    h1 {
+      margin-bottom: 0vh;
+      font-family: "Oswald";
+      position: relative;
+      font-size: 5.8vw;
+      z-index: 2;
+      text-transform: uppercase;
+      color: white;
+      line-height: 1;
+      @media screen and (max-width: $break-small) {
+        font-size: 9.8vw;
+      }
+    }
+  }
+}
+
+ul.site-nav {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  li {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+header.banner {
+  position: relative;
+  background-color: $ochre;
+
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -383,7 +437,7 @@ header.banner { // Logo
     width: 100px;
     margin: 0rem auto 0rem;
     position: relative;
-    top: 14vw;
+    // top: 14vw;
   }
 }
 
@@ -566,8 +620,12 @@ img {
     color: white;
     font-size: 3vw;
     @media screen and (max-width: $break-small) {
-      font-size: 10vw;
+      font-size: 7.7vw;
       margin-top: -5vw;
+      &:after {
+        content: ' \2192';
+        color: $dyk;
+      }
     }
   }
 }
@@ -886,36 +944,36 @@ img {
 footer.site-footer {
   text-align: center;
   padding: 1rem;
+  p {
+    color: black;
+    letter-spacing: 1px;
+    font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 0;
+    @media screen and (max-width: $break-landscape-tablet) {
+      font-size: 0.8rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: $break-small) {
+      font-family: "Work Sans Local", "Helvetica", sans-serif;
+      letter-spacing: 0px;
+      font-size: 0.8rem;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
   .details {
     text-align: left;
     @include media-breakpoint-down(md) {
       text-align: center;
       margin-bottom: 1rem;
-    }
-    p {
-      color: black;
-      letter-spacing: 1px;
-      font-family: "Work Sans Bold", "Work Sans Local", "Helvetica", sans-serif;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      margin: 0;
-      @media screen and (max-width: $break-landscape-tablet) {
-        font-size: 0.8rem;
-      }
-      @include media-breakpoint-down(md) {
-        font-size: 0.9rem;
-      }
-      @media screen and (max-width: $break-small) {
-        font-family: "Work Sans Local", "Helvetica", sans-serif;
-        letter-spacing: 0px;
-        font-size: 0.8rem;
-      }
-      a {
-        color: black;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
   }
   .copyright {
