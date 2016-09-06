@@ -6,37 +6,40 @@
   </head>
   <body class="home overlay-closed contact-overlay-closed">
     {% include navigation.html %}
-    <header class="banner">
-      <h1>
-        <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg" alt="WN">
-        Wilderness Now
-      </h1>
+    <div class="header-banner banner">
+        <img src="{{site.data.config.cdn}}/img/wilderness_now_logo_01_white.svg" alt="WN icon">
+        <header>
+          <h1>Wilderness Now</h1>
+        </header>
       <a href="#introduction" class="hp-arrow arrow-scroll">
         <img class="down-arrow" src="{{site.data.config.cdn}}/img/scroll_arrow_white.svg?123" alt="Down">
       </a>
-    </header>
+    </div>
 
-    <div class="full-width-white">
+    <section class="full-width-white introduction" id="introduction">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-            <section class="introduction" id="introduction">
+
               <p>Wilderness Now is a link between you and the feeling of being fully alive. <a href="#activities" class="trigger-overlay">Choose your next UK adventure.</a></p>
-            </section>
+
           </div><!-- / .col -->
         </div><!-- / .row -->
       </div><!-- / .container -->
-    </div><!-- / .full-width-white -->
+    </section><!-- / .full-width-white -->
 
-    <div class="container-fluid">
-      <div class="row">{% for activity in site.data.parent-activities %}{% if activity.featured %}
-        <div class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}}); background-color: rgba(208, 159, 0, 0.4);">
-          <a href="{{activity.slug}}" title="Wilderness Now: {{activity.title}}">
-            <h4>{{activity.title}}</h4>
-          </a>
-        </div>{% endif %}{% endfor %}
-      </div>
-    </div><!-- / .container-fluid -->
+    <nav class="container-fluid">
+
+        <ul class="row site-nav">
+        {% for activity in site.data.parent-activities %}{% if activity.featured %}
+
+          <li class="col-md-{{activity.grid}} col-xs-12 featured-activity featured-mountaineering" style="background-image: url({{site.data.config.cdn}}/activity-images/{{activity.image}}); background-color: rgba(208, 159, 0, 0.4);">
+            <a href="{{activity.slug}}" title="Wilderness Now: {{activity.title}}">
+              <h4>{{activity.title}}</h4>
+            </a>
+          </li>{% endif %}{% endfor %}
+        </ul>
+    </nav><!-- / .container-fluid -->
 
     <div class="full-width-white">
       <div class="container">
